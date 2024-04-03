@@ -5,14 +5,16 @@ class Sample {
 
 public:
 
-	int foo;
-
-	/* constructor */
 	Sample();
-	/* destructor */
 	~Sample();
 
-	void	bar(void);
+	int		getFoo(void) const;
+	void	setFoo(int v);
+
+private:
+
+	int _foo;
+
 };
 
 #endif // !CLASS_H

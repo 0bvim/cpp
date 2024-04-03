@@ -11,6 +11,13 @@ Sample::~Sample(void) {
 	return;
 }
 
-void	Sample::bar(void) {
-	std::cout << "Calling a member function" << std::endl;
+// const is to how try access have a 'read-only mode'
+int	Sample::getFoo(void) const {
+	return this->_foo;
+}
+
+void	Sample::setFoo(int v) {
+	if (v >= 0)
+		this->_foo = v;
+	return ;
 }

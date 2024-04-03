@@ -2,11 +2,12 @@
 #include <iostream>
 
 int main (void) {
-	Sample test;
+	Sample instance;
 
-	test.foo = 42;
-	std::cout << "Number in foo: " << test.foo << std::endl;
-	test.bar();
+	instance.setFoo(42);
+	std::cout << "Foo value after set: " << instance.getFoo() << std::endl;
+	instance.setFoo(-42);
+	std::cout << "Foo value after try to set a negative value: " << instance.getFoo() << std::endl;
 
 	return 0;
 }
