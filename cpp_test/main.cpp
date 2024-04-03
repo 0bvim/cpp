@@ -2,10 +2,11 @@
 #include <iostream>
 
 int main (void) {
-	Sample Test;
+	Sample test;
 
-	for (int i = 0; i < 100; i++) {
-		std::cout << i << std::endl;
-	}
+	test.foo = 42;
+	std::cout << "Number in foo: " << test.foo << std::endl;
+	test.bar();
+
 	return 0;
 }
