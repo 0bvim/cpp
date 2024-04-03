@@ -13,25 +13,19 @@ private:
 
 public:
 	Contact(void);
-	Contact(
-		std::string _firstName,
-		std::string _lastName,
-		std::string _nickName,
-		std::string _darkestSecret,
-		std::string _phone);
-	~Contact();
+	~Contact(void);
 
-	void setFirstName(const std::string&_firstName);
-	void setLastName(const std::string&_firstName);
-	void setNickName(const std::string&_firstName);
-	void setDarkestSecret(const std::string&_firstName);
-	void setPhone(const std::string&_firstName);
+	void setFirstName(const std::string &_firstName);
+	void setLastName(const std::string &_firstName);
+	void setNickName(const std::string &_firstName);
+	void setDarkestSecret(const std::string &_firstName);
+	void setPhone(const std::string &_firstName);
 
-	std::string getFirstName(const std::string&_firstName);
-	std::string getLastName(const std::string&_firstName);
-	std::string getNickName(const std::string&_firstName);
-	std::string getDarkestSecret(const std::string&_firstName);
-	std::string getPhone(const std::string&_firstName);
+	std::string getFirstName(void);
+	std::string getLastName(void);
+	std::string getNickName(void);
+	std::string getDarkestSecret(void);
+	std::string getPhone(void);
 };
 
 #endif // !CONTACT_HPP
