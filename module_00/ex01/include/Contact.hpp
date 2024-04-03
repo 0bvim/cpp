@@ -12,7 +12,7 @@ private:
 	std::string _phone;
 
 public:
-	Contact();
+	Contact(void);
 	Contact(
 		std::string _firstName,
 		std::string _lastName,
