@@ -3,11 +3,11 @@
 #include "Contact.hpp"
 
 Contact::Contact(void) {
-	std::cout << "Constructor Called" << std::endl;
+	std::cout << "Contact Constructor Called" << std::endl;
 }
 
 Contact::~Contact(void) {
-	std::cout << "Destructor Called" << std::endl;
+	std::cout << "Contact Destructor Called" << std::endl;
 }
 
 void	Contact::setFirstName(const std::string &firstName) {

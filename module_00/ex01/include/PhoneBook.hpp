@@ -6,12 +6,12 @@
 class PhoneBook {
 
 private:
-	int	_contacts[8];
+	Contact	contactsList[8];
 
 public:
 	PhoneBook(void);
 	~PhoneBook(void);
+	
 };
-
 
 #endif // !PHONEBOOK_HPP

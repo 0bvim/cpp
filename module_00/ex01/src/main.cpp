@@ -1,22 +1,21 @@
-#include "Contact.hpp"
 #include "PhoneBook.hpp"
 #include <iostream>
+#include <cstdio>
+
+void	clearCin(void) {
+	fflush(stdin);
+	std::clearerr(stdin);
+	std::cin.clear();
+}
 
 int main (void) {
 	
-	Contact instance;
-
-	instance.setFirstName("Vinicius");
-	instance.setLastName("Pereira");
-	instance.setNickName("Vimni");
-	instance.setDarkestSecret("Secret_Key");
-	instance.setPhone("999999999");
+	PhoneBook book;
 	
-	std::cout << "First Name: " << instance.getFirstName() << std::endl;
-	std::cout << "Last Name: " << instance.getLastName() << std::endl;
-	std::cout << "NickName: " << instance.getNickName() << std::endl;
-	std::cout << "Secret: " << instance.getDarkestSecret() << std::endl;
-	std::cout << "Phone: " << instance.getPhone() << std::endl;
+	while (true) {
+		if (std::cin.eof() || std::cin.fail())
+			clearCin();
+	}
 
 	return 0;
 }
