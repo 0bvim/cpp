@@ -1,21 +1,49 @@
 #include "PhoneBook.hpp"
-#include <iostream>
 #include <cstdio>
+#include <cstdlib>
+#include <iostream>
+#include <ostream>
+#include <string>
 
-void	clearCin(void) {
-	fflush(stdin);
-	std::clearerr(stdin);
-	std::cin.clear();
+void clearCin(void) {
+  std::clearerr(stdin);
+  std::cin.clear();
 }
 
-int main (void) {
-	
-	PhoneBook book;
-	
-	while (true) {
-		if (std::cin.eof() || std::cin.fail())
-			clearCin();
-	}
+std::string prompt(void) {
+  std::string user_input;
 
-	return 0;
+  std::cout << "Welcome to your lovely PhonoBook!" << std::endl;
+  std::cout << "Choose one option: " << std::endl;
+  std::cout << "Type 'ADD' or 'SEARCH' a contact or 'EXIT' to close program."
+            << std::endl;
+
+  if (std::cin.eof() || std::cin.fail())
+    clearCin();
+
+  std::cin >> user_input;
+  return user_input;
+}
+
+void handle_input(const std::string str) {
+  if (str == "ADD") {
+    std::cout << "is add" << std::endl;
+  } else if (str == "SEARCH") {
+    std::cout << "is search" << std::endl;
+  } else if (str == "EXIT") {
+    std::cout << "You lost your contacts forever..." << std::endl;
+    exit(EXIT_SUCCESS);
+  }
+}
+int main(void) {
+
+  PhoneBook book;
+  std::string input;
+
+  while (true) {
+    input = prompt();
+    handle_input(input);
+  }
+
+  return 0;
 }
