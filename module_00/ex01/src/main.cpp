@@ -13,7 +13,6 @@ void clearCin(void) {
 std::string prompt(void) {
   std::string user_input;
 
-  std::cout << "Welcome to your lovely PhonoBook!" << std::endl;
   std::cout << "Choose one option: " << std::endl;
   std::cout << "Type 'ADD' or 'SEARCH' a contact or 'EXIT' to close program."
             << std::endl;
@@ -26,8 +25,12 @@ std::string prompt(void) {
 }
 
 void handle_input(const std::string str) {
+  static int i;
+
   if (str == "ADD") {
     std::cout << "is add" << std::endl;
+    i++;
+    std::cout << i << std::endl;
   } else if (str == "SEARCH") {
     std::cout << "is search" << std::endl;
   } else if (str == "EXIT") {
@@ -40,6 +43,7 @@ int main(void) {
   PhoneBook book;
   std::string input;
 
+  std::cout << "Welcome to your lovely PhonoBook!" << std::endl;
   while (true) {
     input = prompt();
     handle_input(input);
