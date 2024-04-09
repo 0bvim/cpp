@@ -1,8 +1,9 @@
 #include "PhoneBook.hpp"
 #include "Contact.hpp"
+#include <cctype>
+#include <cstdio>
 #include <iomanip>
 #include <iostream>
-#include <cstdio>
 #include <string>
 
 PhoneBook::PhoneBook(void) : currentIndex(0) {
@@ -19,15 +20,36 @@ std::string namesFun(const std::string msg) {
 
   do {
     std::cout << msg;
-		std::getline(std::cin, input);
+    std::getline(std::cin, input);
     if (std::cin.eof() || std::cin.fail()) {
       std::cout << "Field cannot be empty. Please try again." << std::endl;
-			std::clearerr(stdin);
-			std::cin.clear();
+      std::clearerr(stdin);
+      std::cin.clear();
     }
   } while (input.empty());
   std::cin.clear();
   return input;
+}
+
+bool validPhone(const std::string &phone) {
+  bool foundDigits, foundPlus, foundCountryCode = false;
+
+  if (phone.empty())
+    return false;
+  for (std::string::const_iterator it = phone.begin(); it != phone.end();
+       ++it) {
+    if (std::isdigit(*it)) {
+      foundDigits = true;
+    } else if (*it == '+') {
+      if (it != phone.begin())
+        return false;
+      foundPlus = true;
+    } else if (*it == '(' || *it == ')' || *it == '-' || *it == ' ') {
+    } else {
+      return false;
+    }
+  }
+  return foundDigits && (foundPlus || !foundCountryCode);
 }
 
 void PhoneBook::addContact(void) {
@@ -39,5 +61,6 @@ void PhoneBook::addContact(void) {
     newContact.setLastName(namesFun("Enter Last Name: "));
     newContact.setNickName(namesFun("Enter Nickname: "));
     newContact.setDarkestSecret(namesFun("Enter here the Darkest Secret: "));
+    /* insert phone into contact */
   }
 }
