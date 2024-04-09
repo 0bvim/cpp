@@ -24,13 +24,10 @@ std::string prompt(void) {
   return user_input;
 }
 
-void handle_input(const std::string str) {
-  static int i;
+void handleInput(const std::string str, PhoneBook& book) {
 
   if (str == "ADD") {
-    std::cout << "is add" << std::endl;
-    i++;
-    std::cout << i << std::endl;
+		book.addContact();
   } else if (str == "SEARCH") {
     std::cout << "is search" << std::endl;
   } else if (str == "EXIT") {
@@ -46,7 +43,7 @@ int main(void) {
   std::cout << "Welcome to your lovely PhonoBook!" << std::endl;
   while (true) {
     input = prompt();
-    handle_input(input);
+    handleInput(input, book);
   }
 
   return 0;
