@@ -17,16 +17,17 @@ PhoneBook::~PhoneBook(void) {
 bool nameValidation(const std::string &name) {
   std::string::const_iterator it;
   if (name.empty() || name.size() < 2) {
-		std::cout << "Field cannot be empty or have just one character." << std::endl;
-		return true;
-	}
+    std::cout << "Field cannot be empty or have just one character."
+              << std::endl;
+    return true;
+  }
   for (it = name.begin(); it != name.end(); ++it) {
     if (std::isdigit(*it)) {
-			std::cout << "Only characters allowed." << std::endl;
-			return true;
-		}
+      std::cout << "Only characters allowed." << std::endl;
+      return true;
+    }
   }
-	return false;
+  return false;
 }
 
 std::string namesFun(const std::string msg) {
@@ -37,7 +38,7 @@ std::string namesFun(const std::string msg) {
     std::cout << msg << std::endl;
     std::getline(std::cin, input);
     if (std::cin.eof() || std::cin.fail() || nameValidation(input)) {
-			input.clear();
+      input.clear();
       std::clearerr(stdin);
       std::cin.clear();
     }
@@ -102,8 +103,30 @@ void PhoneBook::addContact(void) {
 }
 
 void PhoneBook::searchContact(void) {
+  std::cout << std::setw(10) << std::setfill(' ') << "Index"
+            << "|" << std::setw(10) << std::setfill(' ') << "First Name"
+            << "|" << std::setw(10) << std::setfill(' ') << "Last Name"
+            << "|" << std::setw(10) << std::setfill(' ') << "Nickname"
+            << std::endl;
   for (int i = 0; i < 8; ++i) {
-    if (!contactsList[i].getFirstName().empty())
-      std::cout << contactsList[i].getFirstName() << std::endl;
+    if (!contactsList[i].getFirstName().empty()) {
+      std::cout << std::setw(10) << std::setfill(' ') << (i + 1) << "|"
+                << std::setiosflags(std::ios::right) << std::setw(10)
+                << std::setiosflags(std::ios::right) << std::setfill(' ')
+                << (contactsList[i].getFirstName().length() > 10
+                        ? contactsList[i].getFirstName().substr(0, 9) + "."
+                        : contactsList[i].getFirstName())
+                << "|" << std::setw(10) << std::setiosflags(std::ios::right)
+                << std::setfill(' ')
+                << (contactsList[i].getLastName().length() > 10
+                        ? contactsList[i].getLastName().substr(0, 9) + "."
+                        : contactsList[i].getLastName())
+                << "|" << std::setw(10) << std::setiosflags(std::ios::right)
+                << std::setfill(' ')
+                << (contactsList[i].getNickName().length() > 10
+                        ? contactsList[i].getNickName().substr(0, 9) + "."
+                        : contactsList[i].getNickName())
+                << std::endl;
+    }
   }
 }
