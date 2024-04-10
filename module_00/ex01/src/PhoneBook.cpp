@@ -105,6 +105,8 @@ void PhoneBook::addContact(void) {
 
 bool validateIndex(std::string &index, Contact contactsList[8]) {
   std::string::const_iterator it;
+  if (index.empty())
+    return true;
   for (it = index.begin(); it != index.end(); ++it) {
     if (!std::isdigit(*it)) {
       std::cout << "Only numbers allowed." << std::endl;
@@ -120,12 +122,18 @@ bool validateIndex(std::string &index, Contact contactsList[8]) {
       return true;
     }
   }
-	number -= 1;
-	std::cout << "First Name: " << contactsList[number].getFirstName() << std::endl;
-	std::cout << "Last Name: " << contactsList[number].getLastName() << std::endl;
-	std::cout << "Nickname: " << contactsList[number].getNickName() << std::endl;
-	std::cout << "Phone number: " << contactsList[number].getPhone() << std::endl;
-	std::cout << "Darkest Secret: " << contactsList[number].getDarkestSecret() << std::endl;
+  number -= 1;
+  if (contactsList[number].getFirstName().empty()) {
+    std::cout << "Empty index in phone book." << std::endl;
+    return true;
+  }
+  std::cout << "First Name: " << contactsList[number].getFirstName()
+            << std::endl;
+  std::cout << "Last Name: " << contactsList[number].getLastName() << std::endl;
+  std::cout << "Nickname: " << contactsList[number].getNickName() << std::endl;
+  std::cout << "Phone number: " << contactsList[number].getPhone() << std::endl;
+  std::cout << "Darkest Secret: " << contactsList[number].getDarkestSecret()
+            << std::endl;
   return false;
 }
 
@@ -160,12 +168,12 @@ void PhoneBook::searchContact(void) {
   do {
     std::cout << "Choose one index to display:" << std::endl;
     std::getline(std::cin, index);
-    if (std::cin.eof() || std::cin.fail() || validateIndex(index, contactsList)) {
-			index.clear();
+    if (std::cin.eof() || std::cin.fail() ||
+        validateIndex(index, contactsList)) {
+      index.clear();
       std::clearerr(stdin);
       std::cin.clear();
     }
   } while (index.empty());
   std::cin.clear();
 }
-
