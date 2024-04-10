@@ -16,11 +16,9 @@ std::string prompt(void) {
   std::cout << "Choose one option: " << std::endl;
   std::cout << "Type 'ADD' or 'SEARCH' a contact or 'EXIT' to close program."
             << std::endl;
-
+	std::getline(std::cin, user_input);
   if (std::cin.eof() || std::cin.fail())
     clearCin();
-
-  std::cin >> user_input;
   return user_input;
 }
 
