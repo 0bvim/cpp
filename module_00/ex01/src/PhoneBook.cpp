@@ -14,6 +14,21 @@ PhoneBook::~PhoneBook(void) {
   std::cout << "PhoneBook Destructor Called" << std::endl;
 }
 
+bool nameValidation(const std::string &name) {
+  std::string::const_iterator it;
+  if (name.empty() || name.size() < 2) {
+		std::cout << "Field cannot be empty or have just one character." << std::endl;
+		return true;
+	}
+  for (it = name.begin(); it != name.end(); ++it) {
+    if (std::isdigit(*it)) {
+			std::cout << "Only characters allowed." << std::endl;
+			return true;
+		}
+  }
+	return false;
+}
+
 std::string namesFun(const std::string msg) {
 
   std::string input;
@@ -21,8 +36,8 @@ std::string namesFun(const std::string msg) {
   do {
     std::cout << msg << std::endl;
     std::getline(std::cin, input);
-    if (std::cin.eof() || std::cin.fail()) {
-      std::cout << "Field cannot be empty. Please try again." << std::endl;
+    if (std::cin.eof() || std::cin.fail() || nameValidation(input)) {
+			input.clear();
       std::clearerr(stdin);
       std::cin.clear();
     }
@@ -82,13 +97,13 @@ void PhoneBook::addContact(void) {
     newContact.setPhone(phoneFun("Enter phone number: "));
     newContact.setDarkestSecret(namesFun("Enter here the Darkest Secret: "));
     contactsList[currentIndex++] = newContact;
-		std::cout << "Contact has been added to the PhoneBook!" << std::endl;
+    std::cout << "Contact has been added to the PhoneBook!" << std::endl;
   }
 }
 
 void PhoneBook::searchContact(void) {
-		for (int i = 0; i < 8; ++i) {
-			if (!contactsList[i].getFirstName().empty())
-				std::cout << contactsList[i].getFirstName() << std::endl;
-		}
+  for (int i = 0; i < 8; ++i) {
+    if (!contactsList[i].getFirstName().empty())
+      std::cout << contactsList[i].getFirstName() << std::endl;
+  }
 }
