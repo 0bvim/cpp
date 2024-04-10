@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <iomanip>
 #include <iostream>
+#include <sstream>
 #include <string>
 
 PhoneBook::PhoneBook(void) : currentIndex(0) {
@@ -102,6 +103,32 @@ void PhoneBook::addContact(void) {
   }
 }
 
+bool validateIndex(std::string &index, Contact contactsList[8]) {
+  std::string::const_iterator it;
+  for (it = index.begin(); it != index.end(); ++it) {
+    if (!std::isdigit(*it)) {
+      std::cout << "Only numbers allowed." << std::endl;
+      return true;
+    }
+  }
+  int number;
+  std::istringstream iss(index);
+  iss >> number;
+  if (!iss.fail() && iss.eof()) {
+    if (number < 1 || number > 8) {
+      std::cout << "Only numbers between 1 and 8 are allowed." << std::endl;
+      return true;
+    }
+  }
+	number -= 1;
+	std::cout << "First Name: " << contactsList[number].getFirstName() << std::endl;
+	std::cout << "Last Name: " << contactsList[number].getLastName() << std::endl;
+	std::cout << "Nickname: " << contactsList[number].getNickName() << std::endl;
+	std::cout << "Phone number: " << contactsList[number].getPhone() << std::endl;
+	std::cout << "Darkest Secret: " << contactsList[number].getDarkestSecret() << std::endl;
+  return false;
+}
+
 void PhoneBook::searchContact(void) {
   std::cout << std::setw(10) << std::setfill(' ') << "Index"
             << "|" << std::setw(10) << std::setfill(' ') << "First Name"
@@ -129,4 +156,16 @@ void PhoneBook::searchContact(void) {
                 << std::endl;
     }
   }
+  std::string index;
+  do {
+    std::cout << "Choose one index to display:" << std::endl;
+    std::getline(std::cin, index);
+    if (std::cin.eof() || std::cin.fail() || validateIndex(index, contactsList)) {
+			index.clear();
+      std::clearerr(stdin);
+      std::cin.clear();
+    }
+  } while (index.empty());
+  std::cin.clear();
 }
+
