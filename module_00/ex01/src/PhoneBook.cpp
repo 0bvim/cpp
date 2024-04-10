@@ -34,8 +34,10 @@ std::string namesFun(const std::string msg) {
 bool validPhone(const std::string &phone) {
   bool foundDigits, foundPlus, foundCountryCode = false;
 
-  if (phone.empty() || phone.size() < 7 || phone.size() > 10)
-    return false;
+  if (phone.empty() || phone.size() < 7 || phone.size() > 10) {
+		std::cout << "Empty or invalid phone number." << std::endl;
+		return false;
+	}
   for (std::string::const_iterator it = phone.begin(); it != phone.end();
        ++it) {
     if (std::isdigit(*it)) {
@@ -59,11 +61,10 @@ std::string phoneFun(const std::string msg) {
     std::cout << msg;
     std::getline(std::cin, input);
     if (std::cin.eof() || std::cin.fail()) {
-      std::cout << "Empty or invalid phone number." << std::endl;
       std::clearerr(stdin);
       std::cin.clear();
     }
-  } while (validPhone(input));
+  } while (!validPhone(input));
   std::cin.clear();
   return input;
 }
@@ -78,6 +79,5 @@ void PhoneBook::addContact(void) {
     newContact.setNickName(namesFun("Enter Nickname: "));
     newContact.setPhone(phoneFun("Enter phone number: "));
     newContact.setDarkestSecret(namesFun("Enter here the Darkest Secret: "));
-    /* insert phone into contact */
   }
 }
