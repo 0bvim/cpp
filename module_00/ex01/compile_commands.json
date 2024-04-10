@@ -1,50 +1,36 @@
 [
- {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_00/ex01",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/main.o",
-   "src/main.cpp"
-  ],
-  "file": "src/main.cpp"
- },
- {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_00/ex01",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/Contact.o",
-   "src/Contact.cpp"
-  ],
-  "file": "src/Contact.cpp"
- },
- {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_00/ex01",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/PhoneBook.o",
-   "src/PhoneBook.cpp"
-  ],
-  "file": "src/PhoneBook.cpp"
- }
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/PhoneBook.o",
+      "src/PhoneBook.cpp"
+    ],
+    "directory": "/home/vimni/Documents/ft/cpp/module_00/ex01",
+    "file": "/home/vimni/Documents/ft/cpp/module_00/ex01/src/PhoneBook.cpp",
+    "output": "/home/vimni/Documents/ft/cpp/module_00/ex01/build/PhoneBook.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/vimni/Documents/ft/cpp/module_00/ex01",
+    "file": "/home/vimni/Documents/ft/cpp/module_00/ex01/src/main.cpp",
+    "output": "/home/vimni/Documents/ft/cpp/module_00/ex01/build/main.o"
+  }
 ]
