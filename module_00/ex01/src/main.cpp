@@ -24,11 +24,11 @@ std::string prompt(void) {
 
 void handleInput(const std::string str, PhoneBook& book) {
 
-  if (str == "ADD") {
+  if (str == "ADD" || str == "add") {
 		book.addContact();
-  } else if (str == "SEARCH") {
-    std::cout << "is search" << std::endl;
-  } else if (str == "EXIT") {
+  } else if (str == "SEARCH" || str == "search") {
+    book.searchContact();
+  } else if (str == "EXIT" || str == "exit") {
     std::cout << "You lost your contacts forever..." << std::endl;
     exit(EXIT_SUCCESS);
   }

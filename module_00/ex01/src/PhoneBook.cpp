@@ -19,7 +19,7 @@ std::string namesFun(const std::string msg) {
   std::string input;
 
   do {
-    std::cout << msg;
+    std::cout << msg << std::endl;
     std::getline(std::cin, input);
     if (std::cin.eof() || std::cin.fail()) {
       std::cout << "Field cannot be empty. Please try again." << std::endl;
@@ -58,7 +58,7 @@ std::string phoneFun(const std::string msg) {
   std::string input;
 
   do {
-    std::cout << msg;
+    std::cout << msg << std::endl;
     std::getline(std::cin, input);
     if (std::cin.eof() || std::cin.fail()) {
       std::clearerr(stdin);
@@ -82,7 +82,13 @@ void PhoneBook::addContact(void) {
     newContact.setPhone(phoneFun("Enter phone number: "));
     newContact.setDarkestSecret(namesFun("Enter here the Darkest Secret: "));
     contactsList[currentIndex++] = newContact;
+		std::cout << "Contact has been added to the PhoneBook!" << std::endl;
   }
 }
 
-void PhoneBook::searchContact(void) {}
+void PhoneBook::searchContact(void) {
+		for (int i = 0; i < 8; ++i) {
+			if (!contactsList[i].getFirstName().empty())
+				std::cout << contactsList[i].getFirstName() << std::endl;
+		}
+}
