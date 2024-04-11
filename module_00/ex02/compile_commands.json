@@ -9,12 +9,12 @@
       "-Iinclude",
       "-c",
       "-o",
-      "build/PhoneBook.o",
-      "src/PhoneBook.cpp"
+      "build/tests.o",
+      "src/tests.cpp"
     ],
-    "directory": "/home/vimni/Documents/ft/cpp/module_00/ex01",
-    "file": "/home/vimni/Documents/ft/cpp/module_00/ex01/src/PhoneBook.cpp",
-    "output": "/home/vimni/Documents/ft/cpp/module_00/ex01/build/PhoneBook.o"
+    "directory": "/home/vimni/Documents/ft/cpp/module_00/ex02",
+    "file": "/home/vimni/Documents/ft/cpp/module_00/ex02/src/tests.cpp",
+    "output": "/home/vimni/Documents/ft/cpp/module_00/ex02/build/tests.o"
   },
   {
     "arguments": [
@@ -26,11 +26,11 @@
       "-Iinclude",
       "-c",
       "-o",
-      "build/main.o",
-      "src/main.cpp"
+      "build/Account.o",
+      "src/Account.cpp"
     ],
-    "directory": "/home/vimni/Documents/ft/cpp/module_00/ex01",
-    "file": "/home/vimni/Documents/ft/cpp/module_00/ex01/src/main.cpp",
-    "output": "/home/vimni/Documents/ft/cpp/module_00/ex01/build/main.o"
+    "directory": "/home/vimni/Documents/ft/cpp/module_00/ex02",
+    "file": "/home/vimni/Documents/ft/cpp/module_00/ex02/src/Account.cpp",
+    "output": "/home/vimni/Documents/ft/cpp/module_00/ex02/build/Account.o"
   }
 ]

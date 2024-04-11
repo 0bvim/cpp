@@ -8,7 +8,7 @@ BUILDDIR := build
 TARGETDIR := bin
 
 # Target executable name
-TARGET := love_contact
+TARGET := TheJobOfYourDreams
 
 # Source files
 SRCEXT := cpp
