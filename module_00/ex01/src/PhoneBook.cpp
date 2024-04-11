@@ -18,13 +18,13 @@ PhoneBook::~PhoneBook(void) {
 bool nameValidation(const std::string &name) {
   std::string::const_iterator it;
   if (name.empty() || name.size() < 2) {
-    std::cout << "Field cannot be empty or have just one character."
+    std::cerr << "Field cannot be empty or have just one character."
               << std::endl;
     return true;
   }
   for (it = name.begin(); it != name.end(); ++it) {
     if (std::isdigit(*it)) {
-      std::cout << "Only characters allowed." << std::endl;
+      std::cerr << "Only characters allowed." << std::endl;
       return true;
     }
   }
@@ -44,7 +44,6 @@ std::string namesFun(const std::string msg) {
       std::cin.clear();
     }
   } while (input.empty());
-  std::cin.clear();
   return input;
 }
 
@@ -52,7 +51,7 @@ bool validPhone(const std::string &phone) {
   bool foundDigits, foundPlus, foundCountryCode = false;
 
   if (phone.empty() || phone.size() < 7 || phone.size() > 10) {
-    std::cout << "Empty or invalid phone number." << std::endl;
+    std::cerr << "Empty or invalid phone number." << std::endl;
     return false;
   }
   for (std::string::const_iterator it = phone.begin(); it != phone.end();
@@ -118,13 +117,13 @@ bool validateIndex(std::string &index, Contact contactsList[8]) {
   iss >> number;
   if (!iss.fail() && iss.eof()) {
     if (number < 1 || number > 8) {
-      std::cout << "Only numbers between 1 and 8 are allowed." << std::endl;
+      std::cerr << "Only numbers between 1 and 8 are allowed." << std::endl;
       return true;
     }
   }
   number -= 1;
   if (contactsList[number].getFirstName().empty()) {
-    std::cout << "Empty index in phone book." << std::endl;
+    std::cerr << "Empty index in phone book." << std::endl;
     return true;
   }
   std::cout << "First Name: " << contactsList[number].getFirstName()
