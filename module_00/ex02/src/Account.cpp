@@ -11,7 +11,7 @@ Account::Account(int initial_deposit)
     : _amount(initial_deposit), _nbDeposits(0), _nbWithdrawals(0) {
   _nbAccounts++;
   _totalAmount += initial_deposit;
-  _accountIndex = _nbAccounts;
+  _accountIndex = _nbAccounts - 1;
 }
 
 Account::~Account(void) {}
@@ -21,6 +21,7 @@ void Account::makeDeposit(int deposit) {
   _totalAmount += deposit;
   _nbDeposits++;
   _totalNbDeposits++;
+	_displayTimestamp();
   std::cout << "Deposit of " << deposit << "made. New balance: " << _amount
             << std::endl;
 }
@@ -31,10 +32,12 @@ bool Account::makeWithdrawal(int withdrawal) {
     _totalAmount -= withdrawal;
     _nbWithdrawals++;
     _totalNbWithdrawals++;
+		_displayTimestamp();
     std::cout << "Withdrawal of " << withdrawal
               << " made. New balance: " << _amount << std::endl;
     return true;
   } else {
+		_displayTimestamp();
     std::cout << "Insufficient funds for withdraw." << std::endl;
     return false;
   }
@@ -43,25 +46,28 @@ bool Account::makeWithdrawal(int withdrawal) {
 int Account::checkAmount(void) const { return _amount; }
 
 void Account::displayStatus() const {
-  std::cout << "Account #" << _accountIndex << ": Balance = " << _amount
-            << std::endl;
+    _displayTimestamp();
+    std::cout << "index:" << _accountIndex << ";amount:" << _amount << std::endl;
 }
 
 void Account::displayAccountsInfos() {
   _displayTimestamp();
   std::cout << "Number of accounts: " << _nbAccounts << std::endl;
+  _displayTimestamp();
   std::cout << "Total amount: " << _totalAmount << std::endl;
+  _displayTimestamp();
   std::cout << "Total number of deposits: " << _totalNbDeposits << std::endl;
+  _displayTimestamp();
   std::cout << "Total number of withdrawals: " << _totalNbWithdrawals
             << std::endl;
 }
 
 void Account::_displayTimestamp() {
-  std::time_t t = std::time(0);
-  std::tm *now = std::localtime(&t);
-  std::cout << "Current time: " << (now->tm_year + 1900) << '-'
-            << (now->tm_mon + 1) << '-' << now->tm_mday << " " << now->tm_hour
-            << ":" << now->tm_min << ":" << now->tm_sec << std::endl;
+    std::time_t t = std::time(0);
+    std::tm* now = std::localtime(&t);
+    char buffer[20];
+    strftime(buffer, sizeof(buffer), "%Y%m%d_%H%M%S", now);
+    std::cout << "[" << buffer << "] ";
 }
 
 int Account::getNbAccounts(void) { return _nbAccounts; }
