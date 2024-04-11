@@ -5,6 +5,8 @@
 #include <ostream>
 #include <string>
 
+bool finish = false;
+
 void clearCin(void) {
   std::clearerr(stdin);
   std::cin.clear();
@@ -30,16 +32,17 @@ void handleInput(const std::string str, PhoneBook &book) {
     book.searchContact();
   } else if (!str.compare("EXIT")) {
     std::cout << "You lost your contacts forever..." << std::endl;
-    exit(EXIT_SUCCESS);
+		finish = true;
   }
 }
+
 int main(void) {
 
   PhoneBook book;
   std::string input;
 
   std::cout << "Welcome to your lovely PhonoBook!" << std::endl;
-  while (true) {
+  while (!finish) {
     input = prompt();
     handleInput(input, book);
   }
