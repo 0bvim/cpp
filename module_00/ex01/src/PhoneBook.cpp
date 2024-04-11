@@ -137,10 +137,11 @@ bool validateIndex(std::string &index, Contact contactsList[8]) {
 }
 
 void PhoneBook::searchContact(void) {
-	if (contactsList[0].getFirstName().empty()) {
-		std::cerr << "Phone book needs at least one contact to search." << std::endl;
-		return;
-	}
+  if (contactsList[0].getFirstName().empty()) {
+    std::cerr << "Phone book needs at least one contact to search."
+              << std::endl;
+    return;
+  }
   std::cout << std::setw(10) << std::setfill(' ') << "Index"
             << "|" << std::setw(10) << std::setfill(' ') << "First Name"
             << "|" << std::setw(10) << std::setfill(' ') << "Last Name"

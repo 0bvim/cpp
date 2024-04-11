@@ -16,16 +16,16 @@ std::string prompt(void) {
   std::cout << "Choose one option: " << std::endl;
   std::cout << "Type 'ADD' or 'SEARCH' a contact or 'EXIT' to close program."
             << std::endl;
-	std::getline(std::cin, user_input);
+  std::getline(std::cin, user_input);
   if (std::cin.eof() || std::cin.fail())
     clearCin();
   return user_input;
 }
 
-void handleInput(const std::string str, PhoneBook& book) {
+void handleInput(const std::string str, PhoneBook &book) {
 
   if (!str.compare("ADD")) {
-		book.addContact();
+    book.addContact();
   } else if (!str.compare("SEARCH")) {
     book.searchContact();
   } else if (!str.compare("EXIT")) {
@@ -44,5 +44,5 @@ int main(void) {
     handleInput(input, book);
   }
 
-  return 0;
+  return EXIT_SUCCESS;
 }
