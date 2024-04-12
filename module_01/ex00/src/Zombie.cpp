@@ -5,7 +5,7 @@
 Zombie::Zombie(void) {}
 
 Zombie::~Zombie(void) {
-  std::cout << "Destructor for " << this->_name << "called." << std::endl;
+  std::cout << "Destructor for " << this->_name << " called." << std::endl;
 }
 
 void Zombie::announce(void) {
