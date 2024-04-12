@@ -1,11 +1,11 @@
 #include "Zombie.hpp"
-#include <cstdio>
 #include <cstdlib>
-#include <iostream>
-#include <ostream>
-#include <string>
 
 int main (void) {
 	
+	Zombie biraZombie;
+
+	biraZombie.setName("Bira so_Zombie");
+	biraZombie.announce();
 	return EXIT_SUCCESS;
 }
