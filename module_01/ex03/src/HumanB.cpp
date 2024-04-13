@@ -2,8 +2,6 @@
 #include "Weapon.hpp"
 #include <iostream>
 
-HumanB::HumanB() : _weapon(__null), _name(__null) {}
-
 HumanB::HumanB(const std::string &name) : _weapon(__null), _name(name) {}
 
 HumanB::~HumanB() {}

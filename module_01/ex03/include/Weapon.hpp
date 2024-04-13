@@ -9,7 +9,6 @@ private:
 	std::string _type;
 
 public:
-	Weapon();
 	Weapon(const std::string& name);
 	~Weapon();
 

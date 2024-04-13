@@ -12,7 +12,6 @@ private:
 
 public:
   /* implement constructor with Weapon; */
-  HumanB();
   HumanB(const std::string &name);
   ~HumanB();
 

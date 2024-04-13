@@ -2,8 +2,6 @@
 #include "Weapon.hpp"
 #include <iostream>
 
-HumanA::HumanA() {}
-
 HumanA::HumanA(const std::string &name, Weapon &weapon) {
   this->_name = (name);
   this->my_weapon = &weapon;
