@@ -1,0 +1,66 @@
+[
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_01/ex03",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/main.o",
+   "src/main.cpp"
+  ],
+  "file": "src/main.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_01/ex03",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/Weapon.o",
+   "src/Weapon.cpp"
+  ],
+  "file": "src/Weapon.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_01/ex03",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/HumanA.o",
+   "src/HumanA.cpp"
+  ],
+  "file": "src/HumanA.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_01/ex03",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/HumanB.o",
+   "src/HumanB.cpp"
+  ],
+  "file": "src/HumanB.cpp"
+ }
+]
