@@ -11,6 +11,7 @@ private:
 	std::string _name;
 
 public:
+	/* implement constructor with Weapon; */
 	HumanA();
 	~HumanA();
 
