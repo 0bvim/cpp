@@ -7,13 +7,13 @@
 class HumanA {
 
 private:
-	Weapon my_weapon;
+	Weapon *my_weapon;
 	std::string _name;
 
 public:
 	/* implement constructor with Weapon; */
 	HumanA();
-	HumanA(const std::string& name, Weapon weapon);
+	HumanA(const std::string& name, Weapon &weapon);
 	~HumanA();
 
 	void setName(const std::string& name);

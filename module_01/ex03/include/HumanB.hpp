@@ -7,20 +7,20 @@
 class HumanB {
 
 private:
-	Weapon my_weapon;
-	std::string _name;
+  Weapon *_weapon;
+  std::string _name;
 
 public:
-	/* implement constructor with Weapon; */
-	HumanB();
-	HumanB(const std::string& name);
-	~HumanB();
+  /* implement constructor with Weapon; */
+  HumanB();
+  HumanB(const std::string &name);
+  ~HumanB();
 
-	void setName(const std::string& name);
-	const std::string& getName();
-	void setWeapon(Weapon weapon);
-	const std::string& getWeapon();
-	void attack();
+  void setName(const std::string &name);
+  const std::string &getName();
+  void setWeapon(Weapon &weapon);
+  const std::string &getWeapon();
+  void attack() const;
 };
 
 #endif // !HUMANB_HPP
