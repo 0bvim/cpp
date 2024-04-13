@@ -12,7 +12,7 @@ private:
 
 public:
 	/* implement constructor with Weapon; */
-	HumanA();
+	HumanA(const std::string& weapon);
 	~HumanA();
 
 	void setName(const std::string& name);
@@ -22,4 +22,4 @@ public:
 	void attack();
 };
 
-#endif // !HUMAN_A_HPP
+#endif // !HUMANA_HPP
