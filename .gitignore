@@ -34,3 +34,4 @@
 bin/
 build/
 to_vog*/
+*.idx
