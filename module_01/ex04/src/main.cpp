@@ -11,6 +11,7 @@ int main (int argc, char *argv[]) {
 	if (argc != 4) {
 		std::cerr << "3 arguments needed: <file> <old string> <new string2>" << std::endl;
 	} else {
+		replaceString(argv[1], argv[2], argv[3]);
 		std::cout << "Correct arguments" << std::endl;
 	}
 	return EXIT_SUCCESS;
