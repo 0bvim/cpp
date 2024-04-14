@@ -3,8 +3,18 @@
 #include <iostream>
 #include <string>
 
-void replaceString(std::string file, std::string old, std::string new) {
-	if (std::ifstream(file))
+void replaceString(std::string file, std::string old, std::string replace) {
+	(void)file;
+	std::ifstream ifs("test");
+	std::string content;
+	std::string content2;
+	while (ifs)
+	{
+
+	}
+	ifs >> content >> content >> content;
+	std::cout << "content of file:\n" << content << " " << content2 << std::endl;
+	std::cout << "content of old: " << old << " content of new: " << replace << std::endl;
 }
 int main (int argc, char *argv[]) {
 	(void)argv;
