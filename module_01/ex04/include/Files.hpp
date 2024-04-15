@@ -6,14 +6,14 @@
 class Files {
 
 public:
-	Files(const std::string& name);
-	~Files();
+  Files(const std::string &name);
+  ~Files();
 
-	std::string fileReader();
+  std::string fileReader();
 
 private:
-	std::string _fileName;
-	std::string _content;
+  std::string _fileName;
+  std::string _content;
 };
 
 #endif // !FILES_HPP

@@ -18,6 +18,6 @@ std::string Files::fileReader() {
   while (std::getline(file, line)) {
     _content += line + "\n";
   }
-	file.close();
+  file.close();
   return _content;
 }
