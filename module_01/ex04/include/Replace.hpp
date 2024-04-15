@@ -15,6 +15,7 @@ private:
 	std::string _toReplace;
 	std::string _search;
 	std::string _replace;
+	std::string _replaced;
 };
 
 #endif // !REPLACE_HPP
