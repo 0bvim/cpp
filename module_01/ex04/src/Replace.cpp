@@ -1,9 +1,10 @@
 #include "Replace.hpp"
-#include <iostream>
 #include <string>
+#include <iostream>
+#include <fstream>
 
-Replace::Replace(std::string original, std::string search, std::string replace)
-    : _toReplace(original), _search(search), _replace(replace) {}
+Replace::Replace(std::string original, std::string search, std::string replace, std::string fileName)
+    : _toReplace(original), _search(search), _replace(replace), _fileName(fileName) {}
 
 Replace::~Replace() {}
 
@@ -15,5 +16,11 @@ void Replace::replaceOut() {
                  _toReplace.substr(pos + _search.length());
     pos += _replace.length();
   }
-  std::cout << _toReplace << std::endl;
+	std::ofstream outputFile((_fileName + ".replace").c_str());
+	if (outputFile.is_open()) {
+		outputFile << _toReplace;
+		outputFile.close();
+	} else {
+		std::cerr << "Error: Unable to open file for writing." << std::endl;
+	}
 }

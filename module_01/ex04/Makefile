@@ -49,7 +49,7 @@ clean:
 
 # Run the executable
 run:
-	@./$(EXECUTABLE)
+	@./$(EXECUTABLE) $(ARGS)
 
 # Phony targets
 .PHONY: all clean run

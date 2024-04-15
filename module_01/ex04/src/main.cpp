@@ -3,16 +3,19 @@
 #include <cstdlib>
 #include <iostream>
 
+#define FILE argv[1]
+#define OLD argv[2]
+#define NEW argv[3]
+
 int main(int argc, char *argv[]) {
   (void)argv;
   if (argc != 4) {
-    std::cerr << "3 arguments needed: <file> <old string> <new string2>"
+    std::cerr << "3 arguments needed: <file> <old string> <new string>"
               << std::endl;
   } else {
     Files files(argv[1]);
-    Replace replace(files.fileReader(), argv[2], argv[3]);
+    Replace replace(files.fileReader(), OLD, NEW, FILE);
     replace.replaceOut();
-    /* std::cout << files.fileReader() << std::endl; */
   }
   return EXIT_SUCCESS;
 }
