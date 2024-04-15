@@ -12,7 +12,8 @@ public:
 	std::string fileReader();
 
 private:
-	std::string fileName;
+	std::string _fileName;
+	std::string _content;
 };
 
 #endif // !FILES_HPP
