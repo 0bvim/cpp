@@ -12,8 +12,8 @@ public:
 	Weapon(const std::string& name);
 	~Weapon();
 
-	const std::string& getType() const;
-	void	setType(const std::string& name);
+	const std::string& getType();
+	void	setType(std::string name);
 };
 
 #endif  // INCLUDE_INCLUDE_WEAPON_HPP_

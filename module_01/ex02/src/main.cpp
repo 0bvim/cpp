@@ -8,7 +8,7 @@ int main(void) {
   std::string &ref = msg;
 
   std::cout << "Mem address of msg string: " << &msg << std::endl;
-  std::cout << "Mem address of ptr string: " << &ptr << std::endl;
+  std::cout << "Mem address of ptr string: " << ptr << std::endl;
   std::cout << "Mem address of ref string: " << &ref << std::endl;
 
   std::cout << "Value of msg string: " << msg << std::endl;

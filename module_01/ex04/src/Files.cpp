@@ -1,14 +1,17 @@
 #include "Files.hpp"
+#include <fstream>
+#include <iostream>
+#include <string>
 
-Files::Files(){}
+Files::Files(const std::string& name) : fileName(name) {}
 
-Files::~Files(){}
+Files::~Files() {}
 
-void Files::setFileName(std::string const name) {
-	this->_fileName = name;
-}
-
-std::string Files::getFileName() {
-	return this->_fileName;
+std::string Files::fileReader() {
+	std::ifstream file(fileName.c_str());
+	if (!file.is_open()) {
+		std::cerr << "Error opening the file." << std::endl;
+		return "";
+	}
 }
 

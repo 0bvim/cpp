@@ -3,7 +3,7 @@
 #include <Weapon.hpp>
 #include <cstdlib>
 
-int main() 
+int main()
 {
   {
     Weapon club = Weapon("crude spiked club");

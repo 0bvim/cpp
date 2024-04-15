@@ -1,23 +1,18 @@
 #ifndef FILES_HPP
 #define FILES_HPP
 
-#include <fstream>
 #include <string>
 
 class Files {
 
 public:
-	Files();
+	Files(const std::string& name);
 	~Files();
 
-	void openFile();
-	std::string readFile();
-	void setFileName(std::string const name);
-	std::string getFileName();
+	std::string fileReader();
 
 private:
-	std::string _fileName;
-	std::ifstream _file;
+	std::string fileName;
 };
 
 #endif // !FILES_HPP

@@ -12,13 +12,12 @@ private:
 
 public:
   /* implement constructor with Weapon; */
-  HumanB(const std::string &name);
+  HumanB(std::string name);
   ~HumanB();
 
-  void setName(const std::string &name);
+  void setName(std::string &name);
   const std::string &getName();
   void setWeapon(Weapon &weapon);
-  const std::string &getWeapon();
   void attack() const;
 };
 
