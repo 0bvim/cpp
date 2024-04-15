@@ -9,6 +9,13 @@ public:
   Harl();
   ~Harl();
 
+  enum ComplaintLevel {
+    DEBUG,
+    INFO,
+    WARNING,
+    ERROR,
+  };
+
   void complain(std::string level);
 
 private:
@@ -16,6 +23,9 @@ private:
   void info(void);
   void warning(void);
   void error(void);
+
+  typedef void (Harl::*ComplaintFunction)();
+  ComplaintFunction complaintFunctions[4];
 };
 
 #endif // !HARL_HPP
