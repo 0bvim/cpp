@@ -8,7 +8,7 @@ BUILDDIR := build
 TARGETDIR := bin
 
 # Target executable name
-TARGET := horde
+TARGET := harl2_0
 
 # Source files
 SRCEXT := cpp
@@ -49,7 +49,7 @@ clean:
 
 # Run the executable
 run:
-	@./$(EXECUTABLE)
+	@./$(EXECUTABLE) $(ARGS)
 
 # Phony targets
 .PHONY: all clean run
