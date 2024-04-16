@@ -94,5 +94,37 @@
    "src/Harl.cpp"
   ],
   "file": "src/Harl.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_01/ex06",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/main.o",
+   "src/main.cpp"
+  ],
+  "file": "src/main.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_01/ex06",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/Harl.o",
+   "src/Harl.cpp"
+  ],
+  "file": "src/Harl.cpp"
  }
 ]
