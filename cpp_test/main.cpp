@@ -1,15 +1,18 @@
-#include "Class.hpp"
+#include "Integer.hpp"
 #include <iostream>
 
 int main (void) {
-	Sample instance;
 
-	/* adding value in a variable using object instance */
-	instance.setFoo(42);
-	/* with get, you can get value attributed to a variable of object */
-	std::cout << "Foo value after set: " << instance.getFoo() << std::endl;
-	instance.setFoo(-42);
-	std::cout << "Foo value after try to set a negative value: " << instance.getFoo() << std::endl;
+	Integer x(30);
+	Integer y(20);
+	Integer z(10);
 
+	std::cout << "Value of x : " << x << std::endl;
+	std::cout << "Value of y : " << y << std::endl;
+	y = Integer(12);
+	std::cout << "Value of y : " << y << std::endl;
+	std::cout << "Value of z : " << z << std::endl;
+	z = x + y;
+	std::cout << "Value of z : " << z << std::endl;
 	return 0;
 }
