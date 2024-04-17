@@ -48,7 +48,7 @@ clean:
 	@rm -rf $(TARGETDIR)
 
 # Run the executable
-run:
+run: all
 	@./$(EXECUTABLE) $(ARGS)
 
 # Phony targets

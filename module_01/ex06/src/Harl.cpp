@@ -14,19 +14,10 @@ void Harl::complain(std::string level) {
   switch (this->select) {
   case DEBUG:
     debug();
-    info();
-    warning();
-    error();
-    break;
   case INFO:
     info();
-    warning();
-    error();
-    break;
   case WARNING:
     warning();
-    error();
-    break;
   case ERROR:
     error();
     break;
