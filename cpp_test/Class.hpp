@@ -5,9 +5,18 @@ class Sample {
 
 public:
 
-	Sample();
-	~Sample();
+	/* canonical form constructor */
+	Sample(void); // canonical
+	/* passing the a value to start */
+	Sample(int const n);
+	/* copy constructor */
+	Sample(Sample const & src); //canonical
 
+	/* overload operator */
+	Sample & operator=(Sample const & rhs); //canonical
+
+	/* destructor */
+	~Sample(); //canonical
 	int		getFoo(void) const;
 	void	setFoo(int v);
 
