@@ -2,7 +2,7 @@
 #include <iostream>
 
 Fixed::Fixed(void) : _fixedValue(0) {
-  std::cout << "Class constructor called." << std::endl;
+  std::cout << "Default constructor called." << std::endl;
 }
 
 Fixed::Fixed(Fixed const &src) {
