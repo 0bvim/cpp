@@ -8,7 +8,7 @@ BUILDDIR := build
 TARGETDIR := bin
 
 # Target executable name
-TARGET := Fixed
+TARGET := FixedNumbers
 
 # Source files
 SRCEXT := cpp
