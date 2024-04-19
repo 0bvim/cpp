@@ -42,6 +42,31 @@ float Fixed::toFloat(void) const {
 
 int Fixed::toInt(void) const { return this->_fixedValue >> Fixed::_raw; }
 
+
+bool operator>(const Fixed &nbr) {
+	
+}
+
+bool operator<(const Fixed &nbr) {
+
+}
+
+bool operator<=(const Fixed &nbr) {
+
+}
+
+bool operator>=(const Fixed &nbr) {
+
+}
+
+bool operator==(const Fixed &nbr) {
+
+}
+
+bool operator!=(const Fixed &nbr) {
+
+}
+
 std::ostream &operator<<(std::ostream &oStream, const Fixed &nbr) {
   oStream << nbr.toFloat();
   return oStream;
