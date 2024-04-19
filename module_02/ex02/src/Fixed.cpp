@@ -119,4 +119,4 @@ std::ostream &operator<<(std::ostream &oStream, const Fixed &nbr) {
   return oStream;
 }
 
-Fixed::~Fixed(void) { std::cout << "Destructor called." << std::endl; }
+Fixed::~Fixed(void) {}
