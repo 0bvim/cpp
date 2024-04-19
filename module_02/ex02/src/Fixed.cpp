@@ -28,13 +28,9 @@ Fixed &Fixed::operator=(Fixed const &rhs) {
   return *this;
 }
 
-int Fixed::getRawBits(void) const {
-  return this->_fixedValue;
-}
+int Fixed::getRawBits(void) const { return this->_fixedValue; }
 
-void Fixed::setRawBits(int const raw) {
-  this->_fixedValue = raw;
-}
+void Fixed::setRawBits(int const raw) { this->_fixedValue = raw; }
 
 float Fixed::toFloat(void) const {
   return (float)this->_fixedValue / (float)(1 << Fixed::_raw);
@@ -42,29 +38,28 @@ float Fixed::toFloat(void) const {
 
 int Fixed::toInt(void) const { return this->_fixedValue >> Fixed::_raw; }
 
-
-bool operator>(const Fixed &nbr) {
-	
+bool Fixed::operator>(const Fixed &nbr) {
+  return this->_fixedValue > nbr.getRawBits();
 }
 
-bool operator<(const Fixed &nbr) {
-
+bool Fixed::operator<(const Fixed &nbr) {
+  return this->_fixedValue < nbr.getRawBits();
 }
 
-bool operator<=(const Fixed &nbr) {
-
+bool Fixed::operator<=(const Fixed &nbr) {
+  return this->_fixedValue <= nbr.getRawBits();
 }
 
-bool operator>=(const Fixed &nbr) {
-
+bool Fixed::operator>=(const Fixed &nbr) {
+  return this->_fixedValue >= nbr.getRawBits();
 }
 
-bool operator==(const Fixed &nbr) {
-
+bool Fixed::operator==(const Fixed &nbr) {
+  return this->_fixedValue == nbr.getRawBits();
 }
 
-bool operator!=(const Fixed &nbr) {
-
+bool Fixed::operator!=(const Fixed &nbr) {
+  return this->_fixedValue != nbr.getRawBits();
 }
 
 std::ostream &operator<<(std::ostream &oStream, const Fixed &nbr) {
