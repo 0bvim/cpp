@@ -62,6 +62,22 @@ bool Fixed::operator!=(const Fixed &nbr) {
   return this->_fixedValue != nbr.getRawBits();
 }
 
+Fixed operator+(const Fixed &nbr) {
+	return Fixed(this.toFloat + nbr.toFloat);
+}
+
+Fixed operator-(const Fixed &nbr) {
+	return Fixed(this.toFloat - nbr.toFloat);
+}
+
+Fixed operator*(const Fixed &nbr) {
+	return Fixed(this.toFloat * nbr.toFloat);
+}
+
+Fixed operator/(const Fixed &nbr) {
+	return Fixed(this.toFloat / nbr.toFloat);
+}
+
 std::ostream &operator<<(std::ostream &oStream, const Fixed &nbr) {
   oStream << nbr.toFloat();
   return oStream;
