@@ -2,26 +2,16 @@
 #include <cmath>
 #include <iostream>
 
-Fixed::Fixed(void) : _fixedValue(0) {
-  std::cout << "Default constructor called." << std::endl;
-}
+Fixed::Fixed(void) : _fixedValue(0) {}
 
-Fixed::Fixed(const int iraw) : _fixedValue(iraw * (1 << Fixed::_raw)) {
-  std::cout << "Int constructor called." << std::endl;
-}
+Fixed::Fixed(const int iraw) : _fixedValue(iraw * (1 << Fixed::_raw)) {}
 
 Fixed::Fixed(const float fraw)
-    : _fixedValue(roundf(fraw * (1 << Fixed::_raw))) {
-  std::cout << "Float constructor called." << std::endl;
-}
+    : _fixedValue(roundf(fraw * (1 << Fixed::_raw))) {}
 
-Fixed::Fixed(Fixed const &src) {
-  std::cout << "Copy Constructor Called" << std::endl;
-  *this = src;
-}
+Fixed::Fixed(Fixed const &src) { *this = src; }
 
 Fixed &Fixed::operator=(Fixed const &rhs) {
-  std::cout << "Assignment operator called" << std::endl;
   if (this != &rhs) {
     this->_fixedValue = rhs.getRawBits();
   }
