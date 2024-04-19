@@ -8,11 +8,13 @@ public:
   Fixed(Fixed const &src);
   Fixed &operator=(Fixed const &rhs);
 
+	int getRawBits(void) const;
+	void setRawBits(int const raw);
   ~Fixed(void);
 
 private:
   int _fixedValue;
-  static const int raw;
+  static const int _raw = 8;
 };
 
 #endif // FIXED_HPP

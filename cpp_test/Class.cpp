@@ -13,6 +13,7 @@ Sample::Sample(int const n) : _foo(n) {
 
 Sample::Sample(Sample const &src) {
   std::cout << "Copy Constructor Called" << std::endl;
+	*this = src;
   return;
 }
 
