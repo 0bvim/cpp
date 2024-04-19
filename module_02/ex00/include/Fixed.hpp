@@ -4,12 +4,11 @@
 class Fixed {
 public:
   Fixed(void);
-  Fixed(int const n);
   Fixed(Fixed const &src);
   Fixed &operator=(Fixed const &rhs);
 
-	int getRawBits(void) const;
-	void setRawBits(int const raw);
+  int getRawBits(void) const;
+  void setRawBits(int const raw);
   ~Fixed(void);
 
 private:
