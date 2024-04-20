@@ -8,7 +8,7 @@ BUILDDIR := build
 TARGETDIR := bin
 
 # Target executable name
-TARGET := Overload
+TARGET := bsp
 
 # Source files
 SRCEXT := cpp

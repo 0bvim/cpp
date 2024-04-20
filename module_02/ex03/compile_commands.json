@@ -1,19 +1,66 @@
 [
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-std=c++98",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude",
-      "-c",
-      "-o",
-      "build/Fixed.o",
-      "src/Fixed.cpp"
-    ],
-    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_02/ex01",
-    "file": "/home/nivicius/Documents/projects/ft/cpp/module_02/ex01/src/Fixed.cpp",
-    "output": "/home/nivicius/Documents/projects/ft/cpp/module_02/ex01/build/Fixed.o"
-  }
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_02/ex03",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/main.o",
+   "src/main.cpp"
+  ],
+  "file": "src/main.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_02/ex03",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/Point.o",
+   "src/Point.cpp"
+  ],
+  "file": "src/Point.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_02/ex03",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/bsp.o",
+   "src/bsp.cpp"
+  ],
+  "file": "src/bsp.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_02/ex03",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/Fixed.o",
+   "src/Fixed.cpp"
+  ],
+  "file": "src/Fixed.cpp"
+ }
 ]
