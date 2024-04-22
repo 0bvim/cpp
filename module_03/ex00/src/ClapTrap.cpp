@@ -35,3 +35,13 @@ std::string ClapTrap::getName(void) const { return _name; }
 unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }
 unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }
 unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }
+
+void ClapTrap::attack(const std::string &target) {
+  if (!getEnergypoint()) {
+    std::cout << "ClapTrap " << getName() << " is out of energy." << std::endl;
+    return;
+  }
+  std::cout << "ClapTrap " << getName() << " attacks " << target << ", causing "
+            << getAttackDamage() << " points of damage!" << std::endl;
+	_energyPoints -= 1;
+}
