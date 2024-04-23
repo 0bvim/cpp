@@ -1,34 +1,19 @@
 [
- {
-  "directory": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex00",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/main.o",
-   "src/main.cpp"
-  ],
-  "file": "src/main.cpp"
- },
- {
-  "directory": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex00",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/ClapTrap.o",
-   "src/ClapTrap.cpp"
-  ],
-  "file": "src/ClapTrap.cpp"
- }
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex00",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex00/src/main.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex00/build/main.o"
+  }
 ]
