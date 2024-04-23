@@ -1,13 +1,13 @@
 #include "ClapTrap.hpp"
 #include <cstdlib>
-#include <iostream>
 
 int main(void) {
-  ClapTrap blip("testTrap");
+  ClapTrap blip("normal");
 
-  blip.attack("YOU");
-  blip.beRepaired(10);
-  std::cout << blip.getHitPoints() << "hp\n"
-            << blip.getEnergypoint() << "energy points" << std::endl;
+	blip.takeDamage(1);
+	blip.beRepaired(2);
+	blip.takeDamage(11);
+	blip.takeDamage(1);
+
   return EXIT_SUCCESS;
 }

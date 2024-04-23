@@ -5,6 +5,8 @@
 
 class ClapTrap {
 public:
+  enum status { DEAD, ENERGY, DAMAGE };
+
   ClapTrap(void);
   ClapTrap(const std::string name);
   ClapTrap(ClapTrap const &src);
@@ -29,6 +31,8 @@ private:
   unsigned int _energyPoints;
   unsigned int _hitPoints;
   unsigned int _attackDamage;
+
+  void messages(status type) const;
 };
 
 #endif // !CLAPTRAP_HPP

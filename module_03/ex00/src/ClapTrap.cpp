@@ -36,6 +36,15 @@ unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }
 unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }
 unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }
 
+void ClapTrap::messages(status type) const {
+  if (type == DEAD)
+    std::cout << "ClapTrap " << getName() << " is already dead." << std::endl;
+  else if (type == ENERGY)
+    std::cout << "ClapTrap " << getName() << " is out of energy." << std::endl;
+  else if (type == DAMAGE)
+    std::cout << "ClapTrap " << getName() << " is dead." << std::endl;
+}
+
 void ClapTrap::attack(const std::string &target) {
   if (!getEnergypoint()) {
     std::cout << "ClapTrap " << getName() << " is out of energy." << std::endl;
@@ -47,12 +56,30 @@ void ClapTrap::attack(const std::string &target) {
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
-  if (!getEnergypoint()) {
-    std::cout << "ClapTrap " << getName() << " is out of energy." << std::endl;
+  if (getHitPoints() <= 0) {
+    messages(DEAD);
+    return;
+  } else if (!getEnergypoint()) {
+    messages(ENERGY);
     return;
   }
-	this->_hitPoints += amount;
+  this->_hitPoints += amount;
   std::cout << "ClapTrap " << getName() << " repaired in " << amount
             << ". Hit points now " << getHitPoints() << std::endl;
   _energyPoints -= 1;
+}
+
+void ClapTrap::takeDamage(unsigned int amount) {
+  if (!getHitPoints()) {
+    messages(DEAD);
+    return;
+  }
+  if (amount >= this->getHitPoints()) {
+    messages(DAMAGE);
+    setHitPoints(0);
+    return;
+  }
+  this->_hitPoints -= amount;
+  std::cout << "ClapTrap " << getName() << " take a damage of " << amount
+            << " health points." << std::endl;
 }
