@@ -43,11 +43,24 @@ void ClapTrap::messages(status type) const {
     std::cout << "ClapTrap " << getName() << " is out of energy." << std::endl;
   else if (type == DAMAGE)
     std::cout << "ClapTrap " << getName() << " is dead." << std::endl;
+  else if (type == NEG_DMG)
+    std::cout << "ClapTrap " << getName() + " "
+              << "can't take a negative damage... imo." << std::endl;
+  else if (type == EMPTY_ATK)
+    std::cout << "ClapTrap " << getName() << " does no kill ghosts... yet."
+              << std::endl;
+  else if (type == NEG_AMOUNT)
+    std::cout << "ClapTrap " << getName() + " "
+              << "can't repair a negative value... dyk?" << std::endl;
 }
 
 void ClapTrap::attack(const std::string &target) {
   if (!getEnergypoint()) {
     std::cout << "ClapTrap " << getName() << " is out of energy." << std::endl;
+    return;
+  }
+  if (target.empty()) {
+    messages(EMPTY_ATK);
     return;
   }
   std::cout << "ClapTrap " << getName() << " attacks " << target << ", causing "
@@ -56,7 +69,10 @@ void ClapTrap::attack(const std::string &target) {
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
-  if (getHitPoints() <= 0) {
+  if ((int)amount < 0) {
+    messages(NEG_AMOUNT);
+    return;
+  } else if (getHitPoints() <= 0) {
     messages(DEAD);
     return;
   } else if (!getEnergypoint()) {
@@ -72,6 +88,10 @@ void ClapTrap::beRepaired(unsigned int amount) {
 void ClapTrap::takeDamage(unsigned int amount) {
   if (!getHitPoints()) {
     messages(DEAD);
+    return;
+  }
+  if ((int)amount < 0) {
+    messages(NEG_DMG);
     return;
   }
   if (amount >= this->getHitPoints()) {

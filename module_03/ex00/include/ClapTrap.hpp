@@ -5,7 +5,7 @@
 
 class ClapTrap {
 public:
-  enum status { DEAD, ENERGY, DAMAGE };
+  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };
 
   ClapTrap(void);
   ClapTrap(const std::string name);
