@@ -1,5 +1,4 @@
 #include "Fixed.hpp"
-#include <cstdlib>
 #include <iostream>
 
 void testOperators(void) {
@@ -33,14 +32,4 @@ void testArithmeticOperators(void) {
   std::cout << "Sub 2 - 3 = " << (Fixed(2) - Fixed(3)) << std::endl;
   std::cout << "Div 2 / 3 = " << (Fixed(2) / Fixed(3)) << std::endl;
   std::cout << "Mult 2 * 3 = " << (Fixed(2) * Fixed(3)) << std::endl;
-}
-
-int main(void) {
-  Fixed a;
-  Fixed const b(Fixed(5.05f) * Fixed(2));
-  testOperators();
-  testArithmeticOperators();
-  testIncrement(a, b);
-
-  return EXIT_SUCCESS;
 }
