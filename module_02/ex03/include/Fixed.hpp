@@ -6,8 +6,8 @@
 /**
  * @brief The Fixed class represents fixed-point numbers with 8 fractional bits.
  *
- * Fixed-point numbers are a way to represent decimal numbers in binary systems 
- * by allocating a fixed number of bits to the fractional part. In this class, 
+ * Fixed-point numbers are a way to represent decimal numbers in binary systems
+ * by allocating a fixed number of bits to the fractional part. In this class,
  * we allocate 8 bits to represent the fractional part of the number.
  */
 class Fixed {
@@ -32,14 +32,16 @@ public:
   Fixed(const float fraw);
 
   /**
-   * @brief Copy constructor initializes the Fixed object as a copy of another Fixed object.
+   * @brief Copy constructor initializes the Fixed object as a copy of another
+   * Fixed object.
    *
    * @param src The Fixed object to copy.
    */
   Fixed(Fixed const &src);
 
   /**
-   * @brief Assignment operator assigns the value of another Fixed object to this object.
+   * @brief Assignment operator assigns the value of another Fixed object to
+   * this object.
    *
    * @param rhs The Fixed object to assign.
    * @return Reference to the assigned Fixed object.
@@ -83,7 +85,8 @@ public:
    * @brief Overloaded comparison operator greater than (>)
    *
    * @param nbr The Fixed object to compare.
-   * @return true if this object is greater than the given object, false otherwise.
+   * @return true if this object is greater than the given object, false
+   * otherwise.
    */
   bool operator>(const Fixed &nbr);
 
@@ -99,7 +102,8 @@ public:
    * @brief Overloaded comparison operator less than or equal to (<=)
    *
    * @param nbr The Fixed object to compare.
-   * @return true if this object is less than or equal to the given object, false otherwise.
+   * @return true if this object is less than or equal to the given object,
+   * false otherwise.
    */
   bool operator<=(const Fixed &nbr);
 
@@ -107,7 +111,8 @@ public:
    * @brief Overloaded comparison operator greater than or equal to (>=)
    *
    * @param nbr The Fixed object to compare.
-   * @return true if this object is greater than or equal to the given object, false otherwise.
+   * @return true if this object is greater than or equal to the given object,
+   * false otherwise.
    */
   bool operator>=(const Fixed &nbr);
 
@@ -123,7 +128,8 @@ public:
    * @brief Overloaded comparison operator not equal to (!=)
    *
    * @param nbr The Fixed object to compare.
-   * @return true if this object is not equal to the given object, false otherwise.
+   * @return true if this object is not equal to the given object, false
+   * otherwise.
    */
   bool operator!=(const Fixed &nbr);
 
@@ -225,7 +231,8 @@ public:
 
 private:
   int _fixedValue; /**< The raw integer value representing the Fixed object. */
-  static const int _raw = 8; /**< The number of fractional bits allocated for the Fixed object. */
+  static const int _raw =
+      8; /**< The number of fractional bits allocated for the Fixed object. */
 };
 
 /**

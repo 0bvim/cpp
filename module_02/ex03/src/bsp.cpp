@@ -7,9 +7,10 @@ static Fixed abs(Fixed x) {
 }
 
 static Fixed triangleArea(Point const A, Point const B, Point const C) {
-  return (abs((A.getX() * (B.getY() - C.getY()) +
-							B.getX() * (C.getY() - A.getY()) +
-              C.getX() * (A.getY() - B.getY())) / (float)2.0));
+  return (
+      abs((A.getX() * (B.getY() - C.getY()) + B.getX() * (C.getY() - A.getY()) +
+           C.getX() * (A.getY() - B.getY())) /
+          (float)2.0));
 }
 
 bool bsp(Point const a, Point const b, Point const c, Point const point) {

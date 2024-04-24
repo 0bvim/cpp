@@ -2,7 +2,7 @@
 
 Point::Point(void) : _x(Fixed()), _y(Fixed()){};
 
-Point::Point(const float x, const float y) : _x(Fixed(x)), _y(Fixed(y)) {};
+Point::Point(const float x, const float y) : _x(Fixed(x)), _y(Fixed(y)){};
 
 Point::Point(const Point &src) { *this = src; };
 
