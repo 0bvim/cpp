@@ -17,13 +17,14 @@ void testOperators(void) {
 }
 
 void testIncrement(Fixed &a, Fixed const &b) {
-  std::cout << a << std::endl;
-  std::cout << ++a << std::endl;
-  std::cout << a << std::endl;
-  std::cout << a++ << std::endl;
-  std::cout << a << std::endl;
-  std::cout << b << std::endl;
-  std::cout << Fixed::max(a, b) << std::endl;
+  std::cout << "Normal number " << a << std::endl;
+  std::cout << "Pre increment " << ++a << std::endl;
+  std::cout << "After pre increment "<< a << std::endl;
+  std::cout << "Post increment " << a++ << std::endl;
+  std::cout << "After post increment " << a << std::endl;
+  std::cout << "b value " << b << std::endl;
+  std::cout << "Max operation " << Fixed::max(a, b) << std::endl;
+  std::cout << "Min operation " << Fixed::min(a, b) << std::endl;
 }
 
 void testArithmeticOperators(void) {
@@ -32,4 +33,15 @@ void testArithmeticOperators(void) {
   std::cout << "Sub 2 - 3 = " << (Fixed(2) - Fixed(3)) << std::endl;
   std::cout << "Div 2 / 3 = " << (Fixed(2) / Fixed(3)) << std::endl;
   std::cout << "Mult 2 * 3 = " << (Fixed(2) * Fixed(3)) << std::endl;
+}
+
+int main(void) {
+	Fixed a;
+	Fixed const b(Fixed (5.05f) * Fixed(2));
+	std::cout << std::endl;
+	testArithmeticOperators();
+	std::cout << std::endl;
+	testOperators();
+	std::cout << std::endl;
+	testIncrement(a, b);
 }
