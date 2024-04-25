@@ -3,12 +3,12 @@
 #include <iostream>
 
 ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {
-  std::cout << "ClapTrap constructor Called." << std::endl;
+  std::cout << "ClapTrap Constructor Called." << std::endl;
 }
 
 ClapTrap::ClapTrap(const std::string name)
     : _name(name), _energyPoints(10), _hitPoints(10), _attackDamage(0) {
-  std::cout << "ClapTrap constructor Called." << std::endl;
+  std::cout << "ClapTrap Constructor Called." << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const &src) {
