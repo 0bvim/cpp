@@ -8,7 +8,7 @@ BUILDDIR := build
 TARGETDIR := bin
 
 # Target executable name
-TARGET := andOpen
+TARGET := Serena
 
 # Source files
 SRCEXT := cpp

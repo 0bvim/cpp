@@ -5,6 +5,8 @@
 
 class ScavTrap : public ClapTrap {
 public:
+  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };
+
   ScavTrap(void);
 	ScavTrap(const std::string name);
   ~ScavTrap(void);
@@ -19,6 +21,8 @@ private:
 	unsigned int _hitPoint;
 	unsigned int _energyPoint;
 	unsigned int _atkDmg;
+
+  void messages(status type) const;
 };
 
 #endif // !SCAVTRAP_HPP

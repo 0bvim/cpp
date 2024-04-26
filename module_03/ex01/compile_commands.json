@@ -9,11 +9,11 @@
       "-Iinclude",
       "-c",
       "-o",
-      "build/main.o",
-      "src/main.cpp"
+      "build/ScavTrap.o",
+      "src/ScavTrap.cpp"
     ],
-    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex00",
-    "file": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex00/src/main.cpp",
-    "output": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex00/build/main.o"
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex01",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex01/src/ScavTrap.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex01/build/ScavTrap.o"
   }
 ]

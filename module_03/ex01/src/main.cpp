@@ -1,34 +1,35 @@
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 #include <cstdlib>
 #include <iostream>
 
 int main(void) {
-  ClapTrap blip("normal");
+	ScavTrap blop("anormal");
 
   std::cout << "Messages tests" << std::endl;
-  blip.attack("You");
-  blip.attack("");
-  blip.takeDamage(-1);
-  blip.beRepaired(-1);
-
+  blop.attack("You");
+  blop.attack("");
+  blop.takeDamage(-1);
+  blop.beRepaired(-1);
+ 
   std::cout << std::endl;
   std::cout << "Health Points tests" << std::endl;
 
-  blip.takeDamage(1);
-  blip.beRepaired(2);
-  blip.takeDamage(11);
-  blip.takeDamage(1);
+  blop.takeDamage(1);
+  blop.beRepaired(2);
+  blop.takeDamage(11);
+  blop.takeDamage(1);
 
   std::cout << std::endl;
   std::cout << "Energy tests" << std::endl;
 
   /* setuping for energy tests */
-  blip.setEnergyPoint(0);
-  blip.setHitPoints(10);
+  blop.setEnergyPoint(0);
+  blop.setHitPoints(10);
 
-  blip.attack("You again");
-  blip.beRepaired(1);
-  blip.attack("A ghost");
+  blop.attack("You again");
+  blop.beRepaired(1);
+  blop.attack("A ghost");
+	blop.guardGate();
 
   return EXIT_SUCCESS;
 }

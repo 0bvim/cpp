@@ -27,7 +27,7 @@ ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {
   return *this;
 }
 
-ClapTrap::~ClapTrap(void) { std::cout << "Destructor Called." << std::endl; }
+ClapTrap::~ClapTrap(void) { std::cout << "ClapTrap destructor Called." << std::endl; }
 
 void ClapTrap::setName(const std::string name) { this->_name = name; }
 void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }
