@@ -1,0 +1,97 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wshadow",
+      "-Wno-shadow",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/DiamondTrap.o",
+      "src/DiamondTrap.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03/src/DiamondTrap.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03/build/DiamondTrap.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wshadow",
+      "-Wno-shadow",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/ScavTrap.o",
+      "src/ScavTrap.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03/src/ScavTrap.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03/build/ScavTrap.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wshadow",
+      "-Wno-shadow",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03/src/main.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03/build/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wshadow",
+      "-Wno-shadow",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/FragTrap.o",
+      "src/FragTrap.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03/src/FragTrap.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03/build/FragTrap.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wshadow",
+      "-Wno-shadow",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/ClapTrap.o",
+      "src/ClapTrap.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03/src/ClapTrap.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_03/ex03/build/ClapTrap.o"
+  }
+]
