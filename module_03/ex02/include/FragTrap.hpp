@@ -3,18 +3,51 @@
 
 #include "ClapTrap.hpp"
 
+/**
+ * @class FragTrap
+ * @brief A class representing a FragTrap, inheriting virtually from ClapTrap.
+ */
 class FragTrap : public ClapTrap {
 public:
-  // Constructors and destructor
-  FragTrap(void); // Default constructor
-  FragTrap(const std::string name); // Parameterized constructor
-  ~FragTrap(void); // Destructor
-  FragTrap(FragTrap const &src); // Copy constructor
-  FragTrap &operator=(FragTrap const &rhs); // Assignment operator
+  /**
+   * @brief Default constructor for FragTrap.
+   */
+  FragTrap(void);
 
-  // Member functions
-  void attack(const std::string &target); // Function to perform attack
-	void highFivesGuys(void);
+  /**
+   * @brief Parameterized constructor for FragTrap.
+   * @param name The name of the FragTrap.
+   */
+  FragTrap(const std::string name);
+
+  /**
+   * @brief Destructor for FragTrap.
+   */
+  ~FragTrap(void);
+
+  /**
+   * @brief Copy constructor for FragTrap.
+   * @param src The FragTrap object to copy.
+   */
+  FragTrap(FragTrap const &src);
+
+  /**
+   * @brief Assignment operator for FragTrap.
+   * @param rhs The FragTrap object to assign.
+   * @return A reference to the assigned FragTrap object.
+   */
+  FragTrap &operator=(FragTrap const &rhs);
+
+  /**
+   * @brief Function to perform an attack on a target.
+   * @param target The target to attack.
+   */
+  void attack(const std::string &target);
+
+  /**
+   * @brief Function to initiate a high fives gesture.
+   */
+  void highFivesGuys(void);
 };
 
 #endif // !FRAGTRAP_HPP

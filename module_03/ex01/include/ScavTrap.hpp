@@ -3,25 +3,51 @@
 
 #include "ClapTrap.hpp"
 
+/**
+ * @class ScavTrap
+ * @brief A class representing a ScavTrap, inheriting virtually from ClapTrap.
+ */
 class ScavTrap : public ClapTrap {
 public:
-  // Enum to define different status types
-  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };
+  /**
+   * @brief Default constructor for ScavTrap.
+   */
+  ScavTrap(void);
 
-  // Constructors and destructor
-  ScavTrap(void); // Default constructor
-  ScavTrap(const std::string name); // Parameterized constructor
-  ~ScavTrap(void); // Destructor
-  ScavTrap(ScavTrap const &src); // Copy constructor
-  ScavTrap &operator=(ScavTrap const &rhs); // Assignment operator
+  /**
+   * @brief Parameterized constructor for ScavTrap.
+   * @param name The name of the ScavTrap.
+   */
+  ScavTrap(const std::string name);
 
-  // Member functions
-  void attack(const std::string &target); // Function to perform attack
-  void guardGate(); // Function for guarding the gate
+  /**
+   * @brief Destructor for ScavTrap.
+   */
+  ~ScavTrap(void);
 
-private:
-  // Helper function to print messages based on status
-  void messages(status type) const;
+  /**
+   * @brief Copy constructor for ScavTrap.
+   * @param src The ScavTrap object to copy.
+   */
+  ScavTrap(ScavTrap const &src);
+
+  /**
+   * @brief Assignment operator for ScavTrap.
+   * @param rhs The ScavTrap object to assign.
+   * @return A reference to the assigned ScavTrap object.
+   */
+  ScavTrap &operator=(ScavTrap const &rhs);
+
+  /**
+   * @brief Function to perform an attack on a target.
+   * @param target The target to attack.
+   */
+  void attack(const std::string &target);
+
+  /**
+   * @brief Function for guarding the gate.
+   */
+  void guardGate();
 };
 
 #endif // !SCAVTRAP_HPP

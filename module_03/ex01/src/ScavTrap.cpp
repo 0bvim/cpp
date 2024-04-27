@@ -36,24 +36,6 @@ ScavTrap &ScavTrap::operator=(ScavTrap const &rhs) {
   return *this;
 }
 
-void ScavTrap::messages(status type) const {
-  if (type == DEAD)
-    std::cout << "ScavTrap " << getName() << " is already dead." << std::endl;
-  else if (type == ENERGY)
-    std::cout << "ScavTrap " << getName() << " is out of energy." << std::endl;
-  else if (type == DAMAGE)
-    std::cout << "ScavTrap " << getName() << " is dead." << std::endl;
-  else if (type == NEG_DMG)
-    std::cout << "ScavTrap " << getName() + " "
-              << "can't take a negative damage... imo." << std::endl;
-  else if (type == EMPTY_ATK)
-    std::cout << "ScavTrap " << getName() << " does no kill ghosts... yet."
-              << std::endl;
-  else if (type == NEG_AMOUNT)
-    std::cout << "ScavTrap " << getName() + " "
-              << "can't repair a negative value... dyk?" << std::endl;
-}
-
 void ScavTrap::attack(const std::string &target) {
   if (!getEnergypoint()) {
     std::cout << "ScavTrap " << getName() << " is out of energy." << std::endl;

@@ -108,17 +108,17 @@ public:
    */
   void setAttackDamage(unsigned int atk);
 
-private:
-  std::string _name; /**< The name of the ClapTrap. */
-  unsigned int _energyPoints; /**< The energy points of the ClapTrap. */
-  unsigned int _hitPoints; /**< The hit points of the ClapTrap. */
-  unsigned int _attackDamage; /**< The attack damage of the ClapTrap. */
-
   /**
    * @brief Prints messages based on status type.
    * @param type The status type.
    */
   void messages(status type) const;
+
+private:
+  std::string _name;          /**< The name of the ClapTrap. */
+  unsigned int _energyPoints; /**< The energy points of the ClapTrap. */
+  unsigned int _hitPoints;    /**< The hit points of the ClapTrap. */
+  unsigned int _attackDamage; /**< The attack damage of the ClapTrap. */
 };
 
 #endif // !CLAPTRAP_HPP
