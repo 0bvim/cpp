@@ -48,7 +48,7 @@ int main(void) {
 		fighterOne.guardGate();
 		fighterTwo.highFivesGuys();
 		std::cout << "The fight ends cuz one fighter are in defensive mode "
-							<< "and the other guy are tryinh to make peace with a high five!" << std::endl;
+							<< "and the other guy are trying to make peace with a high five!" << std::endl;
 	}
 
   return EXIT_SUCCESS;
