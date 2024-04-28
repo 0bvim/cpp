@@ -114,7 +114,7 @@ public:
 	 */
 	void messages(status type) const;
 
-private:
+protected:
   std::string _name; /**< The name of the ClapTrap. */
   unsigned int _energyPoints; /**< The energy points of the ClapTrap. */
   unsigned int _hitPoints; /**< The hit points of the ClapTrap. */
