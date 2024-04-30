@@ -9,12 +9,12 @@ protected:
 
 public:
   Animal(void);
-  ~Animal(void);
+  virtual ~Animal(void);
   Animal(Animal const &rhs);
-  Animal &operator=(Animal const &rhs);
+  virtual Animal &operator=(Animal const &rhs);
 
-  void setType(const std::string type);
-  std::string getType(void) const;
+  virtual std::string getType(void) const;
+	virtual void makeSound() const;
 };
 
 #endif // !ANIMAL_HPP
