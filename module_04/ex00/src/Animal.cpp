@@ -1,8 +1,8 @@
 #include "Animal.hpp"
 #include <iostream>
 
-Animal::Animal(void) : _type("None") {
-  std::cout << "Animal constructor called." << std::endl;
+Animal::Animal(void) : _type("Generic Animal") {
+  std::cout << "Generic animal constructor called." << std::endl;
 }
 
 Animal::~Animal(void) { std::cout << "Animal destructor called." << std::endl; }
@@ -20,6 +20,8 @@ Animal &Animal::operator=(Animal const &rhs) {
   return *this;
 }
 
-void Animal::setType(const std::string type) { this->_type = type; }
-
 std::string Animal::getType(void) const { return this->_type; }
+
+void Animal::makeSound() const {
+	std::cout << "Generic Animal Sound" << std::endl;
+}
