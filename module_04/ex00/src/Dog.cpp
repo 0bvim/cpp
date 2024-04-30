@@ -13,6 +13,12 @@ Dog::Dog(Dog const &rhs) : Animal(rhs) {
   *this = rhs;
 }
 
-void Dog::makeSound() const {
-	std::cout << "Woof" << std::endl;
+Dog &Dog::operator=(Dog const &rhs) {
+  std::cout << "Dog assignment operator called." << std::endl;
+  if (this != &rhs) {
+    this->_type = rhs._type;
+  }
+  return *this;
 }
+
+void Dog::makeSound() const { std::cout << "Woof" << std::endl; }

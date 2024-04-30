@@ -13,6 +13,12 @@ Cat::Cat(Cat const &rhs) : Animal(rhs) {
   *this = rhs;
 }
 
-void Cat::makeSound() const {
-	std::cout << "Meow" << std::endl;
+Cat &Cat::operator=(Cat const &rhs) {
+  std::cout << "Cat assignment operator called." << std::endl;
+  if (this != &rhs) {
+    this->_type = rhs._type;
+  }
+  return *this;
 }
+
+void Cat::makeSound() const { std::cout << "Meow" << std::endl; }
