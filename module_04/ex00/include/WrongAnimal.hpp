@@ -1,15 +1,20 @@
 #ifndef WRONGANIMAL_HPP
 #define WRONGANIMAL_HPP
 
-#include "Animal.hpp"
+#include <string>
 
-class wrongAnimal : public Animal {
+class wrongAnimal {
+protected:
+  std::string _type;
+
 public:
   wrongAnimal();
-  ~wrongAnimal();
+  virtual ~wrongAnimal();
   wrongAnimal(wrongAnimal const &rhs);
   wrongAnimal &operator=(wrongAnimal const &rhs);
-  void makeSound() const;
+
+  virtual std::string getType(void) const;
+  virtual void makeSound() const;
 };
 
 #endif // !WRONGANIMAL_HPP

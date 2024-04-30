@@ -83,5 +83,22 @@
     "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex00",
     "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex00/src/Dog.cpp",
     "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex00/build/Dog.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/WrongCat.o",
+      "src/WrongCat.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex00",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex00/src/WrongCat.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex00/build/WrongCat.o"
   }
 ]
