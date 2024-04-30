@@ -7,7 +7,8 @@ class wrongAnimal : public Animal {
 public:
   wrongAnimal();
   ~wrongAnimal();
-  wrongAnimal &operator=(const wrongAnimal &rhs);
+  wrongAnimal(wrongAnimal const &rhs);
+  wrongAnimal &operator=(wrongAnimal const &rhs);
   void makeSound() const;
 };
 
