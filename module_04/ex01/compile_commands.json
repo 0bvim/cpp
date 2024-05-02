@@ -1,0 +1,87 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/Animal.o",
+      "src/Animal.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01/src/Animal.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01/build/Animal.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/WrongAnimal.o",
+      "src/WrongAnimal.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01/src/WrongAnimal.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01/build/WrongAnimal.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/Cat.o",
+      "src/Cat.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01/src/Cat.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01/build/Cat.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01/src/main.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01/build/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/Brain.o",
+      "src/Brain.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01/src/Brain.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex01/build/Brain.o"
+  }
+]
