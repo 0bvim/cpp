@@ -51,6 +51,9 @@ clean:
 run: clean all
 	@./$(EXECUTABLE) $(ARGS)
 
+val: clean all
+	@valgrind ./$(EXECUTABLE) $(ARGS)
+
 # Phony targets
 .PHONY: all clean run
 

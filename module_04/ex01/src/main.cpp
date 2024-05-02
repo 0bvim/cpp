@@ -13,7 +13,7 @@ int main(void) {
     delete j; // should not create a leak
     delete i;
   }
-  std::cout << "\nWrong animal test\n" << std::endl;
+  std::cout << "\nMy tests\n" << std::endl;
   {
     const int arraySize = 4;
     Animal *animals[arraySize];
