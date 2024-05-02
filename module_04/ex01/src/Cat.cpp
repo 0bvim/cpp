@@ -4,9 +4,13 @@
 Cat::Cat() {
   _type = "Cat";
   std::cout << "Cat constructor called." << std::endl;
+  brain = new Brain();
 }
 
-Cat::~Cat() { std::cout << "Cat destructor called." << std::endl; }
+Cat::~Cat() {
+  std::cout << "Cat destructor called." << std::endl;
+  delete brain;
+}
 
 Cat::Cat(Cat const &rhs) : Animal(rhs) {
   std::cout << "Cat copy constructor called." << std::endl;
