@@ -8,7 +8,7 @@ BUILDDIR := build
 TARGETDIR := bin
 
 # Target executable name
-TARGET := animals
+TARGET := interfaceRecap
 
 # Source files
 SRCEXT := cpp
