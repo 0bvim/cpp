@@ -4,12 +4,12 @@
 Dog::Dog() {
   _type = "Dog";
   std::cout << "Dog constructor called." << std::endl;
-  brain = new Brain();
+  _brain = new Brain();
 }
 
 Dog::~Dog() {
   std::cout << "Dog destructor called." << std::endl;
-  delete brain;
+  delete _brain;
 }
 
 Dog::Dog(Dog const &rhs) : AAnimal(rhs) {
@@ -26,3 +26,7 @@ Dog &Dog::operator=(Dog const &rhs) {
 }
 
 void Dog::makeSound() const { std::cout << "Woof" << std::endl; }
+
+Brain *Dog::getBrain(void) const {
+	return _brain;
+}

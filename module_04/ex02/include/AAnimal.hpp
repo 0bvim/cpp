@@ -2,6 +2,7 @@
 #define AANIMAL_HPP
 
 #include <string>
+#include "Brain.hpp"
 
 class AAnimal {
 protected:
@@ -15,6 +16,7 @@ public:
 
   virtual std::string getType(void) const;
 	virtual void makeSound() const = 0;
+	virtual Brain *getBrain(void) const = 0;
 };
 
 #endif // !AANIMAL_HPP

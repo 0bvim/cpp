@@ -24,9 +24,22 @@ int main(void) {
       animals[i * 2] = new Dog();
       animals[i * 2 + 1] = new Cat();
     }
-
-    /* Delete animals */
-    for (int i = 0; i < arraySize; ++i) {
+    for (int i = 0; i < arraySize / 2; ++i) {
+      animals[i * 2]->getBrain()->setIdea("What does the fox say?", 0);
+      animals[i * 2 + 1]->getBrain()->setIdea(
+          "Ring-ding-ding-ding-dingeringeding! "
+          "Gering-ding-ding-ding-dingeringeding! "
+          "Gering-ding-ding-ding-dingeringeding",
+          0);
+    }
+		std::cout << std::endl;
+    std::cout << "Do you mind know what the animals are thinking?" << std::endl;
+		for(int i = 0; i < arraySize; ++i) {
+			std::cout << animals[i]->getBrain()->getIdea(0) << std::endl;
+		}
+		
+        /* Delete animals */
+        for (int i = 0; i < arraySize; ++i) {
       delete animals[i];
     }
   }

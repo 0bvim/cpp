@@ -6,14 +6,16 @@
 
 class Dog : public AAnimal {
 private:
-  Brain *brain;
+  Brain *_brain;
 
 public:
   Dog();
   ~Dog();
   Dog(Dog const &rhs);
   Dog &operator=(Dog const &rhs);
+
   void makeSound() const;
+  Brain *getBrain(void) const;
 };
 
 #endif // !DOG_HPP

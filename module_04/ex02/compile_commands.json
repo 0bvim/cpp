@@ -1,121 +1,114 @@
 [
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-std=c++98",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude",
-      "-c",
-      "-o",
-      "build/AAnimal.o",
-      "src/AAnimal.cpp"
-    ],
-    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02",
-    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/src/AAnimal.cpp",
-    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/build/AAnimal.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-std=c++98",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude",
-      "-c",
-      "-o",
-      "build/WrongAnimal.o",
-      "src/WrongAnimal.cpp"
-    ],
-    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02",
-    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/src/WrongAnimal.cpp",
-    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/build/WrongAnimal.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-std=c++98",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude",
-      "-c",
-      "-o",
-      "build/Cat.o",
-      "src/Cat.cpp"
-    ],
-    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02",
-    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/src/Cat.cpp",
-    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/build/Cat.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-std=c++98",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude",
-      "-c",
-      "-o",
-      "build/main.o",
-      "src/main.cpp"
-    ],
-    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02",
-    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/src/main.cpp",
-    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/build/main.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-std=c++98",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude",
-      "-c",
-      "-o",
-      "build/Brain.o",
-      "src/Brain.cpp"
-    ],
-    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02",
-    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/src/Brain.cpp",
-    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/build/Brain.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-std=c++98",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude",
-      "-c",
-      "-o",
-      "build/Dog.o",
-      "src/Dog.cpp"
-    ],
-    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02",
-    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/src/Dog.cpp",
-    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/build/Dog.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-std=c++98",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude",
-      "-c",
-      "-o",
-      "build/WrongCat.o",
-      "src/WrongCat.cpp"
-    ],
-    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02",
-    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/src/WrongCat.cpp",
-    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex02/build/WrongCat.o"
-  }
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/main.o",
+   "src/main.cpp"
+  ],
+  "file": "src/main.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/WrongAnimal.o",
+   "src/WrongAnimal.cpp"
+  ],
+  "file": "src/WrongAnimal.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/Brain.o",
+   "src/Brain.cpp"
+  ],
+  "file": "src/Brain.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/Cat.o",
+   "src/Cat.cpp"
+  ],
+  "file": "src/Cat.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/Dog.o",
+   "src/Dog.cpp"
+  ],
+  "file": "src/Dog.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/AAnimal.o",
+   "src/AAnimal.cpp"
+  ],
+  "file": "src/AAnimal.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/WrongCat.o",
+   "src/WrongCat.cpp"
+  ],
+  "file": "src/WrongCat.cpp"
+ }
 ]
