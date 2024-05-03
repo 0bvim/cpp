@@ -26,6 +26,8 @@ AMateria &AMateria::operator=(AMateria const &rhs) {
   return *this;
 }
 
-std::string const &AMateria::getType() const {
-	return _type;
+std::string const &AMateria::getType() const { return _type; }
+
+void AMateria::use(ICharacter &target) {
+  std::cout << "Nothing in use yet for" << target.getType() << std::endl;
 }
