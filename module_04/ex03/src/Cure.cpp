@@ -2,24 +2,18 @@
 #include "ICharacter.hpp"
 #include <iostream>
 
-Cure::Cure() : AMateria("Cure") {
-  std::cout << "Cure constructor called" << std::endl;
-}
+Cure::Cure() : AMateria("Cure") {}
 
-Cure::Cure(Cure const &rhs) {
-  std::cout << "Cure copy constructor called" << std::endl;
-  *this = rhs;
-}
+Cure::Cure(Cure const &rhs) { *this = rhs; }
 
 Cure &Cure::operator=(Cure const &rhs) {
-  std::cout << "Cure assignment constructor called" << std::endl;
   if (this != &rhs) {
     this->_type = rhs._type;
   }
   return *this;
 }
 
-Cure::~Cure() { std::cout << "Cure destructor called" << std::endl; }
+Cure::~Cure() {}
 
 AMateria *Cure::clone() const { return new Cure(*this); }
 

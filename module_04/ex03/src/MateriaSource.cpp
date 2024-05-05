@@ -1,25 +1,19 @@
+#include "MateriaSource.hpp"
 #include "AMateria.hpp"
-#include "MateriaSouce.hpp"
-#include <iostream>
 
 MateriaSource::MateriaSource() {
-  std::cout << "MateriaSource constructor called." << std::endl;
   for (int i = 0; i < 4; ++i) {
     _learnedMaterias[i] = NULL;
   }
 }
 
 MateriaSource::~MateriaSource() {
-  std::cout << "MateriaSource destructor called." << std::endl;
   for (int i = 0; i < 4; ++i) {
     delete _learnedMaterias[i];
   }
 }
 
-MateriaSource::MateriaSource(MateriaSource const &rhs) {
-  std::cout << "MateriaSource copy constructor called." << std::endl;
-  *this = rhs;
-}
+MateriaSource::MateriaSource(MateriaSource const &rhs) { *this = rhs; }
 
 MateriaSource &MateriaSource::operator=(MateriaSource const &rhs) {
   if (this != &rhs) {
@@ -34,7 +28,7 @@ MateriaSource &MateriaSource::operator=(MateriaSource const &rhs) {
   return *this;
 }
 
-void MateriaSource::learnedMateria(AMateria *m) {
+void MateriaSource::learnMateria(AMateria *m) {
   for (int i = 0; i < 4; ++i) {
     if (_learnedMaterias[i] == NULL) {
       _learnedMaterias[i] = m;
@@ -48,5 +42,5 @@ AMateria *MateriaSource::createMateria(std::string const &type) {
     if (_learnedMaterias[i] != NULL && _learnedMaterias[i]->getType() == type)
       return _learnedMaterias[i]->clone();
   }
-	return NULL;
+  return NULL;
 }

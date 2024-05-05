@@ -10,11 +10,11 @@ private:
   AMateria *_inventory[4];
 
 public:
-  Character();
+  Character(void);
   Character(std::string const &name);
   Character(Character const &rhs);
   Character &operator=(Character const &rhs);
-  ~Character();
+  ~Character(void);
 
   std::string const &getName() const;
   void equip(AMateria *m);

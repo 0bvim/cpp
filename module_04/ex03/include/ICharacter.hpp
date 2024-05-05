@@ -3,13 +3,11 @@
 
 #include "AMateria.hpp"
 
+class AMateria;
+
 class ICharacter {
 public:
-  ICharacter();
-  ICharacter(ICharacter const &rhs);
-  ICharacter &operator=(ICharacter const &rhs);
-  virtual ~ICharacter();
-
+  virtual ~ICharacter(void) {}
   virtual std::string const &getName() const = 0;
   virtual void equip(AMateria *m) = 0;
   virtual void unequip(int idx) = 0;

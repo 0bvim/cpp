@@ -2,24 +2,18 @@
 #include "ICharacter.hpp"
 #include <iostream>
 
-Ice::Ice() : AMateria("Ice") {
-  std::cout << "Ice constructor called" << std::endl;
-}
+Ice::Ice() : AMateria("Ice") {}
 
-Ice::Ice(Ice const &rhs) {
-  std::cout << "Ice copy constructor called" << std::endl;
-  *this = rhs;
-}
+Ice::Ice(Ice const &rhs) { *this = rhs; }
 
 Ice &Ice::operator=(Ice const &rhs) {
-  std::cout << "Ice assignment constructor called" << std::endl;
   if (this != &rhs) {
     this->_type = rhs._type;
   }
   return *this;
 }
 
-Ice::~Ice() { std::cout << "Ice destructor called" << std::endl; }
+Ice::~Ice() {}
 
 AMateria *Ice::clone() const { return new Ice(*this); }
 
