@@ -42,5 +42,5 @@ AMateria *MateriaSource::createMateria(std::string const &type) {
     if (_learnedMaterias[i] != NULL && _learnedMaterias[i]->getType() == type)
       return _learnedMaterias[i]->clone();
   }
-  return NULL;
+  return 0;
 }
