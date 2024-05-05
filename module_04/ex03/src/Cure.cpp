@@ -4,7 +4,7 @@
 
 Cure::Cure() : AMateria("Cure") {}
 
-Cure::Cure(Cure const &rhs) { *this = rhs; }
+Cure::Cure(Cure const &rhs) : AMateria(rhs) { *this = rhs; }
 
 Cure &Cure::operator=(Cure const &rhs) {
   if (this != &rhs) {
