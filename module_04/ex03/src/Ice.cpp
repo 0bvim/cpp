@@ -4,7 +4,7 @@
 
 Ice::Ice() : AMateria("Ice") {}
 
-Ice::Ice(Ice const &rhs) { *this = rhs; }
+Ice::Ice(Ice const &rhs) : AMateria(rhs) { *this = rhs; }
 
 Ice &Ice::operator=(Ice const &rhs) {
   if (this != &rhs) {
