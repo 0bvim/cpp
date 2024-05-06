@@ -1,114 +1,110 @@
 [
- {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex03",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/main.o",
-   "src/main.cpp"
-  ],
-  "file": "src/main.cpp"
- },
- {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex03",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/Ice.o",
-   "src/Ice.cpp"
-  ],
-  "file": "src/Ice.cpp"
- },
- {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex03",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/IMateriaSource.o",
-   "src/IMateriaSource.cpp"
-  ],
-  "file": "src/IMateriaSource.cpp"
- },
- {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex03",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/ICharacter.o",
-   "src/ICharacter.cpp"
-  ],
-  "file": "src/ICharacter.cpp"
- },
- {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex03",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/Cure.o",
-   "src/Cure.cpp"
-  ],
-  "file": "src/Cure.cpp"
- },
- {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex03",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/MateriaSource.o",
-   "src/MateriaSource.cpp"
-  ],
-  "file": "src/MateriaSource.cpp"
- },
- {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_04/ex03",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/AMateria.o",
-   "src/AMateria.cpp"
-  ],
-  "file": "src/AMateria.cpp"
- }
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g3",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/Ice.o",
+      "src/Ice.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/src/Ice.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/build/Ice.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g3",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/MateriaSource.o",
+      "src/MateriaSource.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/src/MateriaSource.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/build/MateriaSource.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g3",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/Cure.o",
+      "src/Cure.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/src/Cure.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/build/Cure.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g3",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/Character.o",
+      "src/Character.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/src/Character.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/build/Character.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g3",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/src/main.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/build/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g3",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/AMateria.o",
+      "src/AMateria.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/src/AMateria.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_04/ex03/build/AMateria.o"
+  }
 ]

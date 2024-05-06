@@ -1,10 +1,12 @@
+#include "AMateria.hpp"
 #include "Character.hpp"
 #include "Cure.hpp"
+#include "ICharacter.hpp"
 #include "Ice.hpp"
 #include "MateriaSource.hpp"
 #include <cstdlib>
 
-int main(void) {
+void subject_test(void) {
   IMateriaSource *src = new MateriaSource();
   src->learnMateria(new Ice());
   src->learnMateria(new Cure());
@@ -20,5 +22,13 @@ int main(void) {
   delete bob;
   delete me;
   delete src;
+}
+
+void my_test(void) {
+}
+
+int main(void) {
+	subject_test();
+	my_test();
   return EXIT_SUCCESS;
 }
