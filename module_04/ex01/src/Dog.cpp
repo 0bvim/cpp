@@ -1,4 +1,5 @@
 #include "Dog.hpp"
+#include "Brain.hpp"
 #include <iostream>
 
 Dog::Dog() {
@@ -14,6 +15,7 @@ Dog::~Dog() {
 
 Dog::Dog(Dog const &rhs) : Animal(rhs) {
   std::cout << "Dog copy constructor called." << std::endl;
+  brain = new Brain();
   *this = rhs;
 }
 
@@ -21,6 +23,7 @@ Dog &Dog::operator=(Dog const &rhs) {
   std::cout << "Dog assignment operator called." << std::endl;
   if (this != &rhs) {
     this->_type = rhs._type;
+    *brain = *(rhs.brain);
   }
   return *this;
 }
