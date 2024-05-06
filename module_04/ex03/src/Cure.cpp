@@ -2,7 +2,7 @@
 #include "ICharacter.hpp"
 #include <iostream>
 
-Cure::Cure() : AMateria("Cure") {}
+Cure::Cure() : AMateria("cure") {}
 
 Cure::Cure(Cure const &rhs) : AMateria(rhs) { *this = rhs; }
 

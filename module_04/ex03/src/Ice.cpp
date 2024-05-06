@@ -2,7 +2,7 @@
 #include "ICharacter.hpp"
 #include <iostream>
 
-Ice::Ice() : AMateria("Ice") {}
+Ice::Ice() : AMateria("ice") {}
 
 Ice::Ice(Ice const &rhs) : AMateria(rhs) { *this = rhs; }
 
