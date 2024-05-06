@@ -28,5 +28,12 @@ int main(void) {
       delete animals[i];
     }
   }
+  {
+    std::cout << std::endl;
+    Dog basic;
+    { Dog tmp = basic; }
+    std::cout << basic.getType() << std::endl;
+    basic.makeSound();
+  }
   return EXIT_SUCCESS;
 }

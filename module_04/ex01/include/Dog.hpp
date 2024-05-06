@@ -13,7 +13,9 @@ public:
   ~Dog();
   Dog(Dog const &rhs);
   Dog &operator=(Dog const &rhs);
+
   void makeSound() const;
+  Brain *getBrain(void) const;
 };
 
 #endif // !DOG_HPP

@@ -14,6 +14,7 @@ public:
   Cat(Cat const &rhs);
   Cat &operator=(Cat const &rhs);
   void makeSound() const;
+  Brain *getBrain(void) const;
 };
 
 #endif // !CAT_HPP
