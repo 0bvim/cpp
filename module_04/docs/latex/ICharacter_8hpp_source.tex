@@ -1,0 +1,23 @@
+\hypertarget{ICharacter_8hpp_source}{}\doxysection{ICharacter.\+hpp}
+\label{ICharacter_8hpp_source}\index{ex03/include/ICharacter.hpp@{ex03/include/ICharacter.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ICHARACTER\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ICHARACTER\_HPP}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}AMateria.hpp"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{classAMateria}{AMateria}};}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{classICharacter}{ICharacter}} \{}
+\DoxyCodeLine{9 \textcolor{keyword}{public}:}
+\DoxyCodeLine{10   \textcolor{keyword}{virtual} \mbox{\hyperlink{classICharacter}{\string~ICharacter}}(\textcolor{keywordtype}{void}) \{\}}
+\DoxyCodeLine{11   \textcolor{keyword}{virtual} std::string \textcolor{keyword}{const} \&getName() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{12   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} equip(\mbox{\hyperlink{classAMateria}{AMateria}} *m) = 0;}
+\DoxyCodeLine{13   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} unequip(\textcolor{keywordtype}{int} idx) = 0;}
+\DoxyCodeLine{14   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} use(\textcolor{keywordtype}{int} idx, \mbox{\hyperlink{classICharacter}{ICharacter}} \&target) = 0;}
+\DoxyCodeLine{15 \};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !ICHARACTER\_HPP}}
+
+\end{DoxyCode}

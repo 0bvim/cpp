@@ -1,0 +1,27 @@
+\hypertarget{MateriaSource_8hpp_source}{}\doxysection{Materia\+Source.\+hpp}
+\label{MateriaSource_8hpp_source}\index{ex03/include/MateriaSource.hpp@{ex03/include/MateriaSource.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MATERIASOURCE\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MATERIASOURCE\_HPP}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}AMateria.hpp"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}IMateriaSource.hpp"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{classMateriaSource}{MateriaSource}} : \textcolor{keyword}{public} \mbox{\hyperlink{classIMateriaSource}{IMateriaSource}} \{}
+\DoxyCodeLine{8 \textcolor{keyword}{private}:}
+\DoxyCodeLine{9   \mbox{\hyperlink{classAMateria}{AMateria}} *\_learnedMaterias[4];}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12   \mbox{\hyperlink{classMateriaSource}{MateriaSource}}();}
+\DoxyCodeLine{13   \mbox{\hyperlink{classMateriaSource}{\string~MateriaSource}}();}
+\DoxyCodeLine{14   \mbox{\hyperlink{classMateriaSource}{MateriaSource}}(\mbox{\hyperlink{classMateriaSource}{MateriaSource}} \textcolor{keyword}{const} \&rhs);}
+\DoxyCodeLine{15   \mbox{\hyperlink{classMateriaSource}{MateriaSource}} \&operator=(\mbox{\hyperlink{classMateriaSource}{MateriaSource}} \textcolor{keyword}{const} \&rhs);}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17   \textcolor{keywordtype}{void} learnMateria(\mbox{\hyperlink{classAMateria}{AMateria}} *m);}
+\DoxyCodeLine{18   \mbox{\hyperlink{classAMateria}{AMateria}} *createMateria(std::string \textcolor{keyword}{const} \&type);}
+\DoxyCodeLine{19 \};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !MATERIASOURCE\_HPP}}
+
+\end{DoxyCode}

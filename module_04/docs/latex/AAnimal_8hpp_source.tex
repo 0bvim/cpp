@@ -1,0 +1,28 @@
+\hypertarget{AAnimal_8hpp_source}{}\doxysection{AAnimal.\+hpp}
+\label{AAnimal_8hpp_source}\index{ex02/include/AAnimal.hpp@{ex02/include/AAnimal.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef AANIMAL\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define AANIMAL\_HPP}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Brain.hpp"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{classAAnimal}{AAnimal}} \{}
+\DoxyCodeLine{8 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{9   std::string \_type;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12   \mbox{\hyperlink{classAAnimal}{AAnimal}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{13   \textcolor{keyword}{virtual} \mbox{\hyperlink{classAAnimal}{\string~AAnimal}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{14   \mbox{\hyperlink{classAAnimal}{AAnimal}}(\mbox{\hyperlink{classAAnimal}{AAnimal}} \textcolor{keyword}{const} \&rhs);}
+\DoxyCodeLine{15   \mbox{\hyperlink{classAAnimal}{AAnimal}} \&operator=(\mbox{\hyperlink{classAAnimal}{AAnimal}} \textcolor{keyword}{const} \&rhs);}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17   \textcolor{keyword}{virtual} std::string getType(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{18   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} makeSound() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{19   \textcolor{keyword}{virtual} \mbox{\hyperlink{classBrain}{Brain}} *getBrain(\textcolor{keywordtype}{void}) \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{20 \};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !AANIMAL\_HPP}}
+
+\end{DoxyCode}
