@@ -1,0 +1,4 @@
+<map id="wrongAnimal" name="wrongAnimal">
+<area shape="rect" id="node1" title="The wrongAnimal class represents a generic animal (incorrectly named)." alt="" coords="5,5,113,32"/>
+<area shape="rect" id="node2" href="$classwrongCat.html" title="A class representing a wrong implementation of a cat." alt="" coords="17,80,101,107"/>
+</map>
