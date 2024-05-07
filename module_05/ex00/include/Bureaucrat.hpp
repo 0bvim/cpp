@@ -32,4 +32,6 @@ public:
   void decrementGrade();
 };
 
+std::ostream &operator<<(std::ostream &os, Bureaucrat const &bureaucrat);
+
 #endif // BUREAUCRAT_HPP
