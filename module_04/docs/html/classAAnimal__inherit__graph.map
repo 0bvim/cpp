@@ -1,5 +1,0 @@
-<map id="AAnimal" name="AAnimal">
-<area shape="rect" id="node1" title=" " alt="" coords="23,5,101,32"/>
-<area shape="rect" id="node2" href="$classCat.html" title="The Cat class represents a cat." alt="" coords="5,80,49,107"/>
-<area shape="rect" id="node3" href="$classDog.html" title="The Dog class represents a dog." alt="" coords="74,80,122,107"/>
-</map>
