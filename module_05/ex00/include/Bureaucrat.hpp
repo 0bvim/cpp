@@ -23,7 +23,7 @@ public:
   Bureaucrat(const std::string &name, int grade);
   ~Bureaucrat();
   Bureaucrat(Bureaucrat const &rhs);
-  Bureaucrat operator=(Bureaucrat const &rhs);
+  Bureaucrat &operator=(Bureaucrat const &rhs);
 
   std::string getName() const;
   int getGrade() const;
