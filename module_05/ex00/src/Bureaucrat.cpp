@@ -29,7 +29,7 @@ void Bureaucrat::incrementGrade() {
   std::cout << "Grade of this Bureaucrat now are " << this->_grade << std::endl;
 }
 
-void Bureaucrat::decrementGrade() { 
+void Bureaucrat::decrementGrade() {
   if (this->_grade == 150) {
     std::cout << "This Bureaucrat are at the lowest grade." << std::endl;
     return;
