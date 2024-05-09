@@ -6,6 +6,8 @@
 
 # define RED(text) "\033[31m" << text << "\033[0m"
 
+class Form; // Forward declaration
+
 class Bureaucrat {
 private:
 	Bureaucrat();
@@ -25,13 +27,13 @@ public:
 
   Bureaucrat(const std::string &name, int grade);
   ~Bureaucrat();
-  Bureaucrat(Bureaucrat const &rhs);
-  Bureaucrat &operator=(Bureaucrat const &rhs);
+  Bureaucrat(const Bureaucrat &rhs);
+  Bureaucrat &operator=(const Bureaucrat &rhs);
 
   std::string getName() const;
   int getGrade() const;
 
-	void signForm();
+	void signForm(Form &f);
   void incrementGrade();
   void decrementGrade();
 };
