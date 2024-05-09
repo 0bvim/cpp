@@ -32,10 +32,10 @@ int Bureaucrat::getGrade() const { return this->_grade; }
 void Bureaucrat::signForm(Form &f) {
   try {
     f.beSigned(*this);
-    std::cout << RED(_name) << " signed " << f.getName() << std::endl;
-  } catch (const Form::GradeTooLowException &e) {
-    std::cout << RED(_name) << " couldn't sign " << f.getName() << " because "
-              << e.what() << std::endl;
+    std::cout << RED(this->_name) << " signed " << f.getName() << std::endl;
+  } catch (Form::GradeTooLowException &e) {
+    std::cout << RED(_name) << " couldn't sign " << f.getName()
+              << " because: " << e.what() << std::endl;
   }
 }
 
