@@ -54,8 +54,8 @@ int main() {
       john.decrementGrade();
       std::cout << john << std::endl;
 
-			while (john.getGrade() > 42)
-				john.incrementGrade();
+      while (john.getGrade() > 42)
+        john.incrementGrade();
       std::cout << john << std::endl;
 
       // This should throw GradeTooHighException
