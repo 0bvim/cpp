@@ -1,12 +1,9 @@
 #include "Bureaucrat.hpp"
 #include <iostream>
 
-#define RED "\033[31m"
-#define RST "\033[0m"
-
 int main() {
   std::cout << std::endl;
-  std::cout << RED << "Test increment a high grade." << RST << std::endl;
+  std::cout << RED("Test increment a high grade.") << std::endl;
   {
     try {
       Bureaucrat john("High Grade Bure", 1);
@@ -24,7 +21,7 @@ int main() {
     }
   }
   std::cout << std::endl;
-  std::cout << RED << "Test decrement a low grade." << RST << std::endl;
+  std::cout << RED("Test decrement a low grade.") << std::endl;
   {
     try {
       Bureaucrat john("Low Grade Bure", 150);
@@ -42,7 +39,7 @@ int main() {
     }
   }
   std::cout << std::endl;
-  std::cout << RED << "Now different grade" << RST << std::endl;
+  std::cout << RED ("Now different grade") << std::endl;
   {
     try {
       Bureaucrat john("Mid Grade", 75);
