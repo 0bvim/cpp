@@ -6,9 +6,9 @@
 Bureaucrat::Bureaucrat() : _name("not set"), _grade(0) {}
 
 Bureaucrat::Bureaucrat(const std::string &name, int grade) : _name(name) {
-  if (_grade > 150)
+  if (grade > 150)
     throw GradeTooHighException();
-  else if (_grade < 1)
+  else if (grade < 1)
     throw GradeTooHighException();
   _grade = grade;
 }

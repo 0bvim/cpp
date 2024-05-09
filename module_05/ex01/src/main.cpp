@@ -111,6 +111,7 @@ void formTest(void) {
 
 int main() {
   bureTest();
+  std::cout << std::endl;
   formTest();
   return 0;
 }
