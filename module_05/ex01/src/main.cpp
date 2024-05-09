@@ -1,117 +1,72 @@
-#include "Bureaucrat.hpp"
-#include "Form.hpp"
 #include <iostream>
+#include "Form.hpp"
+#include "Bureaucrat.hpp"
 
-void bureTest() {
-  std::cout << std::endl;
-  std::cout << ("Test increment a high grade.") << std::endl;
-  {
+void testFormAndBureaucrat() {
+    std::cout << YELLOW("----- Form and Bureaucrat Tests -----") << std::endl;
+
     try {
-      Bureaucrat john("High Grade Bure", 1);
-      std::cout << john << std::endl;
+        // Creating a form
+        Form form("Application Form", 50, 25);
 
-      john.incrementGrade();
-      std::cout << john << std::endl;
+        // Creating a bureaucrat
+        Bureaucrat bureaucrat("John", 55);
 
-      john.decrementGrade();
-      std::cout << john << std::endl;
+        std::cout << GREEN("Form details:") << std::endl;
+        std::cout << form << std::endl;
 
-      // This should throw GradeTooHighException
+        // Attempting to sign the form
+        std::cout << GREEN("Attempting to sign the form...") << std::endl;
+        bureaucrat.signForm(form);
+
+        // Showing form details after signing
+        std::cout << GREEN("Form details after signing:") << std::endl;
+        std::cout << form << std::endl;
+
     } catch (std::exception &e) {
-      std::cerr << "Exception: " << e.what() << std::endl;
+        std::cout << RED("Exception caught: " << e.what()) << std::endl;
     }
-  }
-  std::cout << std::endl;
-  std::cout << ("Test decrement a low grade.") << std::endl;
-  {
+
     try {
-      Bureaucrat john("Low Grade Bure", 150);
-      std::cout << john << std::endl;
+        // Creating a form
+        Form form2("Approval Form", 5, 10);
 
-      john.decrementGrade();
-      std::cout << john << std::endl;
+        // Creating a bureaucrat
+        Bureaucrat bureaucrat2("Alice", 2);
 
-      john.incrementGrade();
-      std::cout << john << std::endl;
+        std::cout << GREEN("\nForm details:") << std::endl;
+        std::cout << form2 << std::endl;
 
-      // This should throw GradeTooHighException
+        // Attempting to sign the form
+        std::cout << GREEN("Attempting to sign the form...") << std::endl;
+        bureaucrat2.signForm(form2);
+
+        // Showing form details after signing
+        std::cout << GREEN("Form details after signing:") << std::endl;
+        std::cout << form2 << std::endl;
+
     } catch (std::exception &e) {
-      std::cerr << "Exception: " << e.what() << std::endl;
+        std::cout << RED("Exception caught: " << e.what()) << std::endl;
     }
-  }
-  std::cout << std::endl;
-  std::cout << ("Now different grade") << std::endl;
-  {
-    try {
-      Bureaucrat john("Mid Grade", 75);
-      std::cout << john << std::endl;
 
-      john.incrementGrade();
-      std::cout << john << std::endl;
-
-      john.decrementGrade();
-      std::cout << john << std::endl;
-
-      while (john.getGrade() > 42)
-        john.incrementGrade();
-      std::cout << john << std::endl;
-
-      // This should throw GradeTooHighException
-    } catch (std::exception &e) {
-      std::cerr << "Exception: " << e.what() << std::endl;
-    }
-  }
+	
 }
 
-void formTest(void) {
-  std::cout << "=== CREATING A FORM ===" << std::endl;
-  {
-    Form a("Affidavit", 100, 30);
-
-    std::cout << a << std::endl;
-  }
-  std::cout << "=== CREATING A LOW GRADE FORM ===" << std::endl;
-  {
+void testValidationAndGradeTooHighException() {
     try {
-      Form a("Affidavit", 151, 30);
+        // Creating a form with invalid grade
+        std::cout << YELLOW("----- Testing validation and GradeTooHighException -----") << std::endl;
+        std::cout << GREEN("Attempting to create a form with invalid grade...") << std::endl;
+        Form invalidForm("Invalid Form", 150, 25); // Grade too high
 
-      std::cout << a << std::endl;
     } catch (std::exception &e) {
-      std::cerr << e.what() << std::endl;
+        std::cout << RED("Exception caught: " << e.what()) << std::endl;
     }
-  }
-  std::cout << "\n=== CREATING A HIGH GRADE FORM ===" << std::endl;
-  {
-    try {
-      Form a("Affidavit", 0, 30);
-
-      std::cout << a << std::endl;
-    } catch (std::exception &e) {
-      std::cerr << e.what() << std::endl;
-    }
-  }
-  std::cout << "\n=== BUREAUCRAT SIGNING A FORM ===" << std::endl;
-  {
-    Bureaucrat a("Hermes", 50);
-    Form b("Visa", 100, 30);
-
-    std::cout << "Bureaucrat: " << a << std::endl;
-    std::cout << "Form: " << b << std::endl;
-    a.signForm(b);
-  }
-  std::cout << "\n=== LOW GRADE BUREAUCRAT TRIES TO SIGN A FORM ==="
-            << std::endl;
-  {
-    Bureaucrat a("Hermes", 150);
-    Form b("Visa", 100, 30);
-
-    a.signForm(b);
-  }
 }
 
 int main() {
-  bureTest();
-  std::cout << std::endl;
-  formTest();
+	testFormAndBureaucrat();
+	testValidationAndGradeTooHighException();
+	
   return 0;
 }

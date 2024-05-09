@@ -4,13 +4,16 @@
 #include <exception>
 #include <string>
 
-# define RED(text) "\033[31m" << text << "\033[0m"
+// Color macros for console output
+#define RED(text) "\033[1;31m" << text << "\033[0m"
+#define GREEN(text) "\033[1;32m" << text << "\033[0m"
+#define YELLOW(text) "\033[1;33m" << text << "\033[0m"
 
 class Form; // Forward declaration
 
 class Bureaucrat {
 private:
-	Bureaucrat();
+  Bureaucrat();
   const std::string _name;
   int _grade;
 
@@ -33,7 +36,7 @@ public:
   std::string getName() const;
   int getGrade() const;
 
-	void signForm(Form &f);
+  void signForm(Form &f);
   void incrementGrade();
   void decrementGrade();
 };
