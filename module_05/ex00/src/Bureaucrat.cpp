@@ -2,6 +2,8 @@
 #include <iostream>
 #include <ostream>
 
+Bureaucrat::Bureaucrat() : _name("not set"), _grade(0) {}
+
 Bureaucrat::Bureaucrat(const std::string &name, int grade)
     : _name(name), _grade(grade) {}
 
@@ -22,18 +24,18 @@ std::string Bureaucrat::getName() const { return this->_name; }
 int Bureaucrat::getGrade() const { return this->_grade; }
 
 void Bureaucrat::incrementGrade() {
-  if (this->_grade == 1) {
-    throw GradeTooHighException();
-  } else {
+  if (this->_grade > 1) {
     this->_grade--;
+  } else {
+    throw GradeTooHighException();
   }
 }
 
 void Bureaucrat::decrementGrade() {
-  if (this->_grade == 150) {
-    throw GradeTooLowException();
-  } else {
+  if (this->_grade < 150) {
     this->_grade++;
+  } else {
+    throw GradeTooLowException();
   }
 }
 

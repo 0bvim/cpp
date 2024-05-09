@@ -20,6 +20,7 @@ public:
     virtual const char *what() const throw() { return "Grade is too low"; }
   };
 
+	Bureaucrat();
   Bureaucrat(const std::string &name, int grade);
   ~Bureaucrat();
   Bureaucrat(Bureaucrat const &rhs);
