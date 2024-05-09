@@ -2,6 +2,10 @@
 #include "Bureaucrat.hpp"
 #include <iostream>
 
+Form::Form()
+    : _name("Another form in the stack"), _signed(false), _gradeToSign(150),
+      _gradeToExecute(150) {}
+
 Form::Form(const std::string &name, int gradeToSign, int gradeToExecute)
     : _name(name), _signed(false), _gradeToSign(gradeToSign),
       _gradeToExecute(gradeToExecute) {

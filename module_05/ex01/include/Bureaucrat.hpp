@@ -8,6 +8,7 @@
 
 class Bureaucrat {
 private:
+	Bureaucrat();
   const std::string _name;
   int _grade;
 
@@ -22,7 +23,6 @@ public:
     virtual const char *what() const throw() { return "Grade is too low"; }
   };
 
-	Bureaucrat();
   Bureaucrat(const std::string &name, int grade);
   ~Bureaucrat();
   Bureaucrat(Bureaucrat const &rhs);
@@ -31,6 +31,7 @@ public:
   std::string getName() const;
   int getGrade() const;
 
+	void signForm();
   void incrementGrade();
   void decrementGrade();
 };

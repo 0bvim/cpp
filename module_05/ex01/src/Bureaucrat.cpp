@@ -23,6 +23,9 @@ std::string Bureaucrat::getName() const { return this->_name; }
 
 int Bureaucrat::getGrade() const { return this->_grade; }
 
+void Bureaucrat::signForm() {
+
+}
 void Bureaucrat::incrementGrade() {
   if (this->_grade > 1) {
     this->_grade--;
