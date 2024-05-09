@@ -1,7 +1,7 @@
 #include "Bureaucrat.hpp"
 #include <iostream>
 
-int main() {
+void bureTest() {
   std::cout << std::endl;
   std::cout << RED("Test increment a high grade.") << std::endl;
   {
@@ -39,7 +39,7 @@ int main() {
     }
   }
   std::cout << std::endl;
-  std::cout << RED ("Now different grade") << std::endl;
+  std::cout << RED("Now different grade") << std::endl;
   {
     try {
       Bureaucrat john("Mid Grade", 75);
@@ -60,6 +60,9 @@ int main() {
       std::cerr << "Exception: " << e.what() << std::endl;
     }
   }
+}
 
+int main() {
+  bureTest();
   return 0;
 }
