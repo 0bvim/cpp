@@ -1,5 +1,6 @@
 #include "Bureaucrat.hpp"
 #include <iostream>
+#include <ostream>
 
 Bureaucrat::Bureaucrat(const std::string &name, int grade)
     : _name(name), _grade(grade) {}
@@ -22,18 +23,21 @@ int Bureaucrat::getGrade() const { return this->_grade; }
 
 void Bureaucrat::incrementGrade() {
   if (this->_grade == 1) {
-    std::cout << "This Bureaucrat are at the highest grade." << std::endl;
-    return;
+    throw GradeTooHighException();
+  } else {
+    this->_grade--;
   }
-  this->_grade--;
-  std::cout << "Grade of this Bureaucrat now are " << this->_grade << std::endl;
 }
 
 void Bureaucrat::decrementGrade() {
   if (this->_grade == 150) {
-    std::cout << "This Bureaucrat are at the lowest grade." << std::endl;
-    return;
+    throw GradeTooLowException();
+  } else {
+    this->_grade++;
   }
-  this->_grade++;
-  std::cout << "Grade of this Bureaucrat now are " << this->_grade << std::endl;
+}
+
+std::ostream &operator<<(std::ostream &os, Bureaucrat const &bureaucrat) {
+  os << bureaucrat.getName() << ", bureaucrat grade " << bureaucrat.getGrade();
+  return os;
 }

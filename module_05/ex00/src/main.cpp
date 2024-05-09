@@ -3,7 +3,9 @@
 #include <iostream>
 
 int main(void) {
-	Bureaucrat bureaucrat("Beas", 1);
+	Bureaucrat buroHigh("Beas", 1);
+	Bureaucrat buroLow("Beas", 150);
+
 
   return EXIT_SUCCESS;
 }
