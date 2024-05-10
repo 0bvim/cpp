@@ -34,6 +34,8 @@ public:
   int getSignGrade() const;
   int getExecuteGrade() const;
 
+	virtual void execute(Bureaucrat const & executor) const = 0;
+
   bool beSigned(Bureaucrat &b);
 };
 
