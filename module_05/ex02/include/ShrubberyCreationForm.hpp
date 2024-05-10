@@ -1,5 +1,5 @@
-#ifndef SHRRUBBERYCREATIONFORM_HPP
-#define SHRRUBBERYCREATIONFORM_HPP
+#ifndef SHRUBBERYCREATIONFORM_HPP
+#define SHRUBBERYCREATIONFORM_HPP
 
 #include "AForm.hpp"
 #include <exception>
@@ -18,16 +18,16 @@
 #define SIGN_GRADE 145
 #define EXEC_GRADE 137
 
-class ShrrubberyCreationForm : public AForm {
+class ShrubberyCreationForm : public AForm {
 private:
-  ShrrubberyCreationForm();
+  ShrubberyCreationForm();
   std::string _target;
 
 public:
-  ShrrubberyCreationForm(const std::string &target);
-  ~ShrrubberyCreationForm();
-  ShrrubberyCreationForm(ShrrubberyCreationForm const &rhs);
-  ShrrubberyCreationForm &operator=(ShrrubberyCreationForm const &rhs);
+  ShrubberyCreationForm(const std::string &target);
+  ~ShrubberyCreationForm();
+  ShrubberyCreationForm(ShrubberyCreationForm const &rhs);
+  ShrubberyCreationForm &operator=(ShrubberyCreationForm const &rhs);
 
   void execute(const Bureaucrat &executor) const;
 
@@ -42,4 +42,4 @@ public:
   };
 };
 
-#endif // !SHRRUBBERYCREATIONFROM_HPP
+#endif // !SHRUBBERYCREATIONFROM_HPP

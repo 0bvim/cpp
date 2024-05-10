@@ -1,72 +1,43 @@
 #include <iostream>
-#include "AForm.hpp"
+#include <cstdlib> // For rand() function
 #include "Bureaucrat.hpp"
+#include "ShrubberyCreationForm.hpp"
+#include "RobotomyRequestForm.hpp"
+#include "PresidentialPardonForm.hpp"
 
-void testFormAndBureaucrat() {
-    std::cout << YELLOW("----- Form and Bureaucrat Tests -----") << std::endl;
-
-    try {
-        // Creating a form
-        AForm form("Application Form", 50, 25);
-
-        // Creating a bureaucrat
-        Bureaucrat bureaucrat("John", 55);
-
-        std::cout << GREEN("Form details:") << std::endl;
-        std::cout << form << std::endl;
-
-        // Attempting to sign the form
-        std::cout << GREEN("Attempting to sign the form...") << std::endl;
-        bureaucrat.signForm(form);
-
-        // Showing form details after signing
-        std::cout << GREEN("Form details after signing:") << std::endl;
-        std::cout << form << std::endl;
-
-    } catch (std::exception &e) {
-        std::cout << RED("Exception caught: " << e.what()) << std::endl;
-    }
-
-    try {
-        // Creating a form
-        AForm form2("Approval Form", 5, 10);
-
-        // Creating a bureaucrat
-        Bureaucrat bureaucrat2("Alice", 2);
-
-        std::cout << GREEN("\nForm details:") << std::endl;
-        std::cout << form2 << std::endl;
-
-        // Attempting to sign the form
-        std::cout << GREEN("Attempting to sign the form...") << std::endl;
-        bureaucrat2.signForm(form2);
-
-        // Showing form details after signing
-        std::cout << GREEN("Form details after signing:") << std::endl;
-        std::cout << form2 << std::endl;
-
-    } catch (std::exception &e) {
-        std::cout << RED("Exception caught: " << e.what()) << std::endl;
-    }
-
-	
-}
-
-void testValidationAndGradeTooHighException() {
-    try {
-        // Creating a form with invalid grade
-        std::cout << YELLOW("----- Testing validation and GradeTooHighException -----") << std::endl;
-        std::cout << GREEN("Attempting to create a form with invalid grade...") << std::endl;
-        AForm invalidForm("Invalid Form", 150, 25); // Grade too high
-
-    } catch (std::exception &e) {
-        std::cout << RED("Exception caught: " << e.what()) << std::endl;
-    }
-}
+// Define RED macro for colored output
+#define RED(text) "\033[1;31m" << text << "\033[0m"
 
 int main() {
-	testFormAndBureaucrat();
-	testValidationAndGradeTooHighException();
-	
-  return 0;
+    // Create a bureaucrat
+    Bureaucrat bureaucrat("John", 50);
+
+    // Test ShrubberyCreationForm
+    ShrubberyCreationForm shrubberyForm("garden");
+    shrubberyForm.beSigned(bureaucrat);
+    shrubberyForm.execute(bureaucrat);
+
+    // Test RobotomyRequestForm
+    RobotomyRequestForm robotomyForm("target");
+    robotomyForm.beSigned(bureaucrat);
+    robotomyForm.execute(bureaucrat);
+
+    // Test PresidentialPardonForm
+    PresidentialPardonForm pardonForm("criminal");
+    pardonForm.beSigned(bureaucrat);
+    pardonForm.execute(bureaucrat);
+
+    // Test executeForm member function of Bureaucrat
+    Bureaucrat executingBureaucrat("Alice", 10);
+    executingBureaucrat.executeForm(shrubberyForm);
+    executingBureaucrat.executeForm(robotomyForm);
+    executingBureaucrat.executeForm(pardonForm);
+
+    // Test executing form with insufficient grade
+    Bureaucrat lowGradeBureaucrat("LowGrade", 100);
+    lowGradeBureaucrat.executeForm(shrubberyForm);
+    lowGradeBureaucrat.executeForm(robotomyForm);
+    lowGradeBureaucrat.executeForm(pardonForm);
+
+    return 0;
 }
