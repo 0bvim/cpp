@@ -5,7 +5,7 @@
 class Bureaucrat; // Forward declaration
 
 class AForm {
-private:
+protected:
   AForm();
 
   const std::string _name;
@@ -34,7 +34,7 @@ public:
   int getSignGrade() const;
   int getExecuteGrade() const;
 
-	virtual void execute(Bureaucrat const & executor) const = 0;
+  virtual void execute(Bureaucrat const &executor) const = 0;
 
   bool beSigned(Bureaucrat &b);
 };
