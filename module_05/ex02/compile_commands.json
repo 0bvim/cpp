@@ -30,5 +30,107 @@
    "src/Bureaucrat.cpp"
   ],
   "file": "src/Bureaucrat.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_05/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-g3",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/main.o",
+   "src/main.cpp"
+  ],
+  "file": "src/main.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_05/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-g3",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/PresidentialPardonForm.o",
+   "src/PresidentialPardonForm.cpp"
+  ],
+  "file": "src/PresidentialPardonForm.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_05/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-g3",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/AForm.o",
+   "src/AForm.cpp"
+  ],
+  "file": "src/AForm.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_05/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-g3",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/ShrrubberyCreationForm.o",
+   "src/ShrrubberyCreationForm.cpp"
+  ],
+  "file": "src/ShrrubberyCreationForm.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_05/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-g3",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/RobotomyRequestForm.o",
+   "src/RobotomyRequestForm.cpp"
+  ],
+  "file": "src/RobotomyRequestForm.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_05/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-g3",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/Bureaucrat.o",
+   "src/Bureaucrat.cpp"
+  ],
+  "file": "src/Bureaucrat.cpp"
  }
 ]
