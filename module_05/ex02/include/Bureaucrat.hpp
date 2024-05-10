@@ -36,9 +36,12 @@ public:
   std::string getName() const;
   int getGrade() const;
 
-  void signForm(AForm &f);
   void incrementGrade();
   void decrementGrade();
+
+  void signForm(AForm &f);
+	void executeForm(AForm const &form);
+
 };
 
 std::ostream &operator<<(std::ostream &os, Bureaucrat const &bureaucrat);
