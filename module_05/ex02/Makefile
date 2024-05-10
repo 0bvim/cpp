@@ -8,7 +8,7 @@ BUILDDIR := build
 TARGETDIR := bin
 
 # Target executable name
-TARGET := maggots
+TARGET := forms
 
 # Source files
 SRCEXT := cpp

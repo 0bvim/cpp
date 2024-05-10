@@ -1,5 +1,5 @@
 #include "Bureaucrat.hpp"
-#include "Form.hpp"
+#include "AForm.hpp"
 #include <iostream>
 #include <ostream>
 
@@ -29,11 +29,11 @@ std::string Bureaucrat::getName() const { return this->_name; }
 
 int Bureaucrat::getGrade() const { return this->_grade; }
 
-void Bureaucrat::signForm(Form &f) {
+void Bureaucrat::signForm(AForm &f) {
   try {
     f.beSigned(*this);
     std::cout << RED(this->_name) << " signed " << f.getName() << std::endl;
-  } catch (Form::GradeTooLowException &e) {
+  } catch (AForm::GradeTooLowException &e) {
     std::cout << RED(_name) << " couldn't sign " << f.getName()
               << " because: " << e.what() << std::endl;
   }

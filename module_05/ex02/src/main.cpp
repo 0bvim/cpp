@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Form.hpp"
+#include "AForm.hpp"
 #include "Bureaucrat.hpp"
 
 void testFormAndBureaucrat() {
@@ -7,7 +7,7 @@ void testFormAndBureaucrat() {
 
     try {
         // Creating a form
-        Form form("Application Form", 50, 25);
+        AForm form("Application Form", 50, 25);
 
         // Creating a bureaucrat
         Bureaucrat bureaucrat("John", 55);
@@ -29,7 +29,7 @@ void testFormAndBureaucrat() {
 
     try {
         // Creating a form
-        Form form2("Approval Form", 5, 10);
+        AForm form2("Approval Form", 5, 10);
 
         // Creating a bureaucrat
         Bureaucrat bureaucrat2("Alice", 2);
@@ -57,7 +57,7 @@ void testValidationAndGradeTooHighException() {
         // Creating a form with invalid grade
         std::cout << YELLOW("----- Testing validation and GradeTooHighException -----") << std::endl;
         std::cout << GREEN("Attempting to create a form with invalid grade...") << std::endl;
-        Form invalidForm("Invalid Form", 150, 25); // Grade too high
+        AForm invalidForm("Invalid Form", 150, 25); // Grade too high
 
     } catch (std::exception &e) {
         std::cout << RED("Exception caught: " << e.what()) << std::endl;

@@ -4,9 +4,9 @@
 
 class Bureaucrat; // Forward declaration
 
-class Form {
+class AForm {
 private:
-  Form();
+  AForm();
 
   const std::string _name;
   bool _signed;
@@ -14,10 +14,10 @@ private:
   const int _gradeToExecute;
 
 public:
-  Form(const std::string &name, int gradeToSign, int gradeToExecute);
-  ~Form();
-  Form(Form const &rhs);
-  Form &operator=(Form const &rhs);
+  AForm(const std::string &name, int gradeToSign, int gradeToExecute);
+  ~AForm();
+  AForm(AForm const &rhs);
+  AForm &operator=(AForm const &rhs);
 
   class GradeTooHighException : public std::exception {
   public:
@@ -37,6 +37,6 @@ public:
   bool beSigned(Bureaucrat &b);
 };
 
-std::ostream &operator<<(std::ostream &os, Form const &rhs);
+std::ostream &operator<<(std::ostream &os, AForm const &rhs);
 
 #endif // !FORM_HPP

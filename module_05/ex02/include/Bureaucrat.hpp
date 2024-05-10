@@ -9,7 +9,7 @@
 #define GREEN(text) "\033[1;32m" << text << "\033[0m"
 #define YELLOW(text) "\033[1;33m" << text << "\033[0m"
 
-class Form; // Forward declaration
+class AForm; // Forward declaration
 
 class Bureaucrat {
 private:
@@ -36,7 +36,7 @@ public:
   std::string getName() const;
   int getGrade() const;
 
-  void signForm(Form &f);
+  void signForm(AForm &f);
   void incrementGrade();
   void decrementGrade();
 };
