@@ -46,4 +46,3 @@ void ShrubberyCreationForm::execute(const Bureaucrat &executor) const {
 
   out << ASCII_TRESS << std::endl;
 }
-

@@ -9,9 +9,9 @@ AForm::AForm()
 AForm::AForm(const std::string &name, int gradeToSign, int gradeToExecute)
     : _name(name), _signed(false), _gradeToSign(gradeToSign),
       _gradeToExecute(gradeToExecute) {
-  if (gradeToSign < 1 || gradeToExecute < 1)
+  if (_gradeToSign < 1 || _gradeToExecute < 1)
     throw GradeTooHighException();
-  else if (gradeToSign > 150 || gradeToExecute > 150)
+  else if (_gradeToSign > 150 || _gradeToExecute > 150)
     throw GradeTooLowException();
 }
 
@@ -40,7 +40,7 @@ const char *AForm::GradeTooLowException::what(void) const throw() {
 }
 
 const char *AForm::FormNotSignedException::what(void) const throw() {
-  return "AForm: GradeTooLowException";
+  return "AForm: FormNotSignedException";
 }
 
 std::string AForm::getName() const { return this->_name; }
