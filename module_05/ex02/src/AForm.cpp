@@ -39,6 +39,10 @@ const char *AForm::GradeTooLowException::what(void) const throw() {
   return "AForm: GradeTooLowException";
 }
 
+const char *AForm::FormNotSignedException::what(void) const throw() {
+  return "AForm: GradeTooLowException";
+}
+
 std::string AForm::getName() const { return this->_name; }
 bool AForm::getSignature() const { return this->_signed; }
 int AForm::getSignGrade() const { return this->_gradeToSign; }
@@ -58,6 +62,6 @@ std::ostream &operator<<(std::ostream &os, AForm const &rhs) {
   os << RED(rhs.getName()) << " sign request."
      << RED(" Grade to sign: " << rhs.getSignGrade())
      << RED(". Grade to execute: " << rhs.getExecuteGrade())
-                                 << RED(". Is signed: " << (rhs.getSignature() == 1 ? "Yes" : "No"));
+     << RED(". Is signed: " << (rhs.getSignature() == 1 ? "Yes" : "No"));
   return os;
 }
