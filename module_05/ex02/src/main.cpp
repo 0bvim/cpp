@@ -11,7 +11,7 @@ void shruberryTests() {
   std::cout << GREEN("\n=== LOW GRADE TO SIGN FORM ===") << std::endl;
   {
     AForm *a = new ShrubberyCreationForm("home");
-    Bureaucrat b("Hermes", 150);
+    Bureaucrat b("Serj", 150);
 
     b.signForm(*a);
     b.executeForm(*a);
@@ -21,7 +21,7 @@ void shruberryTests() {
   std::cout << GREEN("\n=== LOW GRADE TO EXECUTE FORM ===") << std::endl;
   {
     AForm *a = new ShrubberyCreationForm("home");
-    Bureaucrat b("Hermes", 140);
+    Bureaucrat b("Daron", 140);
 
     b.signForm(*a);
     b.executeForm(*a);
@@ -32,8 +32,8 @@ void shruberryTests() {
             << std::endl;
   {
     AForm *a = new ShrubberyCreationForm("home");
-    Bureaucrat b("Hermes", 130);
-    Bureaucrat c("Mercury", 1);
+    Bureaucrat b("Shavo", 130);
+    Bureaucrat c("John", 1);
 
     b.signForm(*a);
     b.executeForm(*a);
@@ -48,7 +48,7 @@ void robotomyTests() {
   std::cout << GREEN("\n== LOW GRADE TO SIGN FORM ===") << std::endl;
   {
     AForm *a = new RobotomyRequestForm("home");
-    Bureaucrat b("Hermes", 73);
+    Bureaucrat b("Freddie", 73);
 
     b.signForm(*a); // Grade should be equal or higher than 72!
     b.executeForm(*a);
@@ -58,7 +58,7 @@ void robotomyTests() {
   std::cout << GREEN("\n=== LOW GRADE TO EXECUTE FORM ===") << std::endl;
   {
     AForm *a = new RobotomyRequestForm("home");
-    Bureaucrat b("Hermes", 48);
+    Bureaucrat b("Brian", 48);
 
     b.signForm(*a);
     b.executeForm(*a); // Grade should be equal or higher than 45!
@@ -68,8 +68,8 @@ void robotomyTests() {
   std::cout << GREEN("\n=== CREATING A ROBOTOMY REQUEST FORM ===") << std::endl;
   {
     AForm *a = new RobotomyRequestForm("Arthur");
-    Bureaucrat b("Hermes", 42);
-    Bureaucrat c("Mercury", 5);
+    Bureaucrat b("Roger", 42);
+    Bureaucrat c("Mike", 5);
 
     b.signForm(*a);
     c.executeForm(*a);
@@ -94,7 +94,7 @@ void presidentialTests() {
   std::cout << GREEN("\n=== LOW GRADE TO EXECUTE FORM ===") << std::endl;
   {
     AForm *a = new PresidentialPardonForm("pardon");
-    Bureaucrat b("Hermes", 48);
+    Bureaucrat b("Linus", 48);
 
     b.signForm(*a);
     b.executeForm(*a);
@@ -105,8 +105,8 @@ void presidentialTests() {
             << std::endl;
   {
     AForm *a = new PresidentialPardonForm("James");
-    Bureaucrat b("Fred", 42);
-    Bureaucrat c("Mercury", 5);
+    Bureaucrat b("Bjarne", 42);
+    Bureaucrat c("Stroustrup", 5);
 
     b.signForm(*a);
     c.executeForm(*a);
