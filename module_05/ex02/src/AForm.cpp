@@ -3,7 +3,7 @@
 #include <iostream>
 
 AForm::AForm()
-    : _name("Another Aform in the stack"), _signed(false), _gradeToSign(150),
+    : _name("Another Form in the stack"), _signed(false), _gradeToSign(150),
       _gradeToExecute(150) {}
 
 AForm::AForm(const std::string &name, int gradeToSign, int gradeToExecute)
