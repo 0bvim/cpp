@@ -17,6 +17,9 @@ private:
   const std::string _name;
   int _grade;
 
+  static const int _minGrade = 150;
+  static const int _maxGrade = 1;
+
 public:
   class GradeTooHighException : public std::exception {
   public:

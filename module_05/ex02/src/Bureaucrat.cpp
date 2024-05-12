@@ -7,9 +7,9 @@
 Bureaucrat::Bureaucrat() : _name("not set"), _grade(0) {}
 
 Bureaucrat::Bureaucrat(const std::string &name, int grade) : _name(name) {
-  if (grade > 150)
+  if (grade > _minGrade)
     throw GradeTooHighException();
-  else if (grade < 1)
+  else if (grade < _maxGrade)
     throw GradeTooHighException();
   _grade = grade;
 }
@@ -51,7 +51,7 @@ void Bureaucrat::executeForm(AForm const &form) {
 }
 
 void Bureaucrat::incrementGrade() {
-  if (this->_grade > 1) {
+  if (this->_grade > _maxGrade) {
     this->_grade--;
   } else {
     throw GradeTooHighException();
@@ -59,7 +59,7 @@ void Bureaucrat::incrementGrade() {
 }
 
 void Bureaucrat::decrementGrade() {
-  if (this->_grade < 150) {
+  if (this->_grade < _minGrade) {
     this->_grade++;
   } else {
     throw GradeTooLowException();
