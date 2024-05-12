@@ -8,7 +8,7 @@ BUILDDIR := build
 TARGETDIR := bin
 
 # Target executable name
-TARGET := Insert_Target
+TARGET := ScalarType
 
 # Source files
 SRCEXT := cpp
