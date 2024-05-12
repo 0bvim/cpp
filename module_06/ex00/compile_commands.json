@@ -1,0 +1,34 @@
+[
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_06/ex00",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/main.o",
+   "src/main.cpp"
+  ],
+  "file": "src/main.cpp"
+ },
+ {
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_06/ex00",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/ScalarConverter.o",
+   "src/ScalarConverter.cpp"
+  ],
+  "file": "src/ScalarConverter.cpp"
+ }
+]
