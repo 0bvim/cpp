@@ -4,8 +4,13 @@
 
 Bureaucrat::Bureaucrat() : _name("not set"), _grade(0) {}
 
-Bureaucrat::Bureaucrat(const std::string &name, int grade)
-    : _name(name), _grade(grade) {}
+Bureaucrat::Bureaucrat(const std::string &name, int grade) : _name(name) {
+  if (grade < _maxGrade)
+    throw GradeTooHighException();
+  else if (grade > _minGrade)
+    throw GradeTooLowException();
+  _grade = grade;
+}
 
 Bureaucrat::~Bureaucrat() {}
 
