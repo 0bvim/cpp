@@ -28,7 +28,7 @@ RobotomyRequestForm::operator=(RobotomyRequestForm const &rhs) {
 }
 
 RobotomyRequestForm::RobotomyRequestForm(RobotomyRequestForm const &rhs)
-    : AForm("Shruberry Creation Form", R_SIGN_GRADE, R_EXEC_GRADE) {
+    : AForm("Robotomy Creation Form", R_SIGN_GRADE, R_EXEC_GRADE) {
   *this = rhs;
 }
 
