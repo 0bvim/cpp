@@ -8,7 +8,7 @@ BUILDDIR := build
 TARGETDIR := bin
 
 # Target executable name
-TARGET := templates
+TARGET := iter
 
 # Source files
 SRCEXT := cpp

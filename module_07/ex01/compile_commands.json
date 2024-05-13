@@ -1,0 +1,18 @@
+[
+ {
+  "directory": "/home/nivicius/Documents/projects/ft/cpp/module_07/ex01",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/main.o",
+   "src/main.cpp"
+  ],
+  "file": "src/main.cpp"
+ }
+]
