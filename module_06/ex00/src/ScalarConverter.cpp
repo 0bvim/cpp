@@ -18,6 +18,14 @@ ScalarConverter &ScalarConverter::operator=(ScalarConverter const &rhs) {
   return *this;
 }
 
+/**
+ * @brief Verifies if a string contains a single digit character that is
+ * printable.
+ *
+ * @param str The string to verify.
+ * @return true if the string contains a single printable digit character, false
+ * otherwise.
+ */
 static bool verifyOneDigit(const std::string &str) {
   if (str.size() == 1 && !std::isdigit(str[0]) && std::isprint(str[0])) {
     return true;
@@ -25,10 +33,23 @@ static bool verifyOneDigit(const std::string &str) {
   return false;
 }
 
+/**
+ * @brief Checks if a string represents a float by checking if it ends with 'f'.
+ *
+ * @param str The string to check.
+ * @return true if the string ends with 'f', false otherwise.
+ */
 static bool isFloat(const std::string &str) {
   return str[str.size() - 1] == 'f' ? true : false;
 }
 
+/**
+ * @brief Checks additional conditions to verify if a float value is an exact
+ * integer.
+ *
+ * @param f The float value to check.
+ * @return true if the float value meets the conditions, false otherwise.
+ */
 static bool floatConditions(const float f) {
   if (!isinff(f) && (f == std::floor(f) || f == std::ceil(f)) &&
       std::abs(f - round(f)) < 0.001)
@@ -36,6 +57,13 @@ static bool floatConditions(const float f) {
   return false;
 }
 
+/**
+ * @brief Checks additional conditions to verify if a double value is an exact
+ * integer.
+ *
+ * @param d The double value to check.
+ * @return true if the double value meets the conditions, false otherwise.
+ */
 static bool doubleConditions(const double d) {
   if (!isinff(d) && (d == std::floor(d) || d == std::ceil(d)) &&
       std::abs(d - round(d)) < 0.001)
