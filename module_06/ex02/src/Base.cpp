@@ -1,4 +1,5 @@
 #include "Base.hpp"
+#include "Defines.hpp"
 #include "A.hpp"
 #include "B.hpp"
 #include "C.hpp"
@@ -40,7 +41,7 @@ void identify(Base *p) {
   else if (dynamic_cast<C *>(p))
     std::cout << "C" << std::endl;
   else {
-    std::cerr << "error: bad casting!" << std::endl;
+    std::cerr << BLACK("error: bad casting!") << std::endl;
   }
 }
 
@@ -63,7 +64,7 @@ void identify(Base &p) {
         std::cout << "C" << std::endl;
         return;
       } catch (std::exception &e) {
-        std::cerr << "error: bad casting!" << std::endl;
+        std::cerr << BLACK("error: bad casting!") << std::endl;
         return;
       }
     }
