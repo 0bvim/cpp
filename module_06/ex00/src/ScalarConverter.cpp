@@ -48,7 +48,7 @@ void ScalarConverter::convert(const std::string &str) {
 
   i = static_cast<int>(f);
 
-  if (isascii(i)) {
+  if (i < -128 || i > 127) {
     std::cout << RED("char: impossible") << std::endl;
   } else if (!std::isprint(i)) {
     std::cout << RED("char: Non displayable") << std::endl;
@@ -63,12 +63,12 @@ void ScalarConverter::convert(const std::string &str) {
     std::cout << MAGENTA("int: ") << i << std::endl;
   }
 
-  std::cout << CYAN("float: ") << f << std::endl;
+  std::cout << MAGENTA("float: ") << f;
   if (!isinff(f) && (f == std::floor(f) || f == std::ceil(f))) {
-    std::cout << ".0" << std::endl;
+    std::cout << ".0f" << std::endl;
   }
 
-  std::cout << BLUE("double: ") << d << std::endl;
+  std::cout << MAGENTA("double: ") << d;
   if (!isinf(d) && (d == std::floor(d) || d == std::ceil(d))) {
     std::cout << ".0" << std::endl;
   }
