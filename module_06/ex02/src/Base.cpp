@@ -5,11 +5,17 @@
 #include <cstddef>
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
 
 Base::~Base() {}
 
 Base *generate() {
-  srand(time(NULL));
+  static bool first = true;
+
+  if (first) {
+    srand(time(NULL));
+    first = false;
+  }
   int choice = rand() % 3;
   switch (choice) {
   case 0:
@@ -21,3 +27,14 @@ Base *generate() {
   }
   return NULL;
 }
+
+void identify(Base *p) {
+  if (dynamic_cast<A *>(p))
+    std::cout << "A" << std::endl;
+  if (dynamic_cast<B *>(p))
+    std::cout << "B" << std::endl;
+  if (dynamic_cast<C *>(p))
+    std::cout << "C" << std::endl;
+}
+
+void identify(Base &p) { identify(&p); }

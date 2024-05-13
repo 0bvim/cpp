@@ -1,0 +1,34 @@
+[
+ {
+  "directory": "/home/nivicius/Documents/projects/ft/cpp/module_06/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/main.o",
+   "src/main.cpp"
+  ],
+  "file": "src/main.cpp"
+ },
+ {
+  "directory": "/home/nivicius/Documents/projects/ft/cpp/module_06/ex02",
+  "arguments": [
+   "c++",
+   "-std=c++98",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-Iinclude",
+   "-c",
+   "-o",
+   "build/Base.o",
+   "src/Base.cpp"
+  ],
+  "file": "src/Base.cpp"
+ }
+]
