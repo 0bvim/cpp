@@ -4,6 +4,7 @@
 #include <climits>
 #include <cmath>
 #include <iostream>
+#include <math.h>
 #include <string>
 
 ScalarConverter::ScalarConverter() {}
@@ -26,6 +27,20 @@ static bool verifyOneDigit(const std::string &str) {
 
 static bool isFloat(const std::string &str) {
   return str[str.size() - 1] == 'f' ? true : false;
+}
+
+static bool floatConditions(const float f) {
+  if (!isinff(f) && (f == std::floor(f) || f == std::ceil(f)) &&
+      std::abs(f - round(f)) < 0.001)
+    return true;
+  return false;
+}
+
+static bool doubleConditions(const double d) {
+  if (!isinff(d) && (d == std::floor(d) || d == std::ceil(d)) &&
+      std::abs(d - round(d)) < 0.001)
+    return true;
+  return false;
 }
 
 void ScalarConverter::convert(const std::string &str) {
@@ -62,17 +77,21 @@ void ScalarConverter::convert(const std::string &str) {
     std::cout << MAGENTA("int: ") << i << std::endl;
   }
 
-  std::cout << MAGENTA("float: ") << f;
-  if (!isinff(f) && (f == std::floor(f) || f == std::ceil(f))) {
-    std::cout << ".0f" << std::endl;
-  } else {
-    std::cout << "f" << std::endl;
+  std::cout << MAGENTA("float: ");
+  if (f == static_cast<int>(f) && floatConditions(f))
+    std::cout << f << ".0f" << std::endl;
+  else {
+    if (isinf(f) && str[0] != '-')
+      std::cout << "+";
+    std::cout << f << "f" << std::endl;
   }
 
-  std::cout << MAGENTA("double: ") << d;
-  if (!isinf(d) && (d == std::floor(d) || d == std::ceil(d))) {
-    std::cout << ".0" << std::endl;
-  } else {
-    std::cout << std::endl;
+  std::cout << MAGENTA("double: ");
+  if (d == static_cast<int>(d) && doubleConditions(d))
+    std::cout << d << ".0" << std::endl;
+  else {
+    if (isinf(d) && str[0] != '-')
+      std::cout << "+";
+    std::cout << d << std::endl;
   }
 }
