@@ -1,9 +1,11 @@
 #include "ScalarConverter.hpp"
 #include "Defines.hpp"
 #include <cctype>
+#include <cfloat>
 #include <climits>
 #include <cmath>
 #include <cstdlib>
+#include <iostream>
 #include <sstream>
 #include <string>
 
@@ -29,7 +31,7 @@ static bool isFloat(const std::string &str) {
   return str[str.size() - 1] == 'f' ? true : false;
 }
 
-static void converter(const std::string &str) {
+void ScalarConverter::convert(const std::string &str) {
   char c;
   int i;
   float f;
@@ -43,9 +45,33 @@ static void converter(const std::string &str) {
     d = static_cast<double>(f);
   } else {
     std::istringstream(str) >> d;
-		f = static_cast<float>(d);
+    f = static_cast<float>(d);
   }
 
-	i = static_cast<int>(f);
+  i = static_cast<int>(f);
 
+  if (isascii(i)) {
+    std::cout << "char: impossible" << std::endl;
+  } else if (!std::isprint(i)) {
+    std::cout << "char: Non displayable" << std::endl;
+  } else {
+    c = static_cast<char>(i);
+    std::cout << "char: '" << c << "'" << std::endl;
+  }
+
+  if (std::isnan(d) || d > INT_MAX || d < INT_MIN) {
+    std::cout << "int: impossible" << std::endl;
+  } else {
+    std::cout << "int: " << i << std::endl;
+  }
+
+  std::cout << "float: " << f << std::endl;
+  if (!isinff(f) && (f == std::floor(f) || f == std::ceil(f))) {
+    std::cout << ".0" << std::endl;
+  }
+
+  std::cout << "float: " << d << std::endl;
+  if (!isinf(d) && (d == std::floor(d) || d == std::ceil(d))) {
+    std::cout << ".0" << std::endl;
+  }
 }

@@ -27,7 +27,7 @@ public:
    * 
    * @param str The string to be converted.
    */
-  static void convert(const std::string &str);
+  void convert(const std::string &str);
 };
 
 #endif // SCALARCONVERTER_HPP
