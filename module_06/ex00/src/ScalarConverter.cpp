@@ -4,7 +4,6 @@
 #include <climits>
 #include <cmath>
 #include <iostream>
-#include <sstream>
 #include <string>
 
 ScalarConverter::ScalarConverter() {}
@@ -37,12 +36,12 @@ void ScalarConverter::convert(const std::string &str) {
 
   if (verifyOneDigit(str)) {
     f = static_cast<float>(str[0]);
-    d = static_cast<double>(str[0]);
+    d = static_cast<double>(f);
   } else if (isFloat(str)) {
-		f = static_cast<float>(str[0]);
+    f = atof(str.c_str());
     d = static_cast<double>(f);
   } else {
-		d = static_cast<double>(str[0]);
+    d = atof(str.c_str());
     f = static_cast<float>(d);
   }
 
@@ -66,10 +65,14 @@ void ScalarConverter::convert(const std::string &str) {
   std::cout << MAGENTA("float: ") << f;
   if (!isinff(f) && (f == std::floor(f) || f == std::ceil(f))) {
     std::cout << ".0f" << std::endl;
+  } else {
+    std::cout << std::endl;
   }
 
   std::cout << MAGENTA("double: ") << d;
   if (!isinf(d) && (d == std::floor(d) || d == std::ceil(d))) {
     std::cout << ".0" << std::endl;
+  } else {
+		std::cout << std::endl;
   }
 }
