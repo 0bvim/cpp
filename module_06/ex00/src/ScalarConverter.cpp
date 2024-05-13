@@ -39,10 +39,10 @@ void ScalarConverter::convert(const std::string &str) {
     f = static_cast<float>(str[0]);
     d = static_cast<double>(str[0]);
   } else if (isFloat(str)) {
-    std::istringstream(str) >> f;
+		f = static_cast<float>(str[0]);
     d = static_cast<double>(f);
   } else {
-    std::istringstream(str) >> d;
+		d = static_cast<double>(str[0]);
     f = static_cast<float>(d);
   }
 
