@@ -53,12 +53,6 @@ run: clean all
 
 
 test:
-	@ echo "\nRunning test with argument '0'"
-	@./$(EXECUTABLE) "0"
-	@ echo "\nRunning test with argument 'nan'"
-	@./$(EXECUTABLE) "nan"
-	@ echo "\nRunning test with argument '42.0f'"
-	@./$(EXECUTABLE) "42.0f"
 
 val: clean all
 	@valgrind ./$(EXECUTABLE) $(ARGS)
