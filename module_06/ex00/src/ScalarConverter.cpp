@@ -66,13 +66,13 @@ void ScalarConverter::convert(const std::string &str) {
   if (!isinff(f) && (f == std::floor(f) || f == std::ceil(f))) {
     std::cout << ".0f" << std::endl;
   } else {
-    std::cout << std::endl;
+    std::cout << "f" << std::endl;
   }
 
   std::cout << MAGENTA("double: ") << d;
   if (!isinf(d) && (d == std::floor(d) || d == std::ceil(d))) {
     std::cout << ".0" << std::endl;
   } else {
-		std::cout << std::endl;
+    std::cout << std::endl;
   }
 }
