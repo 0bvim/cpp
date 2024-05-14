@@ -34,14 +34,14 @@ template <typename T> unsigned int Array<T>::size() const {
   return this->_size;
 }
 
-template <typename T> T &Array<T>::operator[](const unsigned int &index) const {
+template <typename T> T &Array<T>::operator[](const unsigned int &index) {
   if (index >= this->_size) {
     throw std::out_of_range("Index out of range");
   }
   return this->_data[index];
 }
 
-template <typename T> T &Array<T>::operator[](const unsigned int &index) {
+template <typename T> T const &Array<T>::operator[](const unsigned int &index) const {
   if (index >= this->_size) {
     throw std::out_of_range("Index out of range");
   }
