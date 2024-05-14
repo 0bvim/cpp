@@ -37,5 +37,7 @@ int main(void) {
   std::cout << RED("Data after deserialize") << std::endl;
   printData(testData);
 
+  delete clothing;
+
   return 0;
 }

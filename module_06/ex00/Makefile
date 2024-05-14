@@ -61,7 +61,12 @@ test:
 	@./$(EXECUTABLE) "42.0f"
 
 val: clean all
-	@valgrind ./$(EXECUTABLE) $(ARGS)
+	@ echo "\nRunning test with argument '0'"
+	@ valgrind ./$(EXECUTABLE) "0"
+	@ echo "\nRunning test with argument 'nan'"
+	@ valgrind ./$(EXECUTABLE) "nan"
+	@ echo "\nRunning test with argument '42.0f'"
+	@ valgrind ./$(EXECUTABLE) "42.0f"
 
 # Phony targets
 .PHONY: all clean run
