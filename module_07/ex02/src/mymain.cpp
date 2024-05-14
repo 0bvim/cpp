@@ -58,7 +58,6 @@ int main() {
   // Test const array
   std::cout << GREEN("\nTesting const array:") << std::endl;
   const Array<int> arr5(3);
-
   std::cout << YELLOW("arr5 size: ") << arr5.size() << std::endl; // Expected: 3
   for (std::size_t i = 0; i < arr5.size(); ++i) {
     std::cout << MAGENTA("arr5[" << i << "] = ") << arr5[i]
