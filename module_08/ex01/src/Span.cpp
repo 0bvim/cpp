@@ -1,6 +1,6 @@
 #include "Span.hpp"
 #include <algorithm>
-#include <exception>
+#include <cstdlib>
 #include <limits>
 #include <stdexcept>
 
@@ -36,5 +36,14 @@ int Span::shortestSpan() const {
       minSpan = span;
     }
   }
-  return minSpan;
+  return std::abs(minSpan);
+}
+
+int Span::longestSpan() const {
+  if (_numbers.size() < 2)
+    throw std::logic_error("Not enough numbers to find a span.");
+
+  int minNum = *std::min_element(_numbers.begin(), _numbers.end());
+  int maxNum = *std::max_element(_numbers.begin(), _numbers.end());
+  return std::abs(maxNum - minNum);
 }
