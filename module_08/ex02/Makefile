@@ -8,7 +8,7 @@ BUILDDIR := build
 TARGETDIR := bin
 
 # Target executable name
-TARGET := span
+TARGET := mutated
 
 # Source files
 SRCEXT := cpp
