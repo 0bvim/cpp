@@ -1,6 +1,6 @@
 [
  {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_08/ex01",
+  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_08/ex02",
   "arguments": [
    "c++",
    "-std=c++98",
@@ -14,21 +14,5 @@
    "src/main.cpp"
   ],
   "file": "src/main.cpp"
- },
- {
-  "directory": "/nfs/homes/vde-frei/common_core/cpp/module_08/ex01",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/Span.o",
-   "src/Span.cpp"
-  ],
-  "file": "src/Span.cpp"
  }
 ]
