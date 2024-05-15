@@ -1,9 +1,7 @@
 #ifndef SPAN_HPP
 #define SPAN_HPP
 
-#include <iostream>
 #include <iterator>
-#include <ostream>
 #include <stdexcept>
 #include <vector>
 

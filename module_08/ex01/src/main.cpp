@@ -88,7 +88,7 @@ int main() {
       Span lastSpan(100);
       std::cout << "numbs size " << numbs.size() << std::endl;
       lastSpan.addRange(numbs.begin(), numbs.end());
-			NL;
+      NL;
       std::cout << GREEN("Shortest span: ") << lastSpan.shortestSpan()
                 << std::endl;
 
