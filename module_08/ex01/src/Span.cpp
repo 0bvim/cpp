@@ -24,14 +24,6 @@ void Span::addNumber(int number) {
   _numbers.push_back(number);
 }
 
-template <typename Iterator> void Span::addRange(Iterator begin, Iterator end) {
-  if (std::distance(begin, end) >
-      static_cast<int>(_maxSize - _numbers.size())) {
-    throw std::overflow_error("Not enough space in Span to add entire range");
-  }
-  _numbers.insert(_numbers.end(), begin, end);
-}
-
 int Span::shortestSpan() const {
   if (_numbers.size() < 2)
     throw std::logic_error("Not enough numbers to find a span.");
