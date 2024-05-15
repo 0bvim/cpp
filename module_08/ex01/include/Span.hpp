@@ -1,6 +1,7 @@
 #ifndef SPAN_HPP
 #define SPAN_HPP
 
+#include <iterator>
 #include <vector>
 
 class Span {
@@ -18,5 +19,8 @@ public:
   void addNumber(int number);
 	int shortestSpan() const;
 	int longestSpan() const;
+	template <typename Iterator>
+	void addRange(Iterator begin, Iterator end);
 };
+
 #endif // SPAN_HPP
