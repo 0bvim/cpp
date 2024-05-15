@@ -14,7 +14,8 @@ template <typename T> void printStack(MutantStack<T> &mstack) {
 
 void myTest() {
   NL;
-	std::cout << BLACK("========== My test with MutantStack ==========") << std::endl;
+  std::cout << BLACK("========== My test with MutantStack ==========")
+            << std::endl;
   MutantStack<int> mstack;
 
   // Test pushing elements
@@ -84,7 +85,7 @@ template <typename T> void printStackList(std::list<T> &mylist) {
 
 void myTestList(void) {
   std::cout << std::endl;
-	std::cout << BLACK("========== My test with List ==========") << std::endl;
+  std::cout << BLACK("========== My test with List ==========") << std::endl;
   std::list<int> mylist; // Use std::list instead of MutantStack
 
   // Test pushing elements
@@ -154,7 +155,7 @@ void listTest(void) {
 
 int main() {
   myTest();
-	myTestList();
+  myTestList();
   subjectTest();
   listTest();
 
