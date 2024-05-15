@@ -2,8 +2,7 @@
 #include <algorithm>
 #include <exception>
 #include <limits>
-
-Span::Span() : _numbers(0), _maxSize(0) {}
+#include <stdexcept>
 
 Span::Span(unsigned int N) : _maxSize(N) {}
 
@@ -11,7 +10,7 @@ Span::~Span() {}
 
 Span::Span(const Span &rhs) : _numbers(rhs._numbers), _maxSize(rhs._maxSize) {}
 
-Span &Span::operator(const Span &rhs) {
+Span &Span::operator=(const Span &rhs) {
   if (this != &rhs) {
     _numbers = rhs._numbers;
     _maxSize = rhs._maxSize;
