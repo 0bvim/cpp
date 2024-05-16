@@ -1,0 +1,36 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/BitcoinExchange.o",
+      "src/BitcoinExchange.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_09/ex00",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_09/ex00/src/BitcoinExchange.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_09/ex00/build/BitcoinExchange.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-std=c++98",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/nivicius/Documents/projects/ft/cpp/module_09/ex00",
+    "file": "/home/nivicius/Documents/projects/ft/cpp/module_09/ex00/src/main.cpp",
+    "output": "/home/nivicius/Documents/projects/ft/cpp/module_09/ex00/build/main.o"
+  }
+]
