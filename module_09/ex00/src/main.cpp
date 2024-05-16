@@ -1,5 +1,6 @@
 #include "BitcoinExchange.hpp"
 #include "Defines.hpp"
+#include <exception>
 #include <fstream>
 #include <iostream>
 #include <stdexcept>
@@ -7,12 +8,13 @@
 
 void start_program(char *av) {
 
-  std::ifstream inputFile(av);
-  if (!inputFile.is_open()) {
-    throw std::logic_error("Error opening file");
+  Exchange btc;
+
+  try {
+    btc.openFile(av);
+  } catch (std::exception &e) {
+    OUTNL(RED("Catch error: ")) << e.what() << std::endl;
   }
-  OUT(RED("test text")) << std::endl;
-  OUTNL(YELLOW("another text test"));
 }
 
 int main(int ac, char **av) {
