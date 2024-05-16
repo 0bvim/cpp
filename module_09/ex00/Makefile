@@ -53,12 +53,12 @@ run: clean all
 
 
 test:
-	@ echo "\nRunning test with argument '0'"
-	@./$(EXECUTABLE) "0"
-	@ echo "\nRunning test with argument 'nan'"
+	@ echo "\nRunning test with no argument"
+	@./$(EXECUTABLE)
+	@ echo "\nRunning test with no file argument"
 	@./$(EXECUTABLE) "nan"
-	@ echo "\nRunning test with argument '42.0f'"
-	@./$(EXECUTABLE) "42.0f"
+	@ echo "\nRunning test with a valid file argument"
+	@./$(EXECUTABLE) "data.csv"
 
 val: clean all
 	@valgrind ./$(EXECUTABLE) $(ARGS)
