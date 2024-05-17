@@ -7,25 +7,24 @@
 #include <string>
 
 static void usage(void) {
-	NL;
+  NL;
   std::cerr << MAGENTA("Usage: ./bin/btc <filename>") << std::endl;
 }
 
 void start_program(char *av) {
 
-  Exchange btc;
-
   try {
-    btc.openFile(av);
-  } catch (std::exception &e) {
-    OUTNL(RED("Catch error: ")) << e.what() << std::endl;
+    Exchange btc(av);
+  } catch (const std::exception &e) {
+    std::cerr << RED("Error: ") << e.what();
   }
 }
 
 int main(int ac, char **av) {
   if (ac == 2)
     start_program(av[1]);
-  usage();
+  else
+    usage();
 
   return 0;
 }

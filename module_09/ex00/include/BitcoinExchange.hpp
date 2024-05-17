@@ -1,24 +1,26 @@
 #ifndef BITCOINEXCHANGE_HPP
 #define BITCOINEXCHANGE_HPP
 
-#include <fstream>
+#include <deque>
 #include <string>
+
+struct BitcoinPrice {
+	std::string date;
+	double price;
+
+};
 
 class Exchange {
 private:
-  std::string _date;
-  float _value;
-  int _rvalue;
-  std::ifstream *_db;
+	std::deque<BitcoinPrice> _bitcoinPrices;
+  Exchange();
 
 public:
-  Exchange();
+	Exchange(const std::string &file);
   ~Exchange();
   Exchange(const Exchange &rhs);
   Exchange &operator=(const Exchange &rhs);
 
-  void openFile(const std::string file);
-  void formatPrint();
 };
 
 #endif // BITCOINEXCHANGE_HPP
