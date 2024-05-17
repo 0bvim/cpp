@@ -1,11 +1,16 @@
 #include "BitcoinExchange.hpp"
 #include "Defines.hpp"
+#include <cstddef>
 #include <exception>
 #include <fstream>
 #include <iostream>
 #include <sstream>
 #include <stdexcept>
 #include <string>
+
+static bool isInteger(const std::string& str) {
+    return str.find('.') == std::string::npos;
+}
 
 Exchange::Exchange() : _bitcoinPrices(0) {}
 
@@ -14,19 +19,16 @@ Exchange::Exchange(const std::string &file) {
   if (!fl.is_open())
     throw std::runtime_error("could not open file.\n");
 
-  std::string line;
+  std::string line, beforeComma, afterComma;
   std::getline(fl, line);
   while (std::getline(fl, line)) {
-		OUTNL(line);
-    std::stringstream iss(line);
-    std::string date;
-    double price;
-		char separator;
-    if (!(iss >> date >> separator >> price)) {
-      throw std::runtime_error("invalid Bitcoin price entry.\n");
-    }
+		size_t pos = line.find('.');
+		if (pos != std::string::npos) {
+			beforeComma = line.substr(0, pos);
+			afterComma = line.substr(pos + 1);
+		}
     BitcoinPrice bitcoinPrice;
-    bitcoinPrice.date = date;
+    bitcoinPrice.date = beforeComma;
     bitcoinPrice.price = price;
     this->_bitcoinPrices.push_back(bitcoinPrice);
   }
