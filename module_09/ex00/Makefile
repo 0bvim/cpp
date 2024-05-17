@@ -51,6 +51,10 @@ clean:
 run: clean all
 	@./$(EXECUTABLE) $(ARGS)
 
+fclean: clean
+	@rm -rf $(TARGETDIR)/$(TARGET)
+
+re: fclean all
 
 test:
 	@ echo "\nRunning test with no argument"
