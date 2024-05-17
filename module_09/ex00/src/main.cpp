@@ -1,10 +1,7 @@
 #include "BitcoinExchange.hpp"
 #include "Defines.hpp"
 #include <exception>
-#include <fstream>
 #include <iostream>
-#include <stdexcept>
-#include <string>
 
 static void usage(void) {
   NL;
@@ -13,7 +10,8 @@ static void usage(void) {
 
 void start_program(char *av) {
   try {
-    Exchange btc(av);
+    Exchange btc;
+    btc.inputValidation(av);
   } catch (const std::exception &e) {
     std::cerr << RED("Error: ") << e.what();
   }

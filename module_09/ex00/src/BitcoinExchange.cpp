@@ -10,12 +10,10 @@
 #include <stdexcept>
 #include <string>
 
-Exchange::Exchange() : _bitcoinPrices(std::deque<BitcoinPrice>()) {}
-
-Exchange::Exchange(const std::string &file) : _bitcoinPrices(0) {
-  std::ifstream fl(file.c_str());
+Exchange::Exchange() : _bitcoinPrices(std::deque<BitcoinPrice>()) {
+  std::ifstream fl("data.csv");
   if (!fl.is_open())
-    throw std::runtime_error("could not open file.\n");
+    throw std::runtime_error("could not open database file.\n");
 
   std::string line, date, price;
   std::getline(fl, line);
@@ -44,4 +42,9 @@ Exchange &Exchange::operator=(const Exchange &rhs) {
   return *this;
 }
 
-void Exchange::inputValidation(const std::string &date) { (void)date; }
+void Exchange::inputValidation(const std::string &file) {
+  std::ifstream fl(file.c_str());
+  if (!fl.is_open())
+    throw std::runtime_error("could not open input file.\n");
+  OUTNL("opened file correctly");
+}

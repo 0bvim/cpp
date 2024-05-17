@@ -12,15 +12,14 @@ struct BitcoinPrice {
 class Exchange {
 private:
   std::deque<BitcoinPrice> _bitcoinPrices;
-  Exchange();
 
 public:
-  Exchange(const std::string &file);
+  Exchange();
   ~Exchange();
   Exchange(const Exchange &rhs);
   Exchange &operator=(const Exchange &rhs);
 
-  void inputValidation(const std::string &date);
+  void inputValidation(const std::string &file);
 };
 
 #endif // BITCOINEXCHANGE_HPP
