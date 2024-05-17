@@ -12,7 +12,6 @@ static void usage(void) {
 }
 
 void start_program(char *av) {
-
   try {
     Exchange btc(av);
   } catch (const std::exception &e) {
