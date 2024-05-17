@@ -6,8 +6,7 @@
 
 struct BitcoinPrice {
   std::string date;
-  float fprice;
-  int price;
+  double price;
 };
 
 class Exchange {
