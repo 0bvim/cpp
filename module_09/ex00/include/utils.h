@@ -14,4 +14,6 @@ bool validateDate(const std::string &date);
 
 bool validatePrice(double value);
 
+std::string trim(const std::string &str);
+
 #endif // !UTILS_HPP

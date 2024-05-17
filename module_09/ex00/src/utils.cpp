@@ -2,6 +2,7 @@
 #include "Defines.hpp"
 #include <iostream>
 #include <ostream>
+#include <string>
 
 bool isInteger(const std::string &str) {
   return str.find('.') == std::string::npos;
@@ -52,4 +53,17 @@ bool validatePrice(double value) {
     return false;
   }
   return true;
+}
+
+std::string trim(const std::string &str) {
+  std::string::const_iterator start = str.begin();
+  while (start != str.end() && std::isspace(*start)) {
+    start++;
+  }
+
+  std::string::const_reverse_iterator end = str.rbegin();
+  while (end.base() != start && std::isspace(*end)) {
+    end++;
+  }
+  return std::string(start, end.base());
 }

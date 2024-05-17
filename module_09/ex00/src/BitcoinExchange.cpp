@@ -46,5 +46,14 @@ void Exchange::inputValidation(const std::string &file) {
   std::ifstream fl(file.c_str());
   if (!fl.is_open())
     throw std::runtime_error("could not open input file.\n");
-  OUTNL("opened file correctly");
+
+  std::string line, date, rate;
+  std::getline(fl, line);
+  while (std::getline(fl, line)) {
+    size_t pos = line.find('|');
+    if (pos != std::string::npos) {
+      date = trim(line.substr(0, pos));
+      rate = trim(line.substr(pos + 1));
+    }
+  }
 }
