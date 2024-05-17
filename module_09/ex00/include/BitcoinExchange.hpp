@@ -19,6 +19,8 @@ public:
   ~Exchange();
   Exchange(const Exchange &rhs);
   Exchange &operator=(const Exchange &rhs);
+
+  void inputValidation(const std::string &date);
 };
 
 #endif // BITCOINEXCHANGE_HPP
