@@ -20,6 +20,7 @@ public:
   Exchange &operator=(const Exchange &rhs);
 
   void inputValidation(const std::string &file);
+  std::deque<BitcoinPrice>::iterator findClosestDate(const std::string &date);
 };
 
 #endif // BITCOINEXCHANGE_HPP
