@@ -44,24 +44,22 @@ Exchange &Exchange::operator=(const Exchange &rhs) {
   }
   return *this;
 }
+
 std::deque<BitcoinPrice>::iterator
 Exchange::findClosestDate(const std::string &date) {
-  if (_bitcoinPrices.empty()) {
-    return _bitcoinPrices.end();
-  }
-
   std::deque<BitcoinPrice>::iterator closestIt = _bitcoinPrices.end();
-  long long minDiff = LLONG_MAX;
+  int minDiff = INT_MAX;
 
   for (std::deque<BitcoinPrice>::iterator it = _bitcoinPrices.begin();
        it != _bitcoinPrices.end(); ++it) {
-    long long diff = std::labs(it->date.compare(date));
-    if (diff < minDiff) {
+    int diff = it->date.compare(date);
+    if (diff <= 0 && abs(diff) < abs(minDiff)) {
       minDiff = diff;
       closestIt = it;
     }
   }
 
+	/* implement the lower or upper bound to do it */
   return closestIt;
 }
 
@@ -83,6 +81,7 @@ void Exchange::inputValidation(const std::string &file) {
 
     if (validateDate(date) && validatePrice(atof(rate.c_str()))) {
       double rateValue = atof(rate.c_str());
+      OUTNL(rateValue);
       std::deque<BitcoinPrice>::iterator it = findClosestDate(date);
       if (it != _bitcoinPrices.end()) {
         double result = it->price * rateValue;
