@@ -50,10 +50,15 @@ void Exchange::inputValidation(const std::string &file) {
   std::string line, date, rate;
   std::getline(fl, line);
   while (std::getline(fl, line)) {
-    size_t pos = line.find('|');
-    if (pos != std::string::npos) {
-      date = trim(line.substr(0, pos));
-      rate = trim(line.substr(pos + 1));
+    if (line.find('|') == std::string::npos) {
+      std::cerr << RED("Error: ") << YELLOW("bad input => " << line)
+                << std::endl;
+      continue;
     }
+    date = trim(line.substr(0, line.find('|')));
+    rate = trim(line.substr(line.find('|') + 1));
+
+    if (validateDate(date) && validatePrice(atof(rate.c_str())))
+      OUTNL(date << " " << rate);
   }
 }

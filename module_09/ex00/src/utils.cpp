@@ -36,20 +36,19 @@ bool validateDate(const std::string &date) {
   month = date.substr(5, 2);
   day = date.substr(8, 2);
 
-  try {
-    return isValidDate(atoi(year.c_str()), atoi(month.c_str()),
-                       atoi(day.c_str()));
-  } catch (const std::exception &e) {
+  if (!isValidDate(atoi(year.c_str()), atoi(month.c_str()),
+                   atoi(day.c_str()))) {
     return false;
   }
+  return true;
 }
 
 bool validatePrice(double value) {
   if (value < 0) {
-    OUTNL(RED("Error: ") << "not a positive number.");
+    std::cerr << RED("Error: ") << CYAN("not a positive number.") << std::endl;
     return false;
   } else if (value > 1000) {
-    OUTNL(RED("Error: ") << "too large a number.");
+    std::cerr << RED("Error: ") << CYAN("too large a number.") << std::endl;
     return false;
   }
   return true;
