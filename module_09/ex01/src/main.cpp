@@ -1,4 +1,5 @@
 #include "Defines.hpp"
+#include "RPN.hpp"
 #include <exception>
 #include <iostream>
 
@@ -9,8 +10,7 @@ static void usage(void) {
 
 void start_program(char *av) {
   try {
-    NL;
-    (void)av;
+		RPN rpn(av);
   } catch (const std::exception &e) {
     std::cerr << RED("Error: ") << e.what();
   }

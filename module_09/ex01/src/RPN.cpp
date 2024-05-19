@@ -1,8 +1,19 @@
 #include "RPN.hpp"
+#include "Defines.hpp"
+#include "utils.h"
+#include <exception>
+#include <iostream>
+#include <ostream>
 
 RPN::RPN() : _input(""), _stack() {}
 
-RPN::RPN(const std::string input) : _input(input) {}
+RPN::RPN(const std::string input) : _input(input) {
+	try {
+	validateInput(this->_input);
+	} catch (const std::exception &e) {
+		std::cerr << RED(e.what()) << std::endl;
+	}
+}
 
 RPN::~RPN() {}
 
