@@ -1,7 +1,9 @@
 #include "utils.h"
 #include <cctype>
+#include <ostream>
 #include <stdexcept>
 #include <string>
+#include <vector>
 
 std::string trim(const std::string &str) {
   std::string::const_iterator start = str.begin();
@@ -73,4 +75,27 @@ int performOperation(char op, int a, int b) {
   default:
     throw std::invalid_argument("Invalid operator");
   }
+}
+
+bool hasDuplicates(std::vector<int> &numbers) {
+  for (unsigned int i = 0; i < numbers.size(); ++i) {
+    for (unsigned int j = i + 1; j < numbers.size(); ++j) {
+      if (numbers[i] == numbers[j]) {
+        std::cout << "Duplicate number detected: " << numbers[i] << std::endl;
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+std::vector<int> inputValidation(char **input, const size_t &elements) {
+  std::vector<int> numbers(elements - 1);
+  for (size_t i = 1; i < elements; ++i) {
+    numbers[i - 1] = atoi(input[i]);
+    if (numbers[i - 1] <= 0) {
+      throw std::invalid_argument("Number must be positive.");
+    }
+  }
+  return numbers;
 }

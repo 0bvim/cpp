@@ -1,22 +1,23 @@
 #ifndef PMERGEME_HPP
 #define PMERGEME_HPP
 
-#include <string>
+#include <list>
 #include <vector>
 
 class Ford {
 private:
-  std::vector<int>::iterator _seq;
-  Ford();
+  std::vector<int> _vseq;
+  std::list<int> _lseq;
 
 public:
-  Ford(const std::string &input);
+  Ford();
+  Ford(const std::vector<int> &nb, const std::list<int> &lnb);
   ~Ford();
   Ford(const Ford &rhs);
   Ford &operator=(const Ford &rhs);
 
-	bool inputValidation(const std::string &input);
-	std::vector<int> getVector(void);
+  std::vector<int> getVector(void) const;
+  std::list<int> getList(void) const;
 };
 
 #endif // !PMERGEME_HPP
