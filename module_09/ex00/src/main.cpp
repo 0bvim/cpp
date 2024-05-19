@@ -11,6 +11,7 @@ static void usage(void) {
 void start_program(char *av) {
   try {
     Exchange btc;
+		NL;
     btc.inputValidation(av);
   } catch (const std::exception &e) {
     std::cerr << RED("Error: ") << e.what();

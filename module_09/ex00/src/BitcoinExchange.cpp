@@ -1,12 +1,10 @@
 #include "BitcoinExchange.hpp"
 #include "Defines.hpp"
 #include "utils.h"
-#include <algorithm>
 #include <climits>
 #include <cstddef>
 #include <cstdlib>
 #include <deque>
-#include <exception>
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -47,20 +45,15 @@ Exchange &Exchange::operator=(const Exchange &rhs) {
 
 std::deque<BitcoinPrice>::iterator
 Exchange::findClosestDate(const std::string &date) {
-  std::deque<BitcoinPrice>::iterator closestIt = _bitcoinPrices.end();
-  int minDiff = INT_MAX;
-
-  for (std::deque<BitcoinPrice>::iterator it = _bitcoinPrices.begin();
-       it != _bitcoinPrices.end(); ++it) {
-    int diff = it->date.compare(date);
-    if (diff <= 0 && abs(diff) < abs(minDiff)) {
-      minDiff = diff;
-      closestIt = it;
+  std::deque<BitcoinPrice>::iterator it = _bitcoinPrices.begin();
+  for (; it != _bitcoinPrices.end(); ++it) {
+    if (it->date.compare(date) > 0)
+      return --it;
+    else if (!it->date.compare(date)) {
+      return it;
     }
   }
-
-	/* implement the lower or upper bound to do it */
-  return closestIt;
+  return it;
 }
 
 void Exchange::inputValidation(const std::string &file) {
@@ -81,7 +74,6 @@ void Exchange::inputValidation(const std::string &file) {
 
     if (validateDate(date) && validatePrice(atof(rate.c_str()))) {
       double rateValue = atof(rate.c_str());
-      OUTNL(rateValue);
       std::deque<BitcoinPrice>::iterator it = findClosestDate(date);
       if (it != _bitcoinPrices.end()) {
         double result = it->price * rateValue;
