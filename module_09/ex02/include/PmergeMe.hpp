@@ -6,7 +6,7 @@
 
 class Ford {
 private:
-  std::vector<int> _seq;
+  std::vector<int>::iterator _seq;
   Ford();
 
 public:
@@ -15,6 +15,7 @@ public:
   Ford(const Ford &rhs);
   Ford &operator=(const Ford &rhs);
 
+	bool inputValidation(const std::string &input);
 	std::vector<int> getVector(void);
 };
 
