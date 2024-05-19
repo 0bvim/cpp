@@ -1,5 +1,6 @@
 #include "utils.h"
 #include <cctype>
+#include <stdexcept>
 #include <string>
 
 std::string trim(const std::string &str) {
@@ -53,4 +54,23 @@ bool doubleDigit(const std::string &str) {
       return true;
   }
   return false;
+}
+
+int performOperation(char op, int a, int b) {
+
+  switch (op) {
+  case '+':
+    return a + b;
+  case '-':
+    return a - b;
+  case '*':
+    return a * b;
+  case '/':
+    if (b == 0) {
+      throw std::runtime_error("Division by zero");
+    }
+    return a / b;
+  default:
+    throw std::invalid_argument("Invalid operator");
+  }
 }

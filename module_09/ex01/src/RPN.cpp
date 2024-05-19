@@ -1,6 +1,9 @@
 #include "RPN.hpp"
 #include "Defines.hpp"
 #include "utils.h"
+#include <cctype>
+#include <cstddef>
+#include <cstdlib>
 #include <exception>
 #include <iostream>
 #include <ostream>
@@ -34,7 +37,7 @@ const char *RPN::InvalidExpressionException::what() const throw() {
   return "Error";
 }
 
-void RPN::validateInput(const std::string &str) {
+bool RPN::validateInput(const std::string &str) {
   if (str.empty()) {
     throw std::invalid_argument("How you wanna calculate 'nothing'?");
   } else if (doubleDigit(str)) {
@@ -61,10 +64,28 @@ void RPN::validateInput(const std::string &str) {
   }
 
   this->_input = validate;
+  return true;
 }
 
 int RPN::calculate(void) {
+  std::size_t index = 0;
+  std::string::iterator it = _input.begin();
 
-  OUTNL(this->_input);
-  return 1;
+  if (_input.size() < 3)
+    return 0;
+  while (index < _input.size()) {
+    if (::isdigit(*it)) {
+      _stack.push(*it - 48);
+    } else if (isOp(*it) && _input.size() > 1) {
+      int b = _stack.top();
+      _stack.pop();
+      int a = _stack.top();
+      _stack.pop();
+      int result = performOperation(*it, a, b);
+      _stack.push(result);
+    }
+    ++index;
+    ++it;
+  }
+  return _stack.top();
 }

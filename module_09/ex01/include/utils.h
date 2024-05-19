@@ -16,4 +16,6 @@ std::string trimInternSpaces(const std::string &str);
 
 std::string trim(const std::string &str);
 
+int performOperation(char op, int a, int b);
+
 #endif // !UTILS_HPP

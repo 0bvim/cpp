@@ -10,9 +10,9 @@ static void usage(void) {
 
 void start_program(char *av) {
   try {
-		RPN rpn(av);
-		rpn.calculate();
-
+    RPN rpn(av);
+    int result = rpn.calculate();
+    OUTNL(RED(result));
   } catch (const std::exception &e) {
     std::cerr << RED("Error: ") << e.what();
   }
