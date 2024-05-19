@@ -12,7 +12,9 @@ RPN::RPN() : _input(""), _stack() {}
 
 RPN::RPN(const std::string input) : _input(input) {
   try {
-    validateInput(this->_input);
+    if (validateInput(this->_input)) {
+      OUTNL(MAGENTA(calculate()));
+    }
   } catch (const std::exception &e) {
     std::cerr << RED(e.what()) << std::endl;
   }
@@ -54,6 +56,7 @@ bool RPN::validateInput(const std::string &str) {
       continue;
     } else {
       throw std::invalid_argument("Only number and operator allowed.");
+      return false;
     }
   }
 
