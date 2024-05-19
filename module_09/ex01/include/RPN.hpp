@@ -21,6 +21,7 @@ public:
     virtual const char *what() const throw();
   };
 
+	void validateInput(const std::string &str);
   int calculate(void);
 };
 

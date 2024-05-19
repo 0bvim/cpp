@@ -11,6 +11,8 @@ static void usage(void) {
 void start_program(char *av) {
   try {
 		RPN rpn(av);
+		rpn.calculate();
+
   } catch (const std::exception &e) {
     std::cerr << RED("Error: ") << e.what();
   }
