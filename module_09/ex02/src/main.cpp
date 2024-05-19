@@ -4,7 +4,7 @@
 
 static void usage(void) {
   NL;
-  std::cerr << MAGENTA("Usage: ./bin/RPN \"<expression>\"") << std::endl;
+  std::cerr << MAGENTA("Usage: ./bin/PmergeMek \"<unsorted number sequence>\"") << std::endl;
 }
 
 void start_program(char *av) {
