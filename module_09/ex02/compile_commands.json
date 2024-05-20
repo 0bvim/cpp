@@ -7,22 +7,8 @@
    "-Wall",
    "-Wextra",
    "-Werror",
-   "-Iinclude",
-   "-c",
-   "-o",
-   "build/utils.o",
-   "src/utils.cpp"
-  ],
-  "file": "src/utils.cpp"
- },
- {
-  "directory": "/home/nivicius/Documents/projects/ft/cpp/module_09/ex02",
-  "arguments": [
-   "c++",
-   "-std=c++98",
-   "-Wall",
-   "-Wextra",
-   "-Werror",
+   "-MD",
+   "-MP",
    "-Iinclude",
    "-c",
    "-o",
@@ -39,6 +25,8 @@
    "-Wall",
    "-Wextra",
    "-Werror",
+   "-MD",
+   "-MP",
    "-Iinclude",
    "-c",
    "-o",
