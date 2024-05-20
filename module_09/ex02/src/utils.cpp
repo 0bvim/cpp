@@ -1,9 +1,5 @@
 #include "utils.h"
 #include <cctype>
-#include <iostream>
-#include <ostream>
-#include <set>
-#include <stdexcept>
 #include <string>
 
 std::string trim(const std::string &str) {
@@ -40,25 +36,4 @@ std::string trimInternSpaces(const std::string &str) {
   }
 
   return newStr;
-}
-
-template <typename Container>
-Container validateAndProcessInput(char **input, const size_t &elements) {
-  Container numbers;
-  std::set<typename Container::value_type>
-      seenNumbers;
-
-  for (size_t i = 1; i < elements; ++i) {
-    int num = std::atoi(input[i]);
-    if (num <= 0) {
-      throw std::invalid_argument("Number must be positive.");
-    }
-    if (!seenNumbers.insert(num).second) {
-      std::cout << "Duplicate number detected: " << num << std::endl;
-      throw std::invalid_argument("Duplicate number detected.");
-    }
-    numbers.push_back(num); // Use push_back for both vector and list in C++98
-  }
-
-  return numbers;
 }
