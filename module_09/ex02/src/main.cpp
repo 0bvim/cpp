@@ -15,11 +15,12 @@ void start_program(int ac, char **av) {
     Ford srt(validateAndProcessInput<std::vector<int> >(av, ac),
              validateAndProcessInput<std::list<int> >(av, ac));
 
-    std::vector<int> a(srt.getVector());
-    std::list<int> b(srt.getList());
+		std::cout << GREEN("before: ");
+		printSequence(srt.getVector());
 
-		printSequence(a);
-		printSequence(b);
+		displayTime(srt.getVector(), "vector");
+		printAfter = true;
+		displayTime(srt.getList(), "list");
 
   } catch (const std::exception &e) {
     std::cerr << RED("Error: ") << e.what();

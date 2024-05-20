@@ -23,3 +23,5 @@ Ford &Ford::operator=(const Ford &rhs) {
 std::vector<int> Ford::getVector(void) const { return _vseq; }
 
 std::list<int> Ford::getList(void) const { return _lseq; }
+
+bool printAfter = false;

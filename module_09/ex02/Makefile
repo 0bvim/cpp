@@ -21,7 +21,7 @@ OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
 INC := -I$(INCDIR)
 
 # Flags
-CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
+CXXFLAGS = -std=c++98 -Wall -Wextra -Werror -MD -MP
 
 # Final executable
 EXECUTABLE := $(TARGETDIR)/$(TARGET)
