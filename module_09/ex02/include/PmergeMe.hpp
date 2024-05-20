@@ -44,4 +44,13 @@ Container validateAndProcessInput(char **input, int &elements) {
   return numbers;
 }
 
+template <typename Container>
+void printSequence(const Container& seq) {
+    typename Container::const_iterator it;
+    for (it = seq.begin(); it != seq.end(); ++it) {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl;
+}
+
 #endif // !PMERGEME_HPP

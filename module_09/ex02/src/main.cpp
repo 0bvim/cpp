@@ -18,19 +18,8 @@ void start_program(int ac, char **av) {
     std::vector<int> a(srt.getVector());
     std::list<int> b(srt.getList());
 
-		std::cout << "vector: ";
-    for (size_t i = 0; i < a.size(); ++i) {
-      std::cout << a[i] << " ";
-    }
-
-		NL;
-
-    std::cout << "list: ";
-		for (std::list<int>::iterator it = b.begin(); it != b.end(); ++it) {
-      std::cout << *it << " ";
-		}
-
-		NL;
+		printSequence(a);
+		printSequence(b);
 
   } catch (const std::exception &e) {
     std::cerr << RED("Error: ") << e.what();
