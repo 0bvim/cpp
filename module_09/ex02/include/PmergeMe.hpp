@@ -58,11 +58,41 @@ void merge(Iterator first, Iterator mid, Iterator last) {
   std::copy(sortedSeq.begin(), sortedSeq.end(), first);
 }
 
+template <typename Iterator> void insertionSort(Iterator first, Iterator last) {
+  typedef typename std::iterator_traits<Iterator>::value_type ValueType;
+
+  if (first == last)
+    return; // If the range is empty, do nothing
+
+  for (Iterator it = first; it != last; ++it) {
+    Iterator current = it;
+    Iterator previous = it;
+    if (current != first) {
+      --previous;
+    }
+    ValueType key = *current;
+    while (current != first && *previous > key) {
+      *current = *previous;
+      current = previous;
+      if (previous != first) {
+        --previous;
+      }
+    }
+    *current = key;
+  }
+}
+
+const int threshold = 10;
+
 template <typename Iterator>
 void mergeInsertSortRecursively(Iterator first, Iterator last) {
   if (std::distance(first, last) <= 1)
     return;
 
+  if (std::distance(first, last) <= threshold) {
+    insertionSort(first, last);
+    return;
+  }
   Iterator mid = first;
   std::advance(mid, std::distance(first, last) / 2);
   mergeInsertSortRecursively(first, mid);
