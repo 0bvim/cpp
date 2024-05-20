@@ -6,16 +6,9 @@
 
 std::string trim(const std::string &str);
 
-bool validateInput(const std::string &str);
-
-bool isOp(char c);
-
-bool doubleDigit(const std::string &str);
-
 std::string trimInternSpaces(const std::string &str);
 
-std::string trim(const std::string &str);
-
-int performOperation(char op, int a, int b);
+template <typename Container>
+Container validateAndProcessInput(char **input, const size_t &elements);
 
 #endif // !UTILS_HPP
