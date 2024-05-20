@@ -1,5 +1,8 @@
 #include "utils.h"
+#include "Defines.hpp"
 #include <cctype>
+#include <iostream>
+#include <ostream>
 #include <stdexcept>
 #include <string>
 
@@ -72,5 +75,22 @@ int performOperation(char op, int a, int b) {
     return a / b;
   default:
     throw std::invalid_argument("Invalid operator");
+  }
+}
+
+bool nbOp(const std::string &str) {
+  int nb = 0, op = 0;
+
+  for (std::string::const_iterator it = str.begin(); it != str.end(); ++it) {
+    if (isOp(*it)) {
+      ++op;
+    } else if (::isdigit(*it)) {
+      ++nb;
+    }
+  }
+  if ((op - 1) == nb) {
+    return true;
+  } else {
+    return false;
   }
 }

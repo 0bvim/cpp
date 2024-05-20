@@ -18,4 +18,6 @@ std::string trim(const std::string &str);
 
 int performOperation(char op, int a, int b);
 
+bool nbOp(const std::string &str);
+
 #endif // !UTILS_HPP

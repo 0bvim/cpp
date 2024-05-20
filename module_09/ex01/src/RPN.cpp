@@ -45,6 +45,8 @@ bool RPN::validateInput(const std::string &str) {
   } else if (doubleDigit(str)) {
     throw std::invalid_argument(
         "Only numbers between 0 and 9. And no double operators.");
+  } else if (nbOp(str)) {
+    throw std::invalid_argument("Invalid number of operations.");
   }
 
   std::string validate = trimInternSpaces(str);
