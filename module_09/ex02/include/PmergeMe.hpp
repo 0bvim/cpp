@@ -71,8 +71,8 @@ void displayTime(const Container &seq, const std::string &containerName) {
     NL;
   }
   double timeInSeconds = static_cast<double>(end - start) / CLOCKS_PER_SEC;
-  std::cout << "Time to process a range of " << seq.size() << " elements with "
-            << containerName << ": " << timeInSeconds << " sec" << std::endl;
+  std::cout << "Time to process a range of " << seq.size() << " elements with std::"
+            << containerName << ": " << (timeInSeconds * 1000.0) << " us" << std::endl;
 }
 
 #endif // !PMERGEME_HPP
