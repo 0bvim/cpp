@@ -16,7 +16,8 @@ bool isValidDate(int year, int month, int day) {
   if (month < 1 || month > 12)
     return false;
 
-  if (year < 2009 || (year == 2009 && month == 1 && day < 3))
+  if (year < 2009 || (year == 2009 && month == 1 && day < 3) ||
+      (year == 2022 && day > 29 && month > 03))
     return false;
 
   int dayInMo[] = {
