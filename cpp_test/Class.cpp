@@ -2,7 +2,7 @@
 #include <iostream>
 
 Sample::Sample(void) : _foo(0) {
-  std::cout << "Default Constructor Called" << std::endl;
+  std::cout << "Default Constructor" << std::endl;
   return;
 }
 
