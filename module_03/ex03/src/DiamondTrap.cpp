@@ -10,14 +10,14 @@ DiamondTrap::DiamondTrap(void) : ScavTrap(), FragTrap() {
   std::cout << "DiamondTrap Constructor Called." << std::endl;
   ClapTrap::setName(std::string("Foreign") + SUFFIXNAME);
   this->setName(std::string("Foreign") + SUFFIXNAME);
-	ScavTrap::setEnergyPoint(50);
+  ScavTrap::setEnergyPoint(50);
 }
 
 DiamondTrap::DiamondTrap(const std::string name)
     : ClapTrap(name + SUFFIXNAME), ScavTrap(name + SUFFIXNAME),
       FragTrap(name + SUFFIXNAME), _name(name + SUFFIXNAME) {
   std::cout << "DiamondTrap Constuctor Called." << std::endl;
-	ScavTrap::setEnergyPoint(50);
+  ScavTrap::setEnergyPoint(50);
 }
 
 DiamondTrap::~DiamondTrap(void) {
