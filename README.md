@@ -29,8 +29,17 @@ If you install correctly, (in root directory of exercice like `ex00`) type `make
 ## ![Module 03](module_03/)
 > This module is about inheritance in general, and about the ![diamond problem](https://www.makeuseof.com/what-is-diamond-problem-in-cpp/).
 
-
-
 ## ![Module 04](module_04/)
 > This module is about ![subtype polymorphism](https://stackoverflow.com/questions/23505346/conceptual-difference-between-parametric-polymorphism-and-subtype-polymorphism), abstract classes and interfaces.
 
+## ![Module 05](module_05/)
+> This module is to trainning the past concepts and work with exceptions.
+
+## ![Module 06](module_06/)
+> This module is about casting, conversion of scalar types, serialization, identify real type and so forth.
+
+## ![Module 07](module_07/)
+> This module is about templates, how to use and create them.
+
+ ## ![Module 08](module_08/)
+> This module we start to work with ![STL](https://www.simplilearn.com/tutorials/cpp-tutorial/cpp-standard-template-library) `(standard template library)`, templated containers and more iterators.
