@@ -1,0 +1,881 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+$(BUILDDIR)/%.o	ex00/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(BUILDDIR)/%.o	ex01/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(BUILDDIR)/%.o	ex02/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(BUILDDIR)/%.o	ex03/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(BUILDDIR)/%.o	to_vog/ex00/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(BUILDDIR)/%.o	to_vog/ex01/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(BUILDDIR)/%.o	to_vog/ex02/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(BUILDDIR)/%.o	to_vog/ex03/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(BUILDDIR)/%.o	to_vog/test/ex00/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(BUILDDIR)/%.o	to_vog/test/ex01/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(BUILDDIR)/%.o	to_vog/test/ex02/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(BUILDDIR)/%.o	to_vog/test/ex03/Makefile	/^$(BUILDDIR)\/%.o: $(SRCDIR)\/%.$(SRCEXT)$/;"	t
+$(EXECUTABLE)	ex00/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+$(EXECUTABLE)	ex01/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+$(EXECUTABLE)	ex02/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+$(EXECUTABLE)	ex03/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+$(EXECUTABLE)	to_vog/ex00/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+$(EXECUTABLE)	to_vog/ex01/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+$(EXECUTABLE)	to_vog/ex02/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+$(EXECUTABLE)	to_vog/ex03/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+$(EXECUTABLE)	to_vog/test/ex00/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+$(EXECUTABLE)	to_vog/test/ex01/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+$(EXECUTABLE)	to_vog/test/ex02/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+$(EXECUTABLE)	to_vog/test/ex03/Makefile	/^$(EXECUTABLE): $(OBJECTS)$/;"	t
+0	ex00/compile_commands.json	/^      "\/usr\/bin\/c++",$/;"	s	array:0.arguments
+0	ex00/compile_commands.json	/^  {$/;"	o
+0	ex01/compile_commands.json	/^      "\/usr\/bin\/c++",$/;"	s	array:0.arguments
+0	ex01/compile_commands.json	/^  {$/;"	o
+0	ex02/compile_commands.json	/^      "\/usr\/bin\/c++",$/;"	s	array:0.arguments
+0	ex02/compile_commands.json	/^  {$/;"	o
+0	ex03/compile_commands.json	/^      "\/usr\/bin\/c++",$/;"	s	array:0.arguments
+0	ex03/compile_commands.json	/^      "\/usr\/bin\/c++",$/;"	s	array:1.arguments
+0	ex03/compile_commands.json	/^      "\/usr\/bin\/c++",$/;"	s	array:2.arguments
+0	ex03/compile_commands.json	/^      "\/usr\/bin\/c++",$/;"	s	array:3.arguments
+0	ex03/compile_commands.json	/^      "\/usr\/bin\/c++",$/;"	s	array:4.arguments
+0	ex03/compile_commands.json	/^  {$/;"	o
+1	ex00/compile_commands.json	/^      "-std=c++98",$/;"	s	array:0.arguments
+1	ex01/compile_commands.json	/^      "-std=c++98",$/;"	s	array:0.arguments
+1	ex02/compile_commands.json	/^      "-std=c++98",$/;"	s	array:0.arguments
+1	ex03/compile_commands.json	/^      "-std=c++98",$/;"	s	array:0.arguments
+1	ex03/compile_commands.json	/^      "-std=c++98",$/;"	s	array:1.arguments
+1	ex03/compile_commands.json	/^      "-std=c++98",$/;"	s	array:2.arguments
+1	ex03/compile_commands.json	/^      "-std=c++98",$/;"	s	array:3.arguments
+1	ex03/compile_commands.json	/^      "-std=c++98",$/;"	s	array:4.arguments
+1	ex03/compile_commands.json	/^  {$/;"	o
+10	ex03/compile_commands.json	/^      "build\/ClapTrap.o",$/;"	s	array:4.arguments
+10	ex03/compile_commands.json	/^      "build\/DiamondTrap.o",$/;"	s	array:0.arguments
+10	ex03/compile_commands.json	/^      "build\/FragTrap.o",$/;"	s	array:3.arguments
+10	ex03/compile_commands.json	/^      "build\/ScavTrap.o",$/;"	s	array:1.arguments
+10	ex03/compile_commands.json	/^      "build\/main.o",$/;"	s	array:2.arguments
+11	ex03/compile_commands.json	/^      "src\/ClapTrap.cpp"$/;"	s	array:4.arguments
+11	ex03/compile_commands.json	/^      "src\/DiamondTrap.cpp"$/;"	s	array:0.arguments
+11	ex03/compile_commands.json	/^      "src\/FragTrap.cpp"$/;"	s	array:3.arguments
+11	ex03/compile_commands.json	/^      "src\/ScavTrap.cpp"$/;"	s	array:1.arguments
+11	ex03/compile_commands.json	/^      "src\/main.cpp"$/;"	s	array:2.arguments
+2	ex00/compile_commands.json	/^      "-Wall",$/;"	s	array:0.arguments
+2	ex01/compile_commands.json	/^      "-Wall",$/;"	s	array:0.arguments
+2	ex02/compile_commands.json	/^      "-Wall",$/;"	s	array:0.arguments
+2	ex03/compile_commands.json	/^      "-Wall",$/;"	s	array:0.arguments
+2	ex03/compile_commands.json	/^      "-Wall",$/;"	s	array:1.arguments
+2	ex03/compile_commands.json	/^      "-Wall",$/;"	s	array:2.arguments
+2	ex03/compile_commands.json	/^      "-Wall",$/;"	s	array:3.arguments
+2	ex03/compile_commands.json	/^      "-Wall",$/;"	s	array:4.arguments
+2	ex03/compile_commands.json	/^  {$/;"	o
+3	ex00/compile_commands.json	/^      "-Wextra",$/;"	s	array:0.arguments
+3	ex01/compile_commands.json	/^      "-Wextra",$/;"	s	array:0.arguments
+3	ex02/compile_commands.json	/^      "-Wextra",$/;"	s	array:0.arguments
+3	ex03/compile_commands.json	/^      "-Wextra",$/;"	s	array:0.arguments
+3	ex03/compile_commands.json	/^      "-Wextra",$/;"	s	array:1.arguments
+3	ex03/compile_commands.json	/^      "-Wextra",$/;"	s	array:2.arguments
+3	ex03/compile_commands.json	/^      "-Wextra",$/;"	s	array:3.arguments
+3	ex03/compile_commands.json	/^      "-Wextra",$/;"	s	array:4.arguments
+3	ex03/compile_commands.json	/^  {$/;"	o
+4	ex00/compile_commands.json	/^      "-Werror",$/;"	s	array:0.arguments
+4	ex01/compile_commands.json	/^      "-Werror",$/;"	s	array:0.arguments
+4	ex02/compile_commands.json	/^      "-Werror",$/;"	s	array:0.arguments
+4	ex03/compile_commands.json	/^      "-Werror",$/;"	s	array:0.arguments
+4	ex03/compile_commands.json	/^      "-Werror",$/;"	s	array:1.arguments
+4	ex03/compile_commands.json	/^      "-Werror",$/;"	s	array:2.arguments
+4	ex03/compile_commands.json	/^      "-Werror",$/;"	s	array:3.arguments
+4	ex03/compile_commands.json	/^      "-Werror",$/;"	s	array:4.arguments
+4	ex03/compile_commands.json	/^  {$/;"	o
+5	ex00/compile_commands.json	/^      "-Iinclude",$/;"	s	array:0.arguments
+5	ex01/compile_commands.json	/^      "-Iinclude",$/;"	s	array:0.arguments
+5	ex02/compile_commands.json	/^      "-Iinclude",$/;"	s	array:0.arguments
+5	ex03/compile_commands.json	/^      "-Wshadow",$/;"	s	array:0.arguments
+5	ex03/compile_commands.json	/^      "-Wshadow",$/;"	s	array:1.arguments
+5	ex03/compile_commands.json	/^      "-Wshadow",$/;"	s	array:2.arguments
+5	ex03/compile_commands.json	/^      "-Wshadow",$/;"	s	array:3.arguments
+5	ex03/compile_commands.json	/^      "-Wshadow",$/;"	s	array:4.arguments
+6	ex00/compile_commands.json	/^      "-c",$/;"	s	array:0.arguments
+6	ex01/compile_commands.json	/^      "-c",$/;"	s	array:0.arguments
+6	ex02/compile_commands.json	/^      "-c",$/;"	s	array:0.arguments
+6	ex03/compile_commands.json	/^      "-Wno-shadow",$/;"	s	array:0.arguments
+6	ex03/compile_commands.json	/^      "-Wno-shadow",$/;"	s	array:1.arguments
+6	ex03/compile_commands.json	/^      "-Wno-shadow",$/;"	s	array:2.arguments
+6	ex03/compile_commands.json	/^      "-Wno-shadow",$/;"	s	array:3.arguments
+6	ex03/compile_commands.json	/^      "-Wno-shadow",$/;"	s	array:4.arguments
+7	ex00/compile_commands.json	/^      "-o",$/;"	s	array:0.arguments
+7	ex01/compile_commands.json	/^      "-o",$/;"	s	array:0.arguments
+7	ex02/compile_commands.json	/^      "-o",$/;"	s	array:0.arguments
+7	ex03/compile_commands.json	/^      "-Iinclude",$/;"	s	array:0.arguments
+7	ex03/compile_commands.json	/^      "-Iinclude",$/;"	s	array:1.arguments
+7	ex03/compile_commands.json	/^      "-Iinclude",$/;"	s	array:2.arguments
+7	ex03/compile_commands.json	/^      "-Iinclude",$/;"	s	array:3.arguments
+7	ex03/compile_commands.json	/^      "-Iinclude",$/;"	s	array:4.arguments
+8	ex00/compile_commands.json	/^      "build\/main.o",$/;"	s	array:0.arguments
+8	ex01/compile_commands.json	/^      "build\/ScavTrap.o",$/;"	s	array:0.arguments
+8	ex02/compile_commands.json	/^      "build\/ScavTrap.o",$/;"	s	array:0.arguments
+8	ex03/compile_commands.json	/^      "-c",$/;"	s	array:0.arguments
+8	ex03/compile_commands.json	/^      "-c",$/;"	s	array:1.arguments
+8	ex03/compile_commands.json	/^      "-c",$/;"	s	array:2.arguments
+8	ex03/compile_commands.json	/^      "-c",$/;"	s	array:3.arguments
+8	ex03/compile_commands.json	/^      "-c",$/;"	s	array:4.arguments
+9	ex00/compile_commands.json	/^      "src\/main.cpp"$/;"	s	array:0.arguments
+9	ex01/compile_commands.json	/^      "src\/ScavTrap.cpp"$/;"	s	array:0.arguments
+9	ex02/compile_commands.json	/^      "src\/ScavTrap.cpp"$/;"	s	array:0.arguments
+9	ex03/compile_commands.json	/^      "-o",$/;"	s	array:0.arguments
+9	ex03/compile_commands.json	/^      "-o",$/;"	s	array:1.arguments
+9	ex03/compile_commands.json	/^      "-o",$/;"	s	array:2.arguments
+9	ex03/compile_commands.json	/^      "-o",$/;"	s	array:3.arguments
+9	ex03/compile_commands.json	/^      "-o",$/;"	s	array:4.arguments
+BUILDDIR	ex00/Makefile	/^BUILDDIR := build$/;"	m
+BUILDDIR	ex01/Makefile	/^BUILDDIR := build$/;"	m
+BUILDDIR	ex02/Makefile	/^BUILDDIR := build$/;"	m
+BUILDDIR	ex03/Makefile	/^BUILDDIR := build$/;"	m
+BUILDDIR	to_vog/ex00/Makefile	/^BUILDDIR := build$/;"	m
+BUILDDIR	to_vog/ex01/Makefile	/^BUILDDIR := build$/;"	m
+BUILDDIR	to_vog/ex02/Makefile	/^BUILDDIR := build$/;"	m
+BUILDDIR	to_vog/ex03/Makefile	/^BUILDDIR := build$/;"	m
+BUILDDIR	to_vog/test/ex00/Makefile	/^BUILDDIR := build$/;"	m
+BUILDDIR	to_vog/test/ex01/Makefile	/^BUILDDIR := build$/;"	m
+BUILDDIR	to_vog/test/ex02/Makefile	/^BUILDDIR := build$/;"	m
+BUILDDIR	to_vog/test/ex03/Makefile	/^BUILDDIR := build$/;"	m
+CLAPTRAP_HPP	ex00/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	ex01/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	ex02/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	ex03/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	to_vog/ex00/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	to_vog/ex01/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	to_vog/ex02/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	to_vog/ex03/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	to_vog/test/ex00/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	to_vog/test/ex01/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	to_vog/test/ex02/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	to_vog/test/ex03/include/ClapTrap.hpp	/^#define CLAPTRAP_HPP$/;"	d
+CXX	ex00/Makefile	/^CXX := c++$/;"	m
+CXX	ex01/Makefile	/^CXX := c++$/;"	m
+CXX	ex02/Makefile	/^CXX := c++$/;"	m
+CXX	ex03/Makefile	/^CXX := c++$/;"	m
+CXX	to_vog/ex00/Makefile	/^CXX := c++$/;"	m
+CXX	to_vog/ex01/Makefile	/^CXX := c++$/;"	m
+CXX	to_vog/ex02/Makefile	/^CXX := c++$/;"	m
+CXX	to_vog/ex03/Makefile	/^CXX := c++$/;"	m
+CXX	to_vog/test/ex00/Makefile	/^CXX := c++$/;"	m
+CXX	to_vog/test/ex01/Makefile	/^CXX := c++$/;"	m
+CXX	to_vog/test/ex02/Makefile	/^CXX := c++$/;"	m
+CXX	to_vog/test/ex03/Makefile	/^CXX := c++$/;"	m
+CXXFLAGS	ex00/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror$/;"	m
+CXXFLAGS	ex01/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror$/;"	m
+CXXFLAGS	ex02/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror$/;"	m
+CXXFLAGS	ex03/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror -Wshadow -Wno-shadow$/;"	m
+CXXFLAGS	to_vog/ex00/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror$/;"	m
+CXXFLAGS	to_vog/ex01/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror$/;"	m
+CXXFLAGS	to_vog/ex02/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror$/;"	m
+CXXFLAGS	to_vog/ex03/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror -Wshadow -Wno-shadow$/;"	m
+CXXFLAGS	to_vog/test/ex00/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror$/;"	m
+CXXFLAGS	to_vog/test/ex01/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror$/;"	m
+CXXFLAGS	to_vog/test/ex02/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror$/;"	m
+CXXFLAGS	to_vog/test/ex03/Makefile	/^CXXFLAGS = -std=c++98 -Wall -Wextra -Werror -Wshadow -Wno-shadow$/;"	m
+ClapTrap	ex00/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	ex00/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	ex00/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	ex00/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+ClapTrap	ex01/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	ex01/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	ex01/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	ex01/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+ClapTrap	ex02/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	ex02/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	ex02/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	ex02/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+ClapTrap	ex03/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	ex03/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	ex03/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	ex03/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex00/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	to_vog/ex00/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex00/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex00/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex01/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	to_vog/ex01/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex01/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex01/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex02/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	to_vog/ex02/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex02/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex02/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex03/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	to_vog/ex03/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex03/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	to_vog/ex03/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex00/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	to_vog/test/ex00/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex00/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex00/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex01/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	to_vog/test/ex01/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex01/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex01/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex02/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	to_vog/test/ex02/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex02/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex02/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex03/include/ClapTrap.hpp	/^class ClapTrap {$/;"	c
+ClapTrap	to_vog/test/ex03/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(ClapTrap const &src) {$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex03/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(const std::string name)$/;"	f	class:ClapTrap
+ClapTrap	to_vog/test/ex03/src/ClapTrap.cpp	/^ClapTrap::ClapTrap(void) : _energyPoints(10), _hitPoints(10), _attackDamage(0) {$/;"	f	class:ClapTrap
+DAMAGE	ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DAMAGE	ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DAMAGE	ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DAMAGE	ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DAMAGE	to_vog/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DAMAGE	to_vog/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DAMAGE	to_vog/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DAMAGE	to_vog/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DAMAGE	to_vog/test/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DAMAGE	to_vog/test/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DAMAGE	to_vog/test/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DAMAGE	to_vog/test/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	to_vog/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	to_vog/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	to_vog/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	to_vog/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	to_vog/test/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	to_vog/test/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	to_vog/test/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DEAD	to_vog/test/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+DIAMONDTRAP_HPP	ex03/include/DiamondTrap.hpp	/^#define DIAMONDTRAP_HPP$/;"	d
+DIAMONDTRAP_HPP	to_vog/ex03/include/DiamondTrap.hpp	/^#define DIAMONDTRAP_HPP$/;"	d
+DIAMONDTRAP_HPP	to_vog/test/ex03/include/DiamondTrap.hpp	/^#define DIAMONDTRAP_HPP$/;"	d
+DiamondTrap	ex03/include/DiamondTrap.hpp	/^class DiamondTrap : public ScavTrap, public FragTrap {$/;"	c
+DiamondTrap	ex03/src/DiamondTrap.cpp	/^DiamondTrap::DiamondTrap(DiamondTrap const &src)$/;"	f	class:DiamondTrap
+DiamondTrap	ex03/src/DiamondTrap.cpp	/^DiamondTrap::DiamondTrap(const std::string name)$/;"	f	class:DiamondTrap
+DiamondTrap	ex03/src/DiamondTrap.cpp	/^DiamondTrap::DiamondTrap(void) : ScavTrap(), FragTrap() {$/;"	f	class:DiamondTrap
+DiamondTrap	to_vog/ex03/include/DiamondTrap.hpp	/^class DiamondTrap : public ScavTrap, public FragTrap {$/;"	c
+DiamondTrap	to_vog/ex03/src/DiamondTrap.cpp	/^DiamondTrap::DiamondTrap(DiamondTrap const &src)$/;"	f	class:DiamondTrap
+DiamondTrap	to_vog/ex03/src/DiamondTrap.cpp	/^DiamondTrap::DiamondTrap(const std::string name)$/;"	f	class:DiamondTrap
+DiamondTrap	to_vog/ex03/src/DiamondTrap.cpp	/^DiamondTrap::DiamondTrap(void) : ScavTrap(), FragTrap() {$/;"	f	class:DiamondTrap
+DiamondTrap	to_vog/test/ex03/include/DiamondTrap.hpp	/^class DiamondTrap : public ScavTrap, public FragTrap {$/;"	c
+DiamondTrap	to_vog/test/ex03/src/DiamondTrap.cpp	/^DiamondTrap::DiamondTrap(DiamondTrap const &src)$/;"	f	class:DiamondTrap
+DiamondTrap	to_vog/test/ex03/src/DiamondTrap.cpp	/^DiamondTrap::DiamondTrap(const std::string name)$/;"	f	class:DiamondTrap
+DiamondTrap	to_vog/test/ex03/src/DiamondTrap.cpp	/^DiamondTrap::DiamondTrap(void) : ScavTrap(), FragTrap() {$/;"	f	class:DiamondTrap
+EMPTY_ATK	ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EMPTY_ATK	ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EMPTY_ATK	ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EMPTY_ATK	ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EMPTY_ATK	to_vog/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EMPTY_ATK	to_vog/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EMPTY_ATK	to_vog/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EMPTY_ATK	to_vog/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EMPTY_ATK	to_vog/test/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EMPTY_ATK	to_vog/test/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EMPTY_ATK	to_vog/test/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EMPTY_ATK	to_vog/test/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	to_vog/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	to_vog/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	to_vog/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	to_vog/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	to_vog/test/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	to_vog/test/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	to_vog/test/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+ENERGY	to_vog/test/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+EXECUTABLE	ex00/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+EXECUTABLE	ex01/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+EXECUTABLE	ex02/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+EXECUTABLE	ex03/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+EXECUTABLE	to_vog/ex00/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+EXECUTABLE	to_vog/ex01/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+EXECUTABLE	to_vog/ex02/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+EXECUTABLE	to_vog/ex03/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+EXECUTABLE	to_vog/test/ex00/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+EXECUTABLE	to_vog/test/ex01/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+EXECUTABLE	to_vog/test/ex02/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+EXECUTABLE	to_vog/test/ex03/Makefile	/^EXECUTABLE := $(TARGETDIR)\/$(TARGET)$/;"	m
+FRAGTRAP_HPP	ex02/include/FragTrap.hpp	/^#define FRAGTRAP_HPP$/;"	d
+FRAGTRAP_HPP	ex03/include/FragTrap.hpp	/^#define FRAGTRAP_HPP$/;"	d
+FRAGTRAP_HPP	to_vog/ex02/include/FragTrap.hpp	/^#define FRAGTRAP_HPP$/;"	d
+FRAGTRAP_HPP	to_vog/ex03/include/FragTrap.hpp	/^#define FRAGTRAP_HPP$/;"	d
+FRAGTRAP_HPP	to_vog/test/ex02/include/FragTrap.hpp	/^#define FRAGTRAP_HPP$/;"	d
+FRAGTRAP_HPP	to_vog/test/ex03/include/FragTrap.hpp	/^#define FRAGTRAP_HPP$/;"	d
+FragTrap	ex02/include/FragTrap.hpp	/^class FragTrap : public ClapTrap {$/;"	c
+FragTrap	ex02/src/FragTrap.cpp	/^FragTrap::FragTrap(FragTrap const &src) : ClapTrap(src) {$/;"	f	class:FragTrap
+FragTrap	ex02/src/FragTrap.cpp	/^FragTrap::FragTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:FragTrap
+FragTrap	ex02/src/FragTrap.cpp	/^FragTrap::FragTrap(void) : ClapTrap() {$/;"	f	class:FragTrap
+FragTrap	ex03/include/FragTrap.hpp	/^class FragTrap : virtual public ClapTrap {$/;"	c
+FragTrap	ex03/src/FragTrap.cpp	/^FragTrap::FragTrap(FragTrap const &src) : ClapTrap(src) {$/;"	f	class:FragTrap
+FragTrap	ex03/src/FragTrap.cpp	/^FragTrap::FragTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:FragTrap
+FragTrap	ex03/src/FragTrap.cpp	/^FragTrap::FragTrap(void) : ClapTrap() {$/;"	f	class:FragTrap
+FragTrap	to_vog/ex02/include/FragTrap.hpp	/^class FragTrap : public ClapTrap {$/;"	c
+FragTrap	to_vog/ex02/src/FragTrap.cpp	/^FragTrap::FragTrap(FragTrap const &src) : ClapTrap(src) {$/;"	f	class:FragTrap
+FragTrap	to_vog/ex02/src/FragTrap.cpp	/^FragTrap::FragTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:FragTrap
+FragTrap	to_vog/ex02/src/FragTrap.cpp	/^FragTrap::FragTrap(void) : ClapTrap() {$/;"	f	class:FragTrap
+FragTrap	to_vog/ex03/include/FragTrap.hpp	/^class FragTrap : virtual public ClapTrap {$/;"	c
+FragTrap	to_vog/ex03/src/FragTrap.cpp	/^FragTrap::FragTrap(FragTrap const &src) : ClapTrap(src) {$/;"	f	class:FragTrap
+FragTrap	to_vog/ex03/src/FragTrap.cpp	/^FragTrap::FragTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:FragTrap
+FragTrap	to_vog/ex03/src/FragTrap.cpp	/^FragTrap::FragTrap(void) : ClapTrap() {$/;"	f	class:FragTrap
+FragTrap	to_vog/test/ex02/include/FragTrap.hpp	/^class FragTrap : public ClapTrap {$/;"	c
+FragTrap	to_vog/test/ex02/src/FragTrap.cpp	/^FragTrap::FragTrap(FragTrap const &src) : ClapTrap(src) {$/;"	f	class:FragTrap
+FragTrap	to_vog/test/ex02/src/FragTrap.cpp	/^FragTrap::FragTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:FragTrap
+FragTrap	to_vog/test/ex02/src/FragTrap.cpp	/^FragTrap::FragTrap(void) : ClapTrap() {$/;"	f	class:FragTrap
+FragTrap	to_vog/test/ex03/include/FragTrap.hpp	/^class FragTrap : virtual public ClapTrap {$/;"	c
+FragTrap	to_vog/test/ex03/src/FragTrap.cpp	/^FragTrap::FragTrap(FragTrap const &src) : ClapTrap(src) {$/;"	f	class:FragTrap
+FragTrap	to_vog/test/ex03/src/FragTrap.cpp	/^FragTrap::FragTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:FragTrap
+FragTrap	to_vog/test/ex03/src/FragTrap.cpp	/^FragTrap::FragTrap(void) : ClapTrap() {$/;"	f	class:FragTrap
+INC	ex00/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INC	ex01/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INC	ex02/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INC	ex03/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INC	to_vog/ex00/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INC	to_vog/ex01/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INC	to_vog/ex02/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INC	to_vog/ex03/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INC	to_vog/test/ex00/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INC	to_vog/test/ex01/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INC	to_vog/test/ex02/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INC	to_vog/test/ex03/Makefile	/^INC := -I$(INCDIR)$/;"	m
+INCDIR	ex00/Makefile	/^INCDIR := include$/;"	m
+INCDIR	ex01/Makefile	/^INCDIR := include$/;"	m
+INCDIR	ex02/Makefile	/^INCDIR := include$/;"	m
+INCDIR	ex03/Makefile	/^INCDIR := include$/;"	m
+INCDIR	to_vog/ex00/Makefile	/^INCDIR := include$/;"	m
+INCDIR	to_vog/ex01/Makefile	/^INCDIR := include$/;"	m
+INCDIR	to_vog/ex02/Makefile	/^INCDIR := include$/;"	m
+INCDIR	to_vog/ex03/Makefile	/^INCDIR := include$/;"	m
+INCDIR	to_vog/test/ex00/Makefile	/^INCDIR := include$/;"	m
+INCDIR	to_vog/test/ex01/Makefile	/^INCDIR := include$/;"	m
+INCDIR	to_vog/test/ex02/Makefile	/^INCDIR := include$/;"	m
+INCDIR	to_vog/test/ex03/Makefile	/^INCDIR := include$/;"	m
+NEG_AMOUNT	ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_AMOUNT	ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_AMOUNT	ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_AMOUNT	ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_AMOUNT	to_vog/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_AMOUNT	to_vog/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_AMOUNT	to_vog/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_AMOUNT	to_vog/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_AMOUNT	to_vog/test/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_AMOUNT	to_vog/test/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_AMOUNT	to_vog/test/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_AMOUNT	to_vog/test/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	to_vog/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	to_vog/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	to_vog/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	to_vog/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	to_vog/test/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	to_vog/test/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	to_vog/test/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+NEG_DMG	to_vog/test/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	e	enum:ClapTrap::status
+OBJECTS	ex00/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	ex01/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	ex02/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	ex03/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	to_vog/ex00/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	to_vog/ex01/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	to_vog/ex02/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	to_vog/ex03/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	to_vog/test/ex00/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	to_vog/test/ex01/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	to_vog/test/ex02/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	to_vog/test/ex03/Makefile	/^OBJECTS := $(patsubst $(SRCDIR)\/%,$(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+SCAVTRAP_HPP	ex01/include/ScavTrap.hpp	/^#define SCAVTRAP_HPP$/;"	d
+SCAVTRAP_HPP	ex02/include/ScavTrap.hpp	/^#define SCAVTRAP_HPP$/;"	d
+SCAVTRAP_HPP	ex03/include/ScavTrap.hpp	/^#define SCAVTRAP_HPP$/;"	d
+SCAVTRAP_HPP	to_vog/ex01/include/ScavTrap.hpp	/^#define SCAVTRAP_HPP$/;"	d
+SCAVTRAP_HPP	to_vog/ex02/include/ScavTrap.hpp	/^#define SCAVTRAP_HPP$/;"	d
+SCAVTRAP_HPP	to_vog/ex03/include/ScavTrap.hpp	/^#define SCAVTRAP_HPP$/;"	d
+SCAVTRAP_HPP	to_vog/test/ex01/include/ScavTrap.hpp	/^#define SCAVTRAP_HPP$/;"	d
+SCAVTRAP_HPP	to_vog/test/ex02/include/ScavTrap.hpp	/^#define SCAVTRAP_HPP$/;"	d
+SCAVTRAP_HPP	to_vog/test/ex03/include/ScavTrap.hpp	/^#define SCAVTRAP_HPP$/;"	d
+SOURCES	ex00/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	ex01/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	ex02/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	ex03/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	to_vog/ex00/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	to_vog/ex01/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	to_vog/ex02/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	to_vog/ex03/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	to_vog/test/ex00/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	to_vog/test/ex01/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	to_vog/test/ex02/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	to_vog/test/ex03/Makefile	/^SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SRCEXT	ex00/Makefile	/^SRCEXT := cpp$/;"	m
+SRCEXT	ex01/Makefile	/^SRCEXT := cpp$/;"	m
+SRCEXT	ex02/Makefile	/^SRCEXT := cpp$/;"	m
+SRCEXT	ex03/Makefile	/^SRCEXT := cpp$/;"	m
+SRCEXT	to_vog/ex00/Makefile	/^SRCEXT := cpp$/;"	m
+SRCEXT	to_vog/ex01/Makefile	/^SRCEXT := cpp$/;"	m
+SRCEXT	to_vog/ex02/Makefile	/^SRCEXT := cpp$/;"	m
+SRCEXT	to_vog/ex03/Makefile	/^SRCEXT := cpp$/;"	m
+SRCEXT	to_vog/test/ex00/Makefile	/^SRCEXT := cpp$/;"	m
+SRCEXT	to_vog/test/ex01/Makefile	/^SRCEXT := cpp$/;"	m
+SRCEXT	to_vog/test/ex02/Makefile	/^SRCEXT := cpp$/;"	m
+SRCEXT	to_vog/test/ex03/Makefile	/^SRCEXT := cpp$/;"	m
+SUFFIXNAME	ex03/src/DiamondTrap.cpp	/^#define SUFFIXNAME /;"	d	file:
+SUFFIXNAME	to_vog/ex03/src/DiamondTrap.cpp	/^#define SUFFIXNAME /;"	d	file:
+SUFFIXNAME	to_vog/test/ex03/src/DiamondTrap.cpp	/^#define SUFFIXNAME /;"	d	file:
+ScavTrap	ex01/include/ScavTrap.hpp	/^class ScavTrap : public ClapTrap {$/;"	c
+ScavTrap	ex01/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src) {$/;"	f	class:ScavTrap
+ScavTrap	ex01/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:ScavTrap
+ScavTrap	ex01/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(void) : ClapTrap() {$/;"	f	class:ScavTrap
+ScavTrap	ex02/include/ScavTrap.hpp	/^class ScavTrap : public ClapTrap {$/;"	c
+ScavTrap	ex02/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src) {$/;"	f	class:ScavTrap
+ScavTrap	ex02/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:ScavTrap
+ScavTrap	ex02/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(void) : ClapTrap() {$/;"	f	class:ScavTrap
+ScavTrap	ex03/include/ScavTrap.hpp	/^class ScavTrap : virtual public ClapTrap {$/;"	c
+ScavTrap	ex03/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src) {$/;"	f	class:ScavTrap
+ScavTrap	ex03/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:ScavTrap
+ScavTrap	ex03/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(void) : ClapTrap() {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/ex01/include/ScavTrap.hpp	/^class ScavTrap : public ClapTrap {$/;"	c
+ScavTrap	to_vog/ex01/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/ex01/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/ex01/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(void) : ClapTrap() {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/ex02/include/ScavTrap.hpp	/^class ScavTrap : public ClapTrap {$/;"	c
+ScavTrap	to_vog/ex02/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/ex02/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/ex02/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(void) : ClapTrap() {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/ex03/include/ScavTrap.hpp	/^class ScavTrap : virtual public ClapTrap {$/;"	c
+ScavTrap	to_vog/ex03/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/ex03/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/ex03/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(void) : ClapTrap() {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/test/ex01/include/ScavTrap.hpp	/^class ScavTrap : public ClapTrap {$/;"	c
+ScavTrap	to_vog/test/ex01/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/test/ex01/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/test/ex01/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(void) : ClapTrap() {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/test/ex02/include/ScavTrap.hpp	/^class ScavTrap : public ClapTrap {$/;"	c
+ScavTrap	to_vog/test/ex02/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/test/ex02/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/test/ex02/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(void) : ClapTrap() {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/test/ex03/include/ScavTrap.hpp	/^class ScavTrap : virtual public ClapTrap {$/;"	c
+ScavTrap	to_vog/test/ex03/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/test/ex03/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {$/;"	f	class:ScavTrap
+ScavTrap	to_vog/test/ex03/src/ScavTrap.cpp	/^ScavTrap::ScavTrap(void) : ClapTrap() {$/;"	f	class:ScavTrap
+TARGET	ex00/Makefile	/^TARGET := andOpen$/;"	m
+TARGET	ex01/Makefile	/^TARGET := Serena$/;"	m
+TARGET	ex02/Makefile	/^TARGET := Serena$/;"	m
+TARGET	ex03/Makefile	/^TARGET := Serena$/;"	m
+TARGET	to_vog/ex00/Makefile	/^TARGET := andOpen$/;"	m
+TARGET	to_vog/ex01/Makefile	/^TARGET := Serena$/;"	m
+TARGET	to_vog/ex02/Makefile	/^TARGET := Serena$/;"	m
+TARGET	to_vog/ex03/Makefile	/^TARGET := Serena$/;"	m
+TARGET	to_vog/test/ex00/Makefile	/^TARGET := andOpen$/;"	m
+TARGET	to_vog/test/ex01/Makefile	/^TARGET := Serena$/;"	m
+TARGET	to_vog/test/ex02/Makefile	/^TARGET := Serena$/;"	m
+TARGET	to_vog/test/ex03/Makefile	/^TARGET := Serena$/;"	m
+TARGETDIR	ex00/Makefile	/^TARGETDIR := bin$/;"	m
+TARGETDIR	ex01/Makefile	/^TARGETDIR := bin$/;"	m
+TARGETDIR	ex02/Makefile	/^TARGETDIR := bin$/;"	m
+TARGETDIR	ex03/Makefile	/^TARGETDIR := bin$/;"	m
+TARGETDIR	to_vog/ex00/Makefile	/^TARGETDIR := bin$/;"	m
+TARGETDIR	to_vog/ex01/Makefile	/^TARGETDIR := bin$/;"	m
+TARGETDIR	to_vog/ex02/Makefile	/^TARGETDIR := bin$/;"	m
+TARGETDIR	to_vog/ex03/Makefile	/^TARGETDIR := bin$/;"	m
+TARGETDIR	to_vog/test/ex00/Makefile	/^TARGETDIR := bin$/;"	m
+TARGETDIR	to_vog/test/ex01/Makefile	/^TARGETDIR := bin$/;"	m
+TARGETDIR	to_vog/test/ex02/Makefile	/^TARGETDIR := bin$/;"	m
+TARGETDIR	to_vog/test/ex03/Makefile	/^TARGETDIR := bin$/;"	m
+_attackDamage	ex00/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_attackDamage	ex01/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_attackDamage	ex02/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_attackDamage	ex03/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_attackDamage	to_vog/ex00/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_attackDamage	to_vog/ex01/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_attackDamage	to_vog/ex02/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_attackDamage	to_vog/ex03/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_attackDamage	to_vog/test/ex00/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_attackDamage	to_vog/test/ex01/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_attackDamage	to_vog/test/ex02/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_attackDamage	to_vog/test/ex03/include/ClapTrap.hpp	/^  unsigned int _attackDamage; \/**< The attack damage of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	ex00/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	ex01/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	ex02/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	ex03/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	to_vog/ex00/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	to_vog/ex01/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	to_vog/ex02/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	to_vog/ex03/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	to_vog/test/ex00/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	to_vog/test/ex01/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	to_vog/test/ex02/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	to_vog/test/ex03/include/ClapTrap.hpp	/^  unsigned int _energyPoints; \/**< The energy points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	ex00/include/ClapTrap.hpp	/^  unsigned int _hitPoints; \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	ex01/include/ClapTrap.hpp	/^  unsigned int _hitPoints;    \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	ex02/include/ClapTrap.hpp	/^  unsigned int _hitPoints; \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	ex03/include/ClapTrap.hpp	/^  unsigned int _hitPoints; \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	to_vog/ex00/include/ClapTrap.hpp	/^  unsigned int _hitPoints; \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	to_vog/ex01/include/ClapTrap.hpp	/^  unsigned int _hitPoints;    \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	to_vog/ex02/include/ClapTrap.hpp	/^  unsigned int _hitPoints; \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	to_vog/ex03/include/ClapTrap.hpp	/^  unsigned int _hitPoints; \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	to_vog/test/ex00/include/ClapTrap.hpp	/^  unsigned int _hitPoints; \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	to_vog/test/ex01/include/ClapTrap.hpp	/^  unsigned int _hitPoints;    \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	to_vog/test/ex02/include/ClapTrap.hpp	/^  unsigned int _hitPoints; \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	to_vog/test/ex03/include/ClapTrap.hpp	/^  unsigned int _hitPoints; \/**< The hit points of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_name	ex00/include/ClapTrap.hpp	/^  std::string _name; \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	ex01/include/ClapTrap.hpp	/^  std::string _name;          \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	ex02/include/ClapTrap.hpp	/^  std::string _name; \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	ex03/include/ClapTrap.hpp	/^  std::string _name; \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	ex03/include/DiamondTrap.hpp	/^  std::string _name; \/\/\/< The name of the DiamondTrap.$/;"	m	class:DiamondTrap	typeref:typename:std::string
+_name	to_vog/ex00/include/ClapTrap.hpp	/^  std::string _name; \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	to_vog/ex01/include/ClapTrap.hpp	/^  std::string _name;          \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	to_vog/ex02/include/ClapTrap.hpp	/^  std::string _name; \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	to_vog/ex03/include/ClapTrap.hpp	/^  std::string _name; \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	to_vog/ex03/include/DiamondTrap.hpp	/^  std::string _name; \/\/\/< The name of the DiamondTrap.$/;"	m	class:DiamondTrap	typeref:typename:std::string
+_name	to_vog/test/ex00/include/ClapTrap.hpp	/^  std::string _name; \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	to_vog/test/ex01/include/ClapTrap.hpp	/^  std::string _name;          \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	to_vog/test/ex02/include/ClapTrap.hpp	/^  std::string _name; \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	to_vog/test/ex03/include/ClapTrap.hpp	/^  std::string _name; \/**< The name of the ClapTrap. *\/$/;"	m	class:ClapTrap	typeref:typename:std::string
+_name	to_vog/test/ex03/include/DiamondTrap.hpp	/^  std::string _name; \/\/\/< The name of the DiamondTrap.$/;"	m	class:DiamondTrap	typeref:typename:std::string
+all	ex00/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+all	ex01/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+all	ex02/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+all	ex03/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+all	to_vog/ex00/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+all	to_vog/ex01/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+all	to_vog/ex02/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+all	to_vog/ex03/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+all	to_vog/test/ex00/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+all	to_vog/test/ex01/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+all	to_vog/test/ex02/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+all	to_vog/test/ex03/Makefile	/^all: directories $(EXECUTABLE)$/;"	t
+arguments	ex00/compile_commands.json	/^    "arguments": [$/;"	a	object:0
+arguments	ex01/compile_commands.json	/^    "arguments": [$/;"	a	object:0
+arguments	ex02/compile_commands.json	/^    "arguments": [$/;"	a	object:0
+arguments	ex03/compile_commands.json	/^    "arguments": [$/;"	a	object:0
+arguments	ex03/compile_commands.json	/^    "arguments": [$/;"	a	object:1
+arguments	ex03/compile_commands.json	/^    "arguments": [$/;"	a	object:2
+arguments	ex03/compile_commands.json	/^    "arguments": [$/;"	a	object:3
+arguments	ex03/compile_commands.json	/^    "arguments": [$/;"	a	object:4
+attack	ex00/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	ex01/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	ex01/src/ScavTrap.cpp	/^void ScavTrap::attack(const std::string &target) {$/;"	f	class:ScavTrap	typeref:typename:void
+attack	ex02/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	ex02/src/FragTrap.cpp	/^void FragTrap::attack(const std::string &target) {$/;"	f	class:FragTrap	typeref:typename:void
+attack	ex02/src/ScavTrap.cpp	/^void ScavTrap::attack(const std::string &target) {$/;"	f	class:ScavTrap	typeref:typename:void
+attack	ex03/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	ex03/src/DiamondTrap.cpp	/^void DiamondTrap::attack(const std::string &target) {$/;"	f	class:DiamondTrap	typeref:typename:void
+attack	ex03/src/FragTrap.cpp	/^void FragTrap::attack(const std::string &target) {$/;"	f	class:FragTrap	typeref:typename:void
+attack	ex03/src/ScavTrap.cpp	/^void ScavTrap::attack(const std::string &target) {$/;"	f	class:ScavTrap	typeref:typename:void
+attack	to_vog/ex00/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	to_vog/ex01/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	to_vog/ex01/src/ScavTrap.cpp	/^void ScavTrap::attack(const std::string &target) {$/;"	f	class:ScavTrap	typeref:typename:void
+attack	to_vog/ex02/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	to_vog/ex02/src/FragTrap.cpp	/^void FragTrap::attack(const std::string &target) {$/;"	f	class:FragTrap	typeref:typename:void
+attack	to_vog/ex02/src/ScavTrap.cpp	/^void ScavTrap::attack(const std::string &target) {$/;"	f	class:ScavTrap	typeref:typename:void
+attack	to_vog/ex03/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	to_vog/ex03/src/DiamondTrap.cpp	/^void DiamondTrap::attack(const std::string &target) {$/;"	f	class:DiamondTrap	typeref:typename:void
+attack	to_vog/ex03/src/FragTrap.cpp	/^void FragTrap::attack(const std::string &target) {$/;"	f	class:FragTrap	typeref:typename:void
+attack	to_vog/ex03/src/ScavTrap.cpp	/^void ScavTrap::attack(const std::string &target) {$/;"	f	class:ScavTrap	typeref:typename:void
+attack	to_vog/test/ex00/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	to_vog/test/ex01/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	to_vog/test/ex01/src/ScavTrap.cpp	/^void ScavTrap::attack(const std::string &target) {$/;"	f	class:ScavTrap	typeref:typename:void
+attack	to_vog/test/ex02/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	to_vog/test/ex02/src/FragTrap.cpp	/^void FragTrap::attack(const std::string &target) {$/;"	f	class:FragTrap	typeref:typename:void
+attack	to_vog/test/ex02/src/ScavTrap.cpp	/^void ScavTrap::attack(const std::string &target) {$/;"	f	class:ScavTrap	typeref:typename:void
+attack	to_vog/test/ex03/src/ClapTrap.cpp	/^void ClapTrap::attack(const std::string &target) {$/;"	f	class:ClapTrap	typeref:typename:void
+attack	to_vog/test/ex03/src/DiamondTrap.cpp	/^void DiamondTrap::attack(const std::string &target) {$/;"	f	class:DiamondTrap	typeref:typename:void
+attack	to_vog/test/ex03/src/FragTrap.cpp	/^void FragTrap::attack(const std::string &target) {$/;"	f	class:FragTrap	typeref:typename:void
+attack	to_vog/test/ex03/src/ScavTrap.cpp	/^void ScavTrap::attack(const std::string &target) {$/;"	f	class:ScavTrap	typeref:typename:void
+beRepaired	ex00/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	ex01/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	ex02/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	ex03/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	to_vog/ex00/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	to_vog/ex01/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	to_vog/ex02/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	to_vog/ex03/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	to_vog/test/ex00/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	to_vog/test/ex01/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	to_vog/test/ex02/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	to_vog/test/ex03/src/ClapTrap.cpp	/^void ClapTrap::beRepaired(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+clean	ex00/Makefile	/^clean:$/;"	t
+clean	ex01/Makefile	/^clean:$/;"	t
+clean	ex02/Makefile	/^clean:$/;"	t
+clean	ex03/Makefile	/^clean:$/;"	t
+clean	to_vog/ex00/Makefile	/^clean:$/;"	t
+clean	to_vog/ex01/Makefile	/^clean:$/;"	t
+clean	to_vog/ex02/Makefile	/^clean:$/;"	t
+clean	to_vog/ex03/Makefile	/^clean:$/;"	t
+clean	to_vog/test/ex00/Makefile	/^clean:$/;"	t
+clean	to_vog/test/ex01/Makefile	/^clean:$/;"	t
+clean	to_vog/test/ex02/Makefile	/^clean:$/;"	t
+clean	to_vog/test/ex03/Makefile	/^clean:$/;"	t
+directories	ex00/Makefile	/^directories:$/;"	t
+directories	ex01/Makefile	/^directories:$/;"	t
+directories	ex02/Makefile	/^directories:$/;"	t
+directories	ex03/Makefile	/^directories:$/;"	t
+directories	to_vog/ex00/Makefile	/^directories:$/;"	t
+directories	to_vog/ex01/Makefile	/^directories:$/;"	t
+directories	to_vog/ex02/Makefile	/^directories:$/;"	t
+directories	to_vog/ex03/Makefile	/^directories:$/;"	t
+directories	to_vog/test/ex00/Makefile	/^directories:$/;"	t
+directories	to_vog/test/ex01/Makefile	/^directories:$/;"	t
+directories	to_vog/test/ex02/Makefile	/^directories:$/;"	t
+directories	to_vog/test/ex03/Makefile	/^directories:$/;"	t
+directory	ex00/compile_commands.json	/^    "directory": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex00",$/;"	s	object:0
+directory	ex01/compile_commands.json	/^    "directory": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex01",$/;"	s	object:0
+directory	ex02/compile_commands.json	/^    "directory": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex01",$/;"	s	object:0
+directory	ex03/compile_commands.json	/^    "directory": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03",$/;"	s	object:0
+directory	ex03/compile_commands.json	/^    "directory": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03",$/;"	s	object:1
+directory	ex03/compile_commands.json	/^    "directory": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03",$/;"	s	object:2
+directory	ex03/compile_commands.json	/^    "directory": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03",$/;"	s	object:3
+directory	ex03/compile_commands.json	/^    "directory": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03",$/;"	s	object:4
+file	ex00/compile_commands.json	/^    "file": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex00\/src\/main.cpp",$/;"	s	object:0
+file	ex01/compile_commands.json	/^    "file": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex01\/src\/ScavTrap.cpp"/;"	s	object:0
+file	ex02/compile_commands.json	/^    "file": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex01\/src\/ScavTrap.cpp"/;"	s	object:0
+file	ex03/compile_commands.json	/^    "file": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03\/src\/ClapTrap.cpp"/;"	s	object:4
+file	ex03/compile_commands.json	/^    "file": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03\/src\/DiamondTrap.c/;"	s	object:0
+file	ex03/compile_commands.json	/^    "file": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03\/src\/FragTrap.cpp"/;"	s	object:3
+file	ex03/compile_commands.json	/^    "file": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03\/src\/ScavTrap.cpp"/;"	s	object:1
+file	ex03/compile_commands.json	/^    "file": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03\/src\/main.cpp",$/;"	s	object:2
+getAttackDamage	ex00/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getAttackDamage	ex01/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getAttackDamage	ex02/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getAttackDamage	ex03/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getAttackDamage	to_vog/ex00/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getAttackDamage	to_vog/ex01/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getAttackDamage	to_vog/ex02/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getAttackDamage	to_vog/ex03/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getAttackDamage	to_vog/test/ex00/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getAttackDamage	to_vog/test/ex01/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getAttackDamage	to_vog/test/ex02/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getAttackDamage	to_vog/test/ex03/src/ClapTrap.cpp	/^unsigned int ClapTrap::getAttackDamage(void) const { return _attackDamage; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	ex00/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	ex01/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	ex02/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	ex03/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	to_vog/ex00/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	to_vog/ex01/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	to_vog/ex02/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	to_vog/ex03/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	to_vog/test/ex00/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	to_vog/test/ex01/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	to_vog/test/ex02/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getEnergypoint	to_vog/test/ex03/src/ClapTrap.cpp	/^unsigned int ClapTrap::getEnergypoint(void) const { return _energyPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	ex00/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	ex01/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	ex02/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	ex03/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	to_vog/ex00/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	to_vog/ex01/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	to_vog/ex02/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	to_vog/ex03/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	to_vog/test/ex00/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	to_vog/test/ex01/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	to_vog/test/ex02/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getHitPoints	to_vog/test/ex03/src/ClapTrap.cpp	/^unsigned int ClapTrap::getHitPoints(void) const { return _hitPoints; }$/;"	f	class:ClapTrap	typeref:typename:unsigned int
+getName	ex00/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	ex01/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	ex02/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	ex03/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	to_vog/ex00/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	to_vog/ex01/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	to_vog/ex02/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	to_vog/ex03/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	to_vog/test/ex00/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	to_vog/test/ex01/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	to_vog/test/ex02/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+getName	to_vog/test/ex03/src/ClapTrap.cpp	/^std::string ClapTrap::getName(void) const { return _name; }$/;"	f	class:ClapTrap	typeref:typename:std::string
+guardGate	ex01/src/ScavTrap.cpp	/^void ScavTrap::guardGate() {$/;"	f	class:ScavTrap	typeref:typename:void
+guardGate	ex02/src/ScavTrap.cpp	/^void ScavTrap::guardGate() {$/;"	f	class:ScavTrap	typeref:typename:void
+guardGate	ex03/src/ScavTrap.cpp	/^void ScavTrap::guardGate() {$/;"	f	class:ScavTrap	typeref:typename:void
+guardGate	to_vog/ex01/src/ScavTrap.cpp	/^void ScavTrap::guardGate() {$/;"	f	class:ScavTrap	typeref:typename:void
+guardGate	to_vog/ex02/src/ScavTrap.cpp	/^void ScavTrap::guardGate() {$/;"	f	class:ScavTrap	typeref:typename:void
+guardGate	to_vog/ex03/src/ScavTrap.cpp	/^void ScavTrap::guardGate() {$/;"	f	class:ScavTrap	typeref:typename:void
+guardGate	to_vog/test/ex01/src/ScavTrap.cpp	/^void ScavTrap::guardGate() {$/;"	f	class:ScavTrap	typeref:typename:void
+guardGate	to_vog/test/ex02/src/ScavTrap.cpp	/^void ScavTrap::guardGate() {$/;"	f	class:ScavTrap	typeref:typename:void
+guardGate	to_vog/test/ex03/src/ScavTrap.cpp	/^void ScavTrap::guardGate() {$/;"	f	class:ScavTrap	typeref:typename:void
+highFivesGuys	ex02/src/FragTrap.cpp	/^void FragTrap::highFivesGuys(void) {$/;"	f	class:FragTrap	typeref:typename:void
+highFivesGuys	ex03/src/FragTrap.cpp	/^void FragTrap::highFivesGuys(void) {$/;"	f	class:FragTrap	typeref:typename:void
+highFivesGuys	to_vog/ex02/src/FragTrap.cpp	/^void FragTrap::highFivesGuys(void) {$/;"	f	class:FragTrap	typeref:typename:void
+highFivesGuys	to_vog/ex03/src/FragTrap.cpp	/^void FragTrap::highFivesGuys(void) {$/;"	f	class:FragTrap	typeref:typename:void
+highFivesGuys	to_vog/test/ex02/src/FragTrap.cpp	/^void FragTrap::highFivesGuys(void) {$/;"	f	class:FragTrap	typeref:typename:void
+highFivesGuys	to_vog/test/ex03/src/FragTrap.cpp	/^void FragTrap::highFivesGuys(void) {$/;"	f	class:FragTrap	typeref:typename:void
+main	ex00/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	ex01/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	ex02/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	ex03/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	to_vog/ex00/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	to_vog/ex01/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	to_vog/ex02/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	to_vog/ex03/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	to_vog/test/ex00/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	to_vog/test/ex01/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	to_vog/test/ex02/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	to_vog/test/ex03/src/main.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+messages	ex00/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+messages	ex01/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+messages	ex02/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+messages	ex03/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+messages	to_vog/ex00/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+messages	to_vog/ex01/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+messages	to_vog/ex02/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+messages	to_vog/ex03/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+messages	to_vog/test/ex00/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+messages	to_vog/test/ex01/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+messages	to_vog/test/ex02/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+messages	to_vog/test/ex03/src/ClapTrap.cpp	/^void ClapTrap::messages(status type) const {$/;"	f	class:ClapTrap	typeref:typename:void
+operator =	ex00/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	ex01/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	ex01/src/ScavTrap.cpp	/^ScavTrap &ScavTrap::operator=(ScavTrap const &rhs) {$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+operator =	ex02/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	ex02/src/FragTrap.cpp	/^FragTrap &FragTrap::operator=(FragTrap const &rhs) {$/;"	f	class:FragTrap	typeref:typename:FragTrap &
+operator =	ex02/src/ScavTrap.cpp	/^ScavTrap &ScavTrap::operator=(ScavTrap const &rhs) {$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+operator =	ex03/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	ex03/src/DiamondTrap.cpp	/^DiamondTrap &DiamondTrap::operator=(DiamondTrap const &rhs) {$/;"	f	class:DiamondTrap	typeref:typename:DiamondTrap &
+operator =	ex03/src/FragTrap.cpp	/^FragTrap &FragTrap::operator=(FragTrap const &rhs) {$/;"	f	class:FragTrap	typeref:typename:FragTrap &
+operator =	ex03/src/ScavTrap.cpp	/^ScavTrap &ScavTrap::operator=(ScavTrap const &rhs) {$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+operator =	to_vog/ex00/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	to_vog/ex01/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	to_vog/ex01/src/ScavTrap.cpp	/^ScavTrap &ScavTrap::operator=(ScavTrap const &rhs) {$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+operator =	to_vog/ex02/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	to_vog/ex02/src/FragTrap.cpp	/^FragTrap &FragTrap::operator=(FragTrap const &rhs) {$/;"	f	class:FragTrap	typeref:typename:FragTrap &
+operator =	to_vog/ex02/src/ScavTrap.cpp	/^ScavTrap &ScavTrap::operator=(ScavTrap const &rhs) {$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+operator =	to_vog/ex03/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	to_vog/ex03/src/DiamondTrap.cpp	/^DiamondTrap &DiamondTrap::operator=(DiamondTrap const &rhs) {$/;"	f	class:DiamondTrap	typeref:typename:DiamondTrap &
+operator =	to_vog/ex03/src/FragTrap.cpp	/^FragTrap &FragTrap::operator=(FragTrap const &rhs) {$/;"	f	class:FragTrap	typeref:typename:FragTrap &
+operator =	to_vog/ex03/src/ScavTrap.cpp	/^ScavTrap &ScavTrap::operator=(ScavTrap const &rhs) {$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+operator =	to_vog/test/ex00/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	to_vog/test/ex01/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	to_vog/test/ex01/src/ScavTrap.cpp	/^ScavTrap &ScavTrap::operator=(ScavTrap const &rhs) {$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+operator =	to_vog/test/ex02/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	to_vog/test/ex02/src/FragTrap.cpp	/^FragTrap &FragTrap::operator=(FragTrap const &rhs) {$/;"	f	class:FragTrap	typeref:typename:FragTrap &
+operator =	to_vog/test/ex02/src/ScavTrap.cpp	/^ScavTrap &ScavTrap::operator=(ScavTrap const &rhs) {$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+operator =	to_vog/test/ex03/src/ClapTrap.cpp	/^ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	to_vog/test/ex03/src/DiamondTrap.cpp	/^DiamondTrap &DiamondTrap::operator=(DiamondTrap const &rhs) {$/;"	f	class:DiamondTrap	typeref:typename:DiamondTrap &
+operator =	to_vog/test/ex03/src/FragTrap.cpp	/^FragTrap &FragTrap::operator=(FragTrap const &rhs) {$/;"	f	class:FragTrap	typeref:typename:FragTrap &
+operator =	to_vog/test/ex03/src/ScavTrap.cpp	/^ScavTrap &ScavTrap::operator=(ScavTrap const &rhs) {$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+output	ex00/compile_commands.json	/^    "output": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex00\/build\/main.o"$/;"	s	object:0
+output	ex01/compile_commands.json	/^    "output": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex01\/build\/ScavTrap./;"	s	object:0
+output	ex02/compile_commands.json	/^    "output": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex01\/build\/ScavTrap./;"	s	object:0
+output	ex03/compile_commands.json	/^    "output": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03\/build\/ClapTrap./;"	s	object:4
+output	ex03/compile_commands.json	/^    "output": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03\/build\/DiamondTr/;"	s	object:0
+output	ex03/compile_commands.json	/^    "output": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03\/build\/FragTrap./;"	s	object:3
+output	ex03/compile_commands.json	/^    "output": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03\/build\/ScavTrap./;"	s	object:1
+output	ex03/compile_commands.json	/^    "output": "\/home\/nivicius\/Documents\/projects\/ft\/cpp\/module_03\/ex03\/build\/main.o"$/;"	s	object:2
+run	ex00/Makefile	/^run: all$/;"	t
+run	ex01/Makefile	/^run: all$/;"	t
+run	ex02/Makefile	/^run: all$/;"	t
+run	ex03/Makefile	/^run: clean all$/;"	t
+run	to_vog/ex00/Makefile	/^run: all$/;"	t
+run	to_vog/ex01/Makefile	/^run: all$/;"	t
+run	to_vog/ex02/Makefile	/^run: all$/;"	t
+run	to_vog/ex03/Makefile	/^run: clean all$/;"	t
+run	to_vog/test/ex00/Makefile	/^run: all$/;"	t
+run	to_vog/test/ex01/Makefile	/^run: all$/;"	t
+run	to_vog/test/ex02/Makefile	/^run: all$/;"	t
+run	to_vog/test/ex03/Makefile	/^run: clean all$/;"	t
+setAttackDamage	ex00/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setAttackDamage	ex01/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setAttackDamage	ex02/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setAttackDamage	ex03/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setAttackDamage	to_vog/ex00/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setAttackDamage	to_vog/ex01/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setAttackDamage	to_vog/ex02/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setAttackDamage	to_vog/ex03/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setAttackDamage	to_vog/test/ex00/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setAttackDamage	to_vog/test/ex01/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setAttackDamage	to_vog/test/ex02/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setAttackDamage	to_vog/test/ex03/src/ClapTrap.cpp	/^void ClapTrap::setAttackDamage(unsigned int atk) { this->_attackDamage = atk; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	ex00/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	ex01/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	ex02/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	ex03/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	to_vog/ex00/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	to_vog/ex01/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	to_vog/ex02/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	to_vog/ex03/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	to_vog/test/ex00/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	to_vog/test/ex01/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	to_vog/test/ex02/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setEnergyPoint	to_vog/test/ex03/src/ClapTrap.cpp	/^void ClapTrap::setEnergyPoint(unsigned int ep) { this->_energyPoints = ep; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	ex00/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	ex01/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	ex02/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	ex03/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	to_vog/ex00/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	to_vog/ex01/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	to_vog/ex02/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	to_vog/ex03/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	to_vog/test/ex00/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	to_vog/test/ex01/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	to_vog/test/ex02/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setHitPoints	to_vog/test/ex03/src/ClapTrap.cpp	/^void ClapTrap::setHitPoints(unsigned int hp) { this->_hitPoints = hp; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	ex00/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	ex01/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	ex02/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	ex03/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	to_vog/ex00/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	to_vog/ex01/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	to_vog/ex02/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	to_vog/ex03/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	to_vog/test/ex00/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	to_vog/test/ex01/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	to_vog/test/ex02/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+setName	to_vog/test/ex03/src/ClapTrap.cpp	/^void ClapTrap::setName(const std::string name) { this->_name = name; }$/;"	f	class:ClapTrap	typeref:typename:void
+status	ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+status	ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+status	ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+status	ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+status	to_vog/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+status	to_vog/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+status	to_vog/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+status	to_vog/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+status	to_vog/test/ex00/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+status	to_vog/test/ex01/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+status	to_vog/test/ex02/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+status	to_vog/test/ex03/include/ClapTrap.hpp	/^  enum status { DEAD, ENERGY, DAMAGE, NEG_DMG, EMPTY_ATK, NEG_AMOUNT };$/;"	g	class:ClapTrap
+takeDamage	ex00/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	ex01/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	ex02/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	ex03/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	to_vog/ex00/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	to_vog/ex01/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	to_vog/ex02/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	to_vog/ex03/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	to_vog/test/ex00/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	to_vog/test/ex01/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	to_vog/test/ex02/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	to_vog/test/ex03/src/ClapTrap.cpp	/^void ClapTrap::takeDamage(unsigned int amount) {$/;"	f	class:ClapTrap	typeref:typename:void
+whoAmI	ex03/src/DiamondTrap.cpp	/^void DiamondTrap::whoAmI(void) {$/;"	f	class:DiamondTrap	typeref:typename:void
+whoAmI	to_vog/ex03/src/DiamondTrap.cpp	/^void DiamondTrap::whoAmI(void) {$/;"	f	class:DiamondTrap	typeref:typename:void
+whoAmI	to_vog/test/ex03/src/DiamondTrap.cpp	/^void DiamondTrap::whoAmI(void) {$/;"	f	class:DiamondTrap	typeref:typename:void
+~ClapTrap	ex00/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "Destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~ClapTrap	ex01/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "ClapTrap destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~ClapTrap	ex02/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "ClapTrap destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~ClapTrap	ex03/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "ClapTrap destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~ClapTrap	to_vog/ex00/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "Destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~ClapTrap	to_vog/ex01/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "ClapTrap destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~ClapTrap	to_vog/ex02/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "ClapTrap destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~ClapTrap	to_vog/ex03/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "ClapTrap destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~ClapTrap	to_vog/test/ex00/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "Destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~ClapTrap	to_vog/test/ex01/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "ClapTrap destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~ClapTrap	to_vog/test/ex02/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "ClapTrap destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~ClapTrap	to_vog/test/ex03/src/ClapTrap.cpp	/^ClapTrap::~ClapTrap(void) { std::cout << "ClapTrap destructor Called." << std::endl; }$/;"	f	class:ClapTrap
+~DiamondTrap	ex03/src/DiamondTrap.cpp	/^DiamondTrap::~DiamondTrap(void) {$/;"	f	class:DiamondTrap
+~DiamondTrap	to_vog/ex03/src/DiamondTrap.cpp	/^DiamondTrap::~DiamondTrap(void) {$/;"	f	class:DiamondTrap
+~DiamondTrap	to_vog/test/ex03/src/DiamondTrap.cpp	/^DiamondTrap::~DiamondTrap(void) {$/;"	f	class:DiamondTrap
+~FragTrap	ex02/src/FragTrap.cpp	/^FragTrap::~FragTrap(void) {$/;"	f	class:FragTrap
+~FragTrap	ex03/src/FragTrap.cpp	/^FragTrap::~FragTrap(void) {$/;"	f	class:FragTrap
+~FragTrap	to_vog/ex02/src/FragTrap.cpp	/^FragTrap::~FragTrap(void) {$/;"	f	class:FragTrap
+~FragTrap	to_vog/ex03/src/FragTrap.cpp	/^FragTrap::~FragTrap(void) {$/;"	f	class:FragTrap
+~FragTrap	to_vog/test/ex02/src/FragTrap.cpp	/^FragTrap::~FragTrap(void) {$/;"	f	class:FragTrap
+~FragTrap	to_vog/test/ex03/src/FragTrap.cpp	/^FragTrap::~FragTrap(void) {$/;"	f	class:FragTrap
+~ScavTrap	ex01/src/ScavTrap.cpp	/^ScavTrap::~ScavTrap(void) {$/;"	f	class:ScavTrap
+~ScavTrap	ex02/src/ScavTrap.cpp	/^ScavTrap::~ScavTrap(void) {$/;"	f	class:ScavTrap
+~ScavTrap	ex03/src/ScavTrap.cpp	/^ScavTrap::~ScavTrap(void) {$/;"	f	class:ScavTrap
+~ScavTrap	to_vog/ex01/src/ScavTrap.cpp	/^ScavTrap::~ScavTrap(void) {$/;"	f	class:ScavTrap
+~ScavTrap	to_vog/ex02/src/ScavTrap.cpp	/^ScavTrap::~ScavTrap(void) {$/;"	f	class:ScavTrap
+~ScavTrap	to_vog/ex03/src/ScavTrap.cpp	/^ScavTrap::~ScavTrap(void) {$/;"	f	class:ScavTrap
+~ScavTrap	to_vog/test/ex01/src/ScavTrap.cpp	/^ScavTrap::~ScavTrap(void) {$/;"	f	class:ScavTrap
+~ScavTrap	to_vog/test/ex02/src/ScavTrap.cpp	/^ScavTrap::~ScavTrap(void) {$/;"	f	class:ScavTrap
+~ScavTrap	to_vog/test/ex03/src/ScavTrap.cpp	/^ScavTrap::~ScavTrap(void) {$/;"	f	class:ScavTrap
