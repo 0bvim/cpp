@@ -44,11 +44,10 @@ If you wanna run tests go for this [section](#google-test-framework)
 
 ---
 
-# Google test Framework
+# Google Framework
 You should install google tests framework on your system if you don't have yet or run it in a codespaces or a container ~docker~
 this is the repository with documentation ![google test framework](https://github.com/google/googletest)
 
 If you install correctly, (in root directory of exercice like `ex00`) type `make run_tests` and output should be like this ~~(module_00/ex00)~~:
 
 ![image](https://github.com/0bvim/cpp/assets/130008311/253086d5-105f-40cf-be85-82c6a2e51c17)
-
