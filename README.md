@@ -28,3 +28,9 @@ If you install correctly, (in root directory of exercice like `ex00`) type `make
 
 ## ![Module 03](module_03/)
 > This module is about inheritance in general, and about the ![diamond problem](https://www.makeuseof.com/what-is-diamond-problem-in-cpp/).
+
+
+
+## ![Module 04](module_04/)
+> This module is about ![subtype polymorphism](https://stackoverflow.com/questions/23505346/conceptual-difference-between-parametric-polymorphism-and-subtype-polymorphism), abstract classes and interfaces.
+
