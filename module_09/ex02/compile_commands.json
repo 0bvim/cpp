@@ -1,6 +1,6 @@
 [
  {
-  "directory": "/home/nivicius/Documents/projects/ft/cpp/module_09/ex02",
+  "directory": "/home/vinicius/42/cpp/module_09/ex02",
   "arguments": [
    "c++",
    "-std=c++98",
@@ -18,7 +18,7 @@
   "file": "src/PmergeMe.cpp"
  },
  {
-  "directory": "/home/nivicius/Documents/projects/ft/cpp/module_09/ex02",
+  "directory": "/home/vinicius/42/cpp/module_09/ex02",
   "arguments": [
    "c++",
    "-std=c++98",
